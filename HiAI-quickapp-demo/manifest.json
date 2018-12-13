@@ -1,0 +1,59 @@
+{
+  "package": "com.hiai.quickapp",
+  "name": "HiAI体验",
+  "versionName": "1.0.0",
+  "versionCode": 1,
+  "icon": "/Common/img/HiAI_logo.png",
+  "minPlatformVersion": 1000,
+  "features": [
+    {
+      "name": "system.ai"
+    },
+    {
+      "name": "system.media"
+    },
+    {
+      "name": "system.image"
+    },
+    {
+      "name": "system.device"
+    }
+  ],
+  "permissions": [
+    {
+      "origin": "*"
+    }
+  ],
+  "config": {
+    "logLevel": "log"
+  },
+  "router": {
+    "entry": "Main",
+    "pages": {
+      "Main": {
+        "component": "main",
+        "path": "/main"
+      },
+      "Detect_Face": {
+        "component": "detect_face",
+        "path": "/detect_face"
+      },
+      "Detect_Face_Land_Mark": {
+        "component": "detect_face_land_mark",
+        "path": "/detect_face_land_mark"
+      }
+    }
+  },
+  "display": {
+    "backgroundColor": "#fbf9fe",
+    "titleBar": true,
+    "titleBarBackgroundColor": "#0faeff",
+    "titleBarTextColor": "#ffffff",
+    "menu": true,
+    "pages": {
+      "Hello": {
+        "titleBarText": "TitleBar"
+      }
+    }
+  }
+}
