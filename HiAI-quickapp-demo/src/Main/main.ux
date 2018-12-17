@@ -25,6 +25,15 @@
               </text>
             </div>
           </div>
+          //人脸比对
+          <div class="item-container" onclick="detail('Face_Compare')">
+            <div class="item-title">
+              <image class="item-title-icon" src="/Common/img/face_comparision.png"></image>
+              <text class="item-title-detail">
+                人脸比对
+              </text>
+            </div>
+          </div>
         </div>
       </tab-content>
     </tabs>
@@ -134,7 +143,6 @@
           that.osVersionName = ret.osVersionName;
           var one = that.osVersionName.substring(0, 1);
           var two = that.osVersionName.substring(2, 3);
-          console.log("one: " + one, "two: " + two);
           if (Number(one) === 8 && Number(two) >= 1) {
             that.isVersion = true;
           }

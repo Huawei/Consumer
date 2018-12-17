@@ -28,11 +28,11 @@
     </div>
     <div class="mark {{isShow}}" onclick="cancel">
       <div class="popup-container {{isShow}} ">
-        <text class="popup-text" onclick="selectMedia('拍照')">拍照</text>
+        <text class="popup-text" onclick="selectMedia('takePhoto')">拍照</text>
         <div class="popup-line1"></div>
-        <text class="popup-text" onclick="selectMedia('从相册中选择')">从相册中选择</text>
+        <text class="popup-text" onclick="selectMedia('selectImage')">从相册中选择</text>
         <div class="popup-line2"></div>
-        <text class="popup-text" onclick="selectMedia('取消')">取消</text>
+        <text class="popup-text" onclick="selectMedia('cancel')">取消</text>
       </div>
     </div>
   </div>
@@ -191,7 +191,6 @@
   import { errCodeList } from "../Common/data";
   module.exports = {
     data: {
-      list: ["拍照", "从相册中选择", "取消"],
       imageUri: "/Common/img/initial_picture_one.png",
       result_list: [],
       isShow: '',
@@ -214,7 +213,6 @@
           console.log('handling success');
           that.screenWidth = ret.screenWidth;
           that.screenHeight = ret.screenHeight;
-          console.log("屏幕宽度：" + ret.screenWidth, "屏幕高度: " + ret.screenHeight);
           that.selectOneImage();
         }
       })
@@ -233,10 +231,10 @@
     //判定获取图片资源方式是拍照还是从相册中选择，调用media方法获取资源
     selectMedia: function (e) {
       var that = this;
-      if (e === "拍照") {
+      if (e === "takePhoto") {
         that.takePhoto();
       }
-      else if (e === "从相册中选择") {
+      else if (e === "selectImage") {
         that.selectOneImage();
       }
       else {
@@ -280,13 +278,10 @@
       }
       //计算图片压缩比例，压缩比例=原来的宽度/当前设置的宽度
       that.ratio = (real_width / data.width).toFixed(3);
-      console.log("压缩后的宽高：" + data.width + "," + data.height);
+     
       //设置画布的宽高和图片一样
       that.canvasWidth = data.width;
       that.canvasHeight = data.height;
-      console.log("canvasWidth:" + that.canvasWidth, "canvasHeight:" + that.canvasHeight);
-      console.log("压缩比例：" + (data.width / real_width).toFixed(3));
-      console.log("长宽：" + (data.width / that.ratio).toFixed(1) + "," + (data.height / that.ratio).toFixed(1));
 
       var args = [data.uri, 70];
       if (parseFloat(that.ratio) != 1) {
@@ -309,10 +304,6 @@
           image.getImageInfo({
             uri: that.imageUri,
             success: function (imageInfo) {
-              console.log("原始-拍照-图片路径：" + imageInfo.uri + "宽度：" +
-                imageInfo.width + "px,高度：" +
-                imageInfo.height + "px,尺寸：" +
-                (imageInfo.size / (1024)).toFixed(2) + 'KB');
               //调用promise的回调函数resolve将图片信息提供给then方法
               resolve(imageInfo);
             },
@@ -329,8 +320,6 @@
               image.getImageInfo({
                 uri: data.uri,
                 success: function (imageInfo) {
-                  console.log("原始-拍照-图片路径：" + imageInfo.uri + "宽度：" + imageInfo.width + "px,高度：" +
-                    imageInfo.height + "px,尺寸：" + (imageInfo.size / (1024)).toFixed(2) + 'KB');
                   //调用promise的回调函数resolve将图片信息提供给then方法
                   resolve(imageInfo);
                 },
@@ -349,11 +338,9 @@
         media.takePhoto({
           success: function (data) {
             //获取图片原始尺寸
-            console.log('takephoto完成')
               image.getImageInfo({
               uri: data.uri,
               success: function (imageInfo) {
-                console.log("原始-拍照-图片路径：" + imageInfo.uri + "宽度：" + imageInfo.width + "px,高度：" + imageInfo.height + "px,尺寸：" + (imageInfo.size / (1024)).toFixed(2) + 'KB')
                 //调用promise的回调函数resolve将图片信息提供给then方法
                 resolve(imageInfo);
               },
@@ -380,9 +367,6 @@
             image.getImageInfo({
               uri: compressedImg.uri,
               success: function (compressedImgInfo) {
-                console.log("图片路径：" + compressedImgInfo.uri + "宽度：" + compressedImgInfo.width + "px,高度：" +
-                  compressedImgInfo.height + "px,尺寸：" +
-                  (compressedImgInfo.size / (1024)).toFixed(2) + 'KB');
                 if (compressedImgInfo.height % 2 != 0) {
                   //对图片按顺序执行编辑操作
                   image.applyOperations({
@@ -402,8 +386,6 @@
                       image.getImageInfo({
                         uri: data.uri,
                         success: function (operationImgInfo) {
-                          console.log("裁剪后-图片路径：" + operationImgInfo.uri + "宽度：" + operationImgInfo.width + "px,高度：" +
-                            operationImgInfo.height + "px,尺寸：" + (operationImgInfo.size / (1024)).toFixed(2) + 'KB')
                           //调用promise的回调函数resolve将图片信息提供给then方法
                           resolve(operationImgInfo);
                         },
@@ -417,7 +399,7 @@
                     }
                   })
                 } else {
-                  console.log("不剪裁");
+                  console.log("don't crop");
                   resolve(compressedImgInfo);
                 }
               },
@@ -452,7 +434,7 @@
         },
         fail: function (data, code) {
           console.log("handling fail, code: " + code)
-          var co = "错误码:  " + errCodeList[code];
+          var co = "errorCode:  " + errCodeList[code];
           tempList.push(co);
         },
         complete: function (msg) {

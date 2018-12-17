@@ -41,6 +41,10 @@
       "Detect_Face_Land_Mark": {
         "component": "detect_face_land_mark",
         "path": "/detect_face_land_mark"
+      },
+      "Face_Compare": {
+        "component": "face_compare",
+        "path": "/face_compare"
       }
     }
   },
