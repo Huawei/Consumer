@@ -45,146 +45,7 @@
   </div>
 </template>
 <style>
-  .container {
-    flex: 1;
-    flex-direction: column;
-    background-color: #f0ecec;
-  }
-
-  .image-select-container {
-    width: 100%;
-    height: 500px;
-  }
-
-  .first-image-section {
-    width: 50%;
-    height: 500px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .first-image {
-    width: 70%;
-    height: 300px;
-    margin-top: 40px;
-    border-radius: 5px;
-  }
-
-  .first-image-btn {
-    width: 70%;
-    height: 80px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 30px;
-    background-color: #ffffff;
-    border-radius: 5px;
-  }
-
-  .result-container {
-    bottom: 0px;
-    height: 900px;
-    background-color: #ffffff;
-  }
-
-  .result-group-container {
-    flex: 1;
-    flex-direction: column;
-    background-color: #ffffff;
-  }
-
-  .result-content {
-    flex-direction: column;
-    flex: 1;
-  }
-
-  .result-title-detail {
-    padding-left: 30px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    height: 90px;
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-  .result-line {
-    margin-top: 5px;
-    width: 100%;
-    height: 1px;
-    background-color: #f0ecec;
-  }
-
-  .result-item-content {
-    flex-direction: column;
-    flex: 1;
-    padding: 30px;
-    display: flex;
-  }
-
-  .result-list {
-    width: 100%;
-    height: 400px;
-  }
-
-  .items {
-    width: 100%;
-    height: 80px;
-  }
-
-  .item-li {
-    align-items: center;
-  }
-
-  .item-li-detail {
-    font-size: 30px;
-    color: #000000;
-    flex: 1;
-  }
-
-  .mark {
-    position: fixed;
-    display: none;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: #d3d3d3;
-    opacity: 0.5;
-  }
-
-  .popup-container {
-    width: 100%;
-    height: 315px;
-    display: none;
-    background-color: #ffffff;
-    flex-direction: column;
-    position: fixed;
-    bottom: 0px;
-    border: 1px solid #f0ecec;
-  }
-
-  .show {
-    display: flex;
-  }
-
-  .popup-line1 {
-    width: 100%;
-    height: 1px;
-    background-color: #f0ecec;
-  }
-
-  .popup-text {
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    font-size: 30px;
-    color: #000000;
-  }
-
-  .popup-line2 {
-    width: 100%;
-    height: 10px;
-    background-color: #f0ecec;
-  }
+  @import '../Common/css/compare_parse.css';
 </style>
 <script>
   import ai from '@system.ai'
@@ -285,7 +146,7 @@
     //将两张图片进行对比
     faceCompare: function () {
       var that = this;
-      var tempList = [];
+      that.result_list = [];
       //调用ai库中faceCompare方法
       ai.faceCompare({
         uri1: that.oneImgUri,
@@ -301,14 +162,14 @@
           var sc = Number(data.score * 100).toFixed(2);
           that.score = "相似度:  " + sc + "%";
           //将结果放到数组中去，刷新数据源，
-          tempList.push(that.samePersonResult);
-          tempList.push(that.score);
+          that.result_list.push(that.samePersonResult);
+          that.result_list.push(that.score);
         },
         fail: function (data, code) {
-          tempList.push("errorCode:  " + errCodeList[code]);
+          that.result_list.push("errorCode:  " + errCodeList[code]);
         },
         complete: function () {
-          that.result_list = tempList;
+          console.log('handling complete');
         }
       })
     }

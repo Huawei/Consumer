@@ -39,148 +39,7 @@
 </template>
 
 <style>
-  .container {
-    flex: 1;
-    flex-direction: column;
-    background-color: #f0ecec;
-  }
-
-  .top-container {
-    flex-direction: column;
-    width: 100%;
-    height: 45%;
-    align-items: center;
-  }
-
-  .face-image {
-    flex: 1;
-  }
-
-  .bottom-container {
-    width: 100%;
-    height: 55%;
-    background-color: #ffffff;
-    flex-direction: column;
-  }
-
-  .result-group-container {
-    flex: 1;
-    flex-direction: column;
-    background-color: #ffffff;
-  }
-
-  .result-content {
-    flex-direction: column;
-    flex: 1;
-  }
-
-  .result-title-detail {
-    padding-left: 30px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    height: 90px;
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-  .result-line {
-    margin-top: 5px;
-    width: 100%;
-    height: 1px;
-    background-color: #f0ecec;
-  }
-
-  .result-item-content {
-    flex-direction: column;
-    flex: 1;
-    padding: 30px;
-    display: flex;
-  }
-
-  .result-list {
-    width: 100%;
-    height: 400px;
-  }
-
-  .items {
-    width: 100%;
-    height: 80px;
-  }
-
-  .item-li {
-    align-items: center;
-  }
-
-  .item-li-detail {
-    font-size: 30px;
-    color: #000000;
-    flex: 1;
-  }
-
-  .select-container {
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    flex-direction: column;
-    align-items: center;
-    bottom: 40px;
-  }
-
-  .select-btn {
-    width: 80%;
-    height: 100%;
-    background-color: #1478fa;
-    text-align: center;
-    color: #ffffff;
-    font-size: 40px;
-    border-radius: 10px;
-  }
-
-  .mark {
-    position: fixed;
-    display: none;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: #d3d3d3;
-    opacity: 0.5;
-  }
-
-  .popup-container {
-    width: 100%;
-    height: 315px;
-    display: none;
-    background-color: #ffffff;
-    flex-direction: column;
-    position: fixed;
-    bottom: 0px;
-    border: 1px solid #f0ecec;
-  }
-
-  .show {
-    display: flex;
-  }
-
-  .popup-line1 {
-    width: 100%;
-    height: 1px;
-    background-color: #f0ecec;
-  }
-
-  .popup-text {
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    font-size: 30px;
-    color: #000000;
-  }
-
-  .popup-line2 {
-    width: 100%;
-    height: 10px;
-    background-color: #f0ecec;
-  }
+ @import '../Common/css/common.css';
 </style>
 
 <script>
@@ -269,12 +128,12 @@
       if (data.height > data.width) {
         var ratio = data.height / caculateHeight;
         data.height = caculateHeight;
-        data.width = Math.ceil(data.width / ratio) % 2 != 0 ? (Math.ceil(data.width / ratio) - 1) : Math.ceil(data.width / ratio);
+        data.width = Math.ceil(data.width / ratio) % 2 !== 0 ? (Math.ceil(data.width / ratio) - 1) : Math.ceil(data.width / ratio);
       }
       else if (real_height < real_width) {
         data.height = caculateHeight;
         var ratio = real_height / data.height;
-        data.width = Math.ceil(data.width / ratio) % 2 != 0 ? (Math.ceil(data.width / ratio) - 1) : Math.ceil(data.width / ratio);
+        data.width = Math.ceil(data.width / ratio) % 2 !== 0 ? (Math.ceil(data.width / ratio) - 1) : Math.ceil(data.width / ratio);
       }
       //计算图片压缩比例，压缩比例=原来的宽度/当前设置的宽度
       that.ratio = (real_width / data.width).toFixed(3);
@@ -367,7 +226,7 @@
             image.getImageInfo({
               uri: compressedImg.uri,
               success: function (compressedImgInfo) {
-                if (compressedImgInfo.height % 2 != 0) {
+                if (compressedImgInfo.height % 2 !== 0) {
                   //对图片按顺序执行编辑操作
                   image.applyOperations({
                     uri: compressedImgInfo.uri,
@@ -418,7 +277,7 @@
     //人脸五官特征方法
     detectFaceLand: function () {
       var that = this;
-      var tempList = [];
+      that.result_list = [];
       //获得画布
       var clearRect = that.$element("canvas");
       var ctx = clearRect.getContext("2d");
@@ -433,9 +292,7 @@
           console.log("data.mark:" + JSON.stringify(data.marks));
         },
         fail: function (data, code) {
-          console.log("handling fail, code: " + code)
-          var co = "errorCode:  " + errCodeList[code];
-          tempList.push(co);
+          that.result_list.push("errorCode:  " + errCodeList[code]);
         },
         complete: function (msg) {
           console.log("detect_face_land_mark handling complete");

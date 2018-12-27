@@ -45,6 +45,18 @@
       "Face_Compare": {
         "component": "face_compare",
         "path": "/face_compare"
+      },
+      "Detect_Head_Pose": {
+        "component": "detect_head_pose",
+        "path": "/detect_head_pose"
+      },
+      "Detect_Face_Attributes": {
+        "component": "detect_face_attributes",
+        "path": "/detect_face_attributes"
+      },
+      "Parse_Face": {
+        "component": "parse_face",
+        "path": "/parse_face"
       }
     }
   },

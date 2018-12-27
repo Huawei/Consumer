@@ -34,6 +34,33 @@
               </text>
             </div>
           </div>
+           //人脸朝向识别
+          <div class="item-container" onclick="detail('Detect_Head_Pose')">
+            <div class="item-title">
+              <image class="item-title-icon" src="/Common/img/head_pose.png"></image>
+              <text class="item-title-detail">
+                人脸朝向识别
+              </text>
+            </div>
+          </div>
+           //人脸属性
+          <div class="item-container" onclick="detail('Detect_Face_Attributes')">
+            <div class="item-title">
+              <image class="item-title-icon" src="/Common/img/face_attributes.png"></image>
+              <text class="item-title-detail">
+                人脸属性
+              </text>
+            </div>
+          </div>
+          //人脸解析
+          <div class="item-container" onclick="detail('Parse_Face')">
+            <div class="item-title">
+              <image class="item-title-icon" src="/Common/img/face_parsing.png"></image>
+              <text class="item-title-detail">
+                人脸解析
+              </text>
+            </div>
+          </div>
         </div>
       </tab-content>
     </tabs>
