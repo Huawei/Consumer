@@ -53,7 +53,7 @@
   import { errCodeList } from "../Common/data";
   module.exports = {
     data: {
-      imageUri: "/Common/img/initial_picture_one.png",
+      imageUri: "/Common/img/initial/initial_picture_one.png",
       result_list: [],
       isShow: '',
       pointArray: [],

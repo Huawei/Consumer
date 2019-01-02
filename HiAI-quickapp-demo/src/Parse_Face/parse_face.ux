@@ -49,7 +49,7 @@
   import { errCodeList } from "../Common/data";
   module.exports = {
     data: {
-      oneImgUri: "/Common/img/initial_picture_one.png",
+      oneImgUri: "/Common/img/initial/initial_picture_one.png",
       twoImgUri: "",
       result_list: [],
       level: '',

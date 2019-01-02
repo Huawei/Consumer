@@ -53,8 +53,8 @@
   import { errCodeList } from "../Common/data";
   module.exports = {
     data: {
-      oneImgUri: "/Common/img/initial_picture_one.png",
-      twoImgUri: "/Common/img/initial_picture_one.png",
+      oneImgUri: "/Common/img/initial/initial_picture_one.png",
+      twoImgUri: "/Common/img/initial/initial_picture_one.png",
       samePersonResult: '',
       score: '',
       result_list: [],

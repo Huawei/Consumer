@@ -1,69 +1,66 @@
 <template>
   <div class="container">
-    <tabs>
-      <tab-content class="group-container">
+      <div class="group-container">
         <div class="group-content">
           <stack class="title">
             <image class="title-background" src="/Common/img/background.png"></image>
             <text class="title-detail">HiAI快速体验</text>
           </stack>
-          /*人脸检测*/
+          /*人脸识别*/
           <div class="item-container">
-            <div class="item-title" onclick="detail('Detect_Face')">
-              <image class="item-title-icon" src="/Common/img/face_detect.png"></image>
-              <text class="item-title-detail">
-                人脸检测
+            <div class="item-title">
+              <image class="item-title-icon" src="/Common/img/face/face_recognise.png"></image>
+              <text class="item-title-detail {{list.faceRecognition}}-txt" onclick="selectConFn('faceRecognition')">
+                人脸识别
               </text>
             </div>
-          </div>
-          //五官特征检测
-          <div class="item-container" onclick="detail('Detect_Face_Land_Mark')">
-            <div class="item-title">
-              <image class="item-title-icon" src="/Common/img/face_land_mark.png"></image>
-              <text class="item-title-detail">
-                五官特征检测
-              </text>
+            //人脸识别子元素
+            <div class="item-content {{list.faceRecognition}}">
+              <div class="item-li" onclick="detail('Face_Compare')">
+                <image class="item-li-img" src="/Common/img/face/face_comparision.png"></image>
+                <text class="item-li-detail">人脸比对</text>
+              </div>
+              <div class="item-li" onclick="detail('Detect_Face')">
+                <image class="item-li-img" src="/Common/img/face/face_detect.png"></image>
+                <text class="item-li-detail">人脸检测</text>
+              </div>
+              <div class="item-li" onclick="detail('Detect_Face_Land_Mark')">
+                <image class="item-li-img" src="/Common/img/face/face_land_mark.png"></image>
+                <text class="item-li-detail">五官特征检测</text>
+              </div>
+              <div class="item-li" onclick="detail('Detect_Face_Attributes')">
+                <image class="item-li-img" src="/Common/img/face/face_attributes.png"></image>
+                <text class="item-li-detail">人脸属性</text>
+              </div>
+              <div class="item-li" onclick="detail('Detect_Head_Pose')">
+                <image class="item-li-img" src="/Common/img/face/head_pose.png"></image>
+                <text class="item-li-detail">人脸朝向识别</text>
+              </div>
+              <div class="item-li" onclick="detail('Parse_Face')">
+                <image class="item-li-img" src="/Common/img/face/face_parsing.png"></image>
+                <text class="item-li-detail">人脸解析</text>
+              </div>
             </div>
           </div>
-          //人脸比对
-          <div class="item-container" onclick="detail('Face_Compare')">
+
+          //语音识别
+          <div class="item-container">
             <div class="item-title">
-              <image class="item-title-icon" src="/Common/img/face_comparision.png"></image>
-              <text class="item-title-detail">
-                人脸比对
+              <image class="item-title-icon" src="/Common/img/speech/speech_recognition.png"></image>
+              <text class="item-title-detail {{list.speechRecognition}}-txt" onclick="selectConFn('speechRecognition')">
+                语音识别
               </text>
             </div>
-          </div>
-           //人脸朝向识别
-          <div class="item-container" onclick="detail('Detect_Head_Pose')">
-            <div class="item-title">
-              <image class="item-title-icon" src="/Common/img/head_pose.png"></image>
-              <text class="item-title-detail">
-                人脸朝向识别
-              </text>
-            </div>
-          </div>
-           //人脸属性
-          <div class="item-container" onclick="detail('Detect_Face_Attributes')">
-            <div class="item-title">
-              <image class="item-title-icon" src="/Common/img/face_attributes.png"></image>
-              <text class="item-title-detail">
-                人脸属性
-              </text>
-            </div>
-          </div>
-          //人脸解析
-          <div class="item-container" onclick="detail('Parse_Face')">
-            <div class="item-title">
-              <image class="item-title-icon" src="/Common/img/face_parsing.png"></image>
-              <text class="item-title-detail">
-                人脸解析
-              </text>
+            //语音识别
+            <div class="item-content {{list.speechRecognition}}">
+              <div class="item-li" onclick="detail('Asr')">
+                <image class="item-li-img" src="/Common/img/speech/speech_recognition_small.png"></image>
+                <text class="item-li-detail">语音识别</text>
+              </div>
             </div>
           </div>
         </div>
-      </tab-content>
-    </tabs>
+      </div>
   </div>
 </template>
 
@@ -131,6 +128,27 @@
     font-size: 40px;
   }
 
+  .item-content {
+    flex-direction: column;
+    padding: 30px;
+    display: none;
+  }
+
+  .item-li-img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 20px;
+    resize-mode: contain;
+  }
+
+  .item-li-detail {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #000000;
+    flex: 1;
+  }
+
   .show {
     display: flex;
   }
@@ -148,13 +166,16 @@
   module.exports = {
     data: {
       list: {
+        faceRecognition: '',
+        speechRecognition: '',
         osVersionName: '',
+        nulRecognition: '',
         isVersion: false,
       }
     },
     onInit() {
       this.$page.setTitleBar({
-        text: 'HiAI体验',
+        text: 'HiAI快速体验',
       })
       var that = this;
       that.getDeviceInfo();
@@ -165,8 +186,6 @@
       //获取屏幕信息
       device.getInfo({
         success: function (ret) {
-          console.log('handling success' + JSON.stringify(ret));
-          console.log('osVersionName: ' + ret.osVersionName);
           that.osVersionName = ret.osVersionName;
           var one = that.osVersionName.substring(0, 1);
           var two = that.osVersionName.substring(2, 3);
@@ -182,7 +201,22 @@
         }
       })
     },
-   
+    activeF: function (list, target, addClass) {
+      var obj = list;
+      if (obj[target] === addClass) {
+        obj[target] = '';
+        return
+      }
+      for (var a in obj) {
+        obj[a] = '';
+        if (target === a) {
+          obj[a] = addClass;
+        }
+      }
+    },
+    selectConFn: function (e) {
+      this.activeF(this['list'], e, 'show');
+    },
     detail: function (src) {
       var that = this;
       if (that.isVersion === true) {
@@ -190,7 +224,7 @@
       }
       else {
         prompt.showToast({
-          message: "手机系统版本过低，暂不支持HiAI",
+          message: "手机处理器或系统版本过低，暂不支持HiAI能力，建议使用麒麟970处理器、EMUI8.1.0及以上版本手机。",
         });
       }
     },

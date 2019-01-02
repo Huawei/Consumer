@@ -57,6 +57,10 @@
       "Parse_Face": {
         "component": "parse_face",
         "path": "/parse_face"
+      },
+      "Asr": {
+        "component": "asr",
+        "path": "/asr"
       }
     }
   },
