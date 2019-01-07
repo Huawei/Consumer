@@ -1,79 +1,83 @@
 {
-  "package": "com.hiai.quickapp",
-  "name": "HiAI体验",
-  "versionName": "1.0.0",
-  "versionCode": 1,
-  "icon": "/Common/img/HiAI_logo.png",
-  "minPlatformVersion": 1000,
-  "features": [
-    {
-      "name": "system.ai"
+    "package": "com.hiai.quickapp",
+    "name": "HiAI体验",
+    "versionName": "1.0.0",
+    "versionCode": 1,
+    "icon": "/Common/img/HiAI_logo.png",
+    "minPlatformVersion": 1000,
+    "features": [
+        {
+            "name": "system.ai"
+        },
+        {
+            "name": "system.media"
+        },
+        {
+            "name": "system.image"
+        },
+        {
+            "name": "system.device"
+        }
+    ],
+    "permissions": [
+        {
+            "origin": "*"
+        }
+    ],
+    "config": {
+        "logLevel": "log"
     },
-    {
-      "name": "system.media"
+    "router": {
+        "entry": "Main",
+        "pages": {
+            "Main": {
+                "component": "main",
+                "path": "/main"
+            },
+            "Detect_Face": {
+                "component": "detect_face",
+                "path": "/detect_face"
+            },
+            "Detect_Face_Land_Mark": {
+                "component": "detect_face_land_mark",
+                "path": "/detect_face_land_mark"
+            },
+            "Face_Compare": {
+                "component": "face_compare",
+                "path": "/face_compare"
+            },
+            "Detect_Head_Pose": {
+                "component": "detect_head_pose",
+                "path": "/detect_head_pose"
+            },
+            "Detect_Face_Attributes": {
+                "component": "detect_face_attributes",
+                "path": "/detect_face_attributes"
+            },
+            "Parse_Face": {
+                "component": "parse_face",
+                "path": "/parse_face"
+            },
+            "Asr": {
+                "component": "asr",
+                "path": "/asr"
+            },
+            "Word_Segment": {
+                "component": "word_segment",
+                "path": "/Word_Segment"
+            }
+        }
     },
-    {
-      "name": "system.image"
-    },
-    {
-      "name": "system.device"
+    "display": {
+        "backgroundColor": "#fbf9fe",
+        "titleBar": true,
+        "titleBarBackgroundColor": "#0faeff",
+        "titleBarTextColor": "#ffffff",
+        "menu": true,
+        "pages": {
+            "Hello": {
+                "titleBarText": "TitleBar"
+            }
+        }
     }
-  ],
-  "permissions": [
-    {
-      "origin": "*"
-    }
-  ],
-  "config": {
-    "logLevel": "log"
-  },
-  "router": {
-    "entry": "Main",
-    "pages": {
-      "Main": {
-        "component": "main",
-        "path": "/main"
-      },
-      "Detect_Face": {
-        "component": "detect_face",
-        "path": "/detect_face"
-      },
-      "Detect_Face_Land_Mark": {
-        "component": "detect_face_land_mark",
-        "path": "/detect_face_land_mark"
-      },
-      "Face_Compare": {
-        "component": "face_compare",
-        "path": "/face_compare"
-      },
-      "Detect_Head_Pose": {
-        "component": "detect_head_pose",
-        "path": "/detect_head_pose"
-      },
-      "Detect_Face_Attributes": {
-        "component": "detect_face_attributes",
-        "path": "/detect_face_attributes"
-      },
-      "Parse_Face": {
-        "component": "parse_face",
-        "path": "/parse_face"
-      },
-      "Asr": {
-        "component": "asr",
-        "path": "/asr"
-      }
-    }
-  },
-  "display": {
-    "backgroundColor": "#fbf9fe",
-    "titleBar": true,
-    "titleBarBackgroundColor": "#0faeff",
-    "titleBarTextColor": "#ffffff",
-    "menu": true,
-    "pages": {
-      "Hello": {
-        "titleBarText": "TitleBar"
-      }
-    }
-  }
 }

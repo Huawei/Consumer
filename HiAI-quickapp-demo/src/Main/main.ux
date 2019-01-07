@@ -1,235 +1,251 @@
 <template>
-  <div class="container">
-      <div class="group-container">
-        <div class="group-content">
-          <stack class="title">
-            <image class="title-background" src="/Common/img/background.png"></image>
-            <text class="title-detail">HiAI快速体验</text>
-          </stack>
-          /*人脸识别*/
-          <div class="item-container">
-            <div class="item-title">
-              <image class="item-title-icon" src="/Common/img/face/face_recognise.png"></image>
-              <text class="item-title-detail {{list.faceRecognition}}-txt" onclick="selectConFn('faceRecognition')">
-                人脸识别
-              </text>
-            </div>
-            //人脸识别子元素
-            <div class="item-content {{list.faceRecognition}}">
-              <div class="item-li" onclick="detail('Face_Compare')">
-                <image class="item-li-img" src="/Common/img/face/face_comparision.png"></image>
-                <text class="item-li-detail">人脸比对</text>
-              </div>
-              <div class="item-li" onclick="detail('Detect_Face')">
-                <image class="item-li-img" src="/Common/img/face/face_detect.png"></image>
-                <text class="item-li-detail">人脸检测</text>
-              </div>
-              <div class="item-li" onclick="detail('Detect_Face_Land_Mark')">
-                <image class="item-li-img" src="/Common/img/face/face_land_mark.png"></image>
-                <text class="item-li-detail">五官特征检测</text>
-              </div>
-              <div class="item-li" onclick="detail('Detect_Face_Attributes')">
-                <image class="item-li-img" src="/Common/img/face/face_attributes.png"></image>
-                <text class="item-li-detail">人脸属性</text>
-              </div>
-              <div class="item-li" onclick="detail('Detect_Head_Pose')">
-                <image class="item-li-img" src="/Common/img/face/head_pose.png"></image>
-                <text class="item-li-detail">人脸朝向识别</text>
-              </div>
-              <div class="item-li" onclick="detail('Parse_Face')">
-                <image class="item-li-img" src="/Common/img/face/face_parsing.png"></image>
-                <text class="item-li-detail">人脸解析</text>
-              </div>
-            </div>
-          </div>
+    <div class="container">
+        <div class="group-container">
+            <div class="group-content">
+                <stack class="title">
+                    <image class="title-background" src="/Common/img/background.png"></image>
+                    <text class="title-detail">HiAI快速体验</text>
+                </stack>
+                /*人脸识别*/
+                <div class="item-container">
+                    <div class="item-title">
+                        <image class="item-title-icon" src="/Common/img/face/face_recognise.png"></image>
+                        <text class="item-title-detail {{list.faceRecognition}}-txt" onclick="selectConFn('faceRecognition')">
+                            人脸识别
+                        </text>
+                    </div>
+                    //人脸识别子元素
+                    <div class="item-content {{list.faceRecognition}}">
+                        <div class="item-li" onclick="detail('Face_Compare')">
+                            <image class="item-li-img" src="/Common/img/face/face_comparision.png"></image>
+                            <text class="item-li-detail">人脸比对</text>
+                        </div>
+                        <div class="item-li" onclick="detail('Detect_Face')">
+                            <image class="item-li-img" src="/Common/img/face/face_detect.png"></image>
+                            <text class="item-li-detail">人脸检测</text>
+                        </div>
+                        <div class="item-li" onclick="detail('Detect_Face_Land_Mark')">
+                            <image class="item-li-img" src="/Common/img/face/face_land_mark.png"></image>
+                            <text class="item-li-detail">五官特征检测</text>
+                        </div>
+                        <div class="item-li" onclick="detail('Detect_Face_Attributes')">
+                            <image class="item-li-img" src="/Common/img/face/face_attributes.png"></image>
+                            <text class="item-li-detail">人脸属性</text>
+                        </div>
+                        <div class="item-li" onclick="detail('Detect_Head_Pose')">
+                            <image class="item-li-img" src="/Common/img/face/head_pose.png"></image>
+                            <text class="item-li-detail">人脸朝向识别</text>
+                        </div>
+                        <div class="item-li" onclick="detail('Parse_Face')">
+                            <image class="item-li-img" src="/Common/img/face/face_parsing.png"></image>
+                            <text class="item-li-detail">人脸解析</text>
+                        </div>
+                    </div>
+                </div>
 
-          //语音识别
-          <div class="item-container">
-            <div class="item-title">
-              <image class="item-title-icon" src="/Common/img/speech/speech_recognition.png"></image>
-              <text class="item-title-detail {{list.speechRecognition}}-txt" onclick="selectConFn('speechRecognition')">
-                语音识别
-              </text>
+                //语音识别
+                <div class="item-container">
+                    <div class="item-title">
+                        <image class="item-title-icon" src="/Common/img/speech/speech_recognition.png"></image>
+                        <text class="item-title-detail {{list.speechRecognition}}-txt" onclick="selectConFn('speechRecognition')">
+                            语音识别
+                        </text>
+                    </div>
+                    //语音识别
+                    <div class="item-content {{list.speechRecognition}}">
+                        <div class="item-li" onclick="detail('Asr')">
+                            <image class="item-li-img" src="/Common/img/speech/speech_recognition_small.png"></image>
+                            <text class="item-li-detail">语音识别</text>
+                        </div>
+                    </div>
+                </div>
+                //自然语言处理
+                <div class="item-container">
+                    <div class="item-title">
+                        <image class="item-title-icon" src="/Common/img/language/language_resolve.png"></image>
+                        <text class="item-title-detail {{list.nulRecognition}}-txt" onclick="selectConFn('nulRecognition')">
+                            自然语言处理
+                        </text>
+                    </div>
+                    //自然语言识别子元素
+                    <div class="item-content {{list.nulRecognition}}">
+                        <div class="item-li" onclick="detail('Word_Segment')">
+                            <image class="item-li-img" src="/Common/img/nlu/participle.png"></image>
+                            <text class="item-li-detail">分词</text>
+                        </div>
+                    </div>
+                </div>
             </div>
-            //语音识别
-            <div class="item-content {{list.speechRecognition}}">
-              <div class="item-li" onclick="detail('Asr')">
-                <image class="item-li-img" src="/Common/img/speech/speech_recognition_small.png"></image>
-                <text class="item-li-detail">语音识别</text>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-  </div>
+    </div>
 </template>
 
 <style>
-  .container {
-    background-color: #ffffff;
-    flex: 1;
-    flex-direction: column;
-  }
+    .container {
+        background-color: #ffffff;
+        flex: 1;
+        flex-direction: column;
+    }
 
-  .group-container {
-    flex: 1;
-    flex-direction: column;
-  }
+    .group-container {
+        flex: 1;
+        flex-direction: column;
+    }
 
-  .group-content {
-    flex-direction: column;
-    flex: 1;
-  }
+    .group-content {
+        flex-direction: column;
+        flex: 1;
+    }
 
-  .title {
-    width: 100%;
-    height: 300px;
-    flex-direction: column;
-  }
+    .title {
+        width: 100%;
+        height: 300px;
+        flex-direction: column;
+    }
 
-  .title_background {
-    width: 100%;
-    height: 100%;
-  }
+    .title_background {
+        width: 100%;
+        height: 100%;
+    }
 
-  .title-detail {
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    font-size: 40px;
-    color: #ffffff;
-  }
+    .title-detail {
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        font-size: 40px;
+        color: #ffffff;
+    }
 
-  .group-content {
-    flex-direction: column;
-    flex: 1;
-  }
+    .group-content {
+        flex-direction: column;
+        flex: 1;
+    }
 
-  .item-container {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    background-color: #ffffff;
-    flex-direction: column;
-    margin-bottom: 20px;
-    border: 1px solid #d3d3d3;
-  }
+    .item-container {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        background-color: #ffffff;
+        flex-direction: column;
+        margin-bottom: 20px;
+        border: 1px solid #d3d3d3;
+    }
 
-  .item-title-icon {
-    width: 90px;
-    height: 90px;
-    margin: 20px;
-  }
+    .item-title-icon {
+        width: 90px;
+        height: 90px;
+        margin: 20px;
+    }
 
-  .item-title-detail {
-    padding: 40px;
-    flex: 1;
-    color: #000000;
-    font-size: 40px;
-  }
+    .item-title-detail {
+        padding: 40px;
+        flex: 1;
+        color: #000000;
+        font-size: 40px;
+    }
 
-  .item-content {
-    flex-direction: column;
-    padding: 30px;
-    display: none;
-  }
+    .item-content {
+        flex-direction: column;
+        padding: 30px;
+        display: none;
+    }
 
-  .item-li-img {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 30px;
-    margin-right: 20px;
-    resize-mode: contain;
-  }
+    .item-li-img {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 30px;
+        margin-right: 20px;
+        resize-mode: contain;
+    }
 
-  .item-li-detail {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: #000000;
-    flex: 1;
-  }
+    .item-li-detail {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: #000000;
+        flex: 1;
+    }
 
-  .show {
-    display: flex;
-  }
+    .show {
+        display: flex;
+    }
 
-  .show-txt {
-    color: #cccccc;
-  }
+    .show-txt {
+        color: #cccccc;
+    }
 </style>
 
 <script>
 
-  import router from '@system.router'
-  import device from '@system.device'
-  import prompt from '@system.prompt'
-  module.exports = {
-    data: {
-      list: {
-        faceRecognition: '',
-        speechRecognition: '',
-        osVersionName: '',
-        nulRecognition: '',
-        isVersion: false,
-      }
-    },
-    onInit() {
-      this.$page.setTitleBar({
-        text: 'HiAI快速体验',
-      })
-      var that = this;
-      that.getDeviceInfo();
-    },
+    import router from '@system.router'
+    import device from '@system.device'
+    import prompt from '@system.prompt'
+    module.exports = {
+        data: {
+            list: {
+                faceRecognition: '',
+                speechRecognition: '',
+                osVersionName: '',
+                nulRecognition: '',
+                isVersion: false,
+            }
+        },
+        onInit() {
+            this.$page.setTitleBar({
+                text: 'HiAI快速体验',
+            })
+            var that = this;
+            that.getDeviceInfo();
+        },
 
-    getDeviceInfo: function () {
-      var that = this;
-      //获取屏幕信息
-      device.getInfo({
-        success: function (ret) {
-          that.osVersionName = ret.osVersionName;
-          var one = that.osVersionName.substring(0, 1);
-          var two = that.osVersionName.substring(2, 3);
-          if (Number(one) === 8 && Number(two) >= 1) {
-            that.isVersion = true;
-          }
-          else if (Number(one) >= 9) {
-            that.isVersion = true;
-          }
-          else {
-            that.isVersion = false;
-          }
+        getDeviceInfo: function () {
+            var that = this;
+            //获取屏幕信息
+            device.getInfo({
+                success: function (ret) {
+                    that.osVersionName = ret.osVersionName;
+                    var one = that.osVersionName.substring(0, 1);
+                    var two = that.osVersionName.substring(2, 3);
+                    if (Number(one) === 8 && Number(two) >= 1) {
+                        that.isVersion = true;
+                    }
+                    else if (Number(one) >= 9) {
+                        that.isVersion = true;
+                    }
+                    else {
+                        that.isVersion = false;
+                    }
+                }
+            })
+        },
+        activeF: function (list, target, addClass) {
+            var obj = list;
+            if (obj[target] === addClass) {
+                obj[target] = '';
+                return
+            }
+            for (var a in obj) {
+                obj[a] = '';
+                if (target === a) {
+                    obj[a] = addClass;
+                }
+            }
+        },
+        selectConFn: function (e) {
+            this.activeF(this['list'], e, 'show');
+        },
+        detail: function (src) {
+            var that = this;
+            if (that.isVersion === true) {
+                router.push({ 'uri': src });
+            }
+            else {
+                prompt.showToast({
+                    message: "手机处理器或系统版本过低，暂不支持HiAI能力，建议使用麒麟970处理器、EMUI8.1.0及以上版本手机。",
+                });
+            }
+        },
+        routePath(path, params) {
+            router.push({ uri: path, params: params })
         }
-      })
-    },
-    activeF: function (list, target, addClass) {
-      var obj = list;
-      if (obj[target] === addClass) {
-        obj[target] = '';
-        return
-      }
-      for (var a in obj) {
-        obj[a] = '';
-        if (target === a) {
-          obj[a] = addClass;
-        }
-      }
-    },
-    selectConFn: function (e) {
-      this.activeF(this['list'], e, 'show');
-    },
-    detail: function (src) {
-      var that = this;
-      if (that.isVersion === true) {
-        router.push({ 'uri': src });
-      }
-      else {
-        prompt.showToast({
-          message: "手机处理器或系统版本过低，暂不支持HiAI能力，建议使用麒麟970处理器、EMUI8.1.0及以上版本手机。",
-        });
-      }
-    },
-    routePath(path, params) {
-      router.push({ uri: path, params: params })
     }
-  }
 </script>
