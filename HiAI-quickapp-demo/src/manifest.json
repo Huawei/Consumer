@@ -65,6 +65,14 @@
             "Word_Segment": {
                 "component": "word_segment",
                 "path": "/Word_Segment"
+            },
+            "Assistant_Intention": {
+                "component": "assistant_intention",
+                "path": "/Assistant_Intention"
+            },
+            "Chat_Intention": {
+                "component": "chat_intention",
+                "path": "/Chat_Intention"
             }
         }
     },

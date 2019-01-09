@@ -73,6 +73,14 @@
                             <image class="item-li-img" src="/Common/img/nlu/participle.png"></image>
                             <text class="item-li-detail">分词</text>
                         </div>
+                        <div class="item-li" onclick="detail('Assistant_Intention')">
+                            <image class="item-li-img" src="/Common/img/nlu/assistant_intent_recognition.png"></image>
+                            <text class="item-li-detail">助手类意图识别</text>
+                        </div>
+                        <div class="item-li" onclick="detail('Chat_Intention')">
+                            <image class="item-li-img" src="/Common/img/nlu/im_intent_identification.png"></image>
+                            <text class="item-li-detail">IM类意图识别</text>
+                        </div>
                     </div>
                 </div>
             </div>
