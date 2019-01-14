@@ -81,6 +81,10 @@
                             <image class="item-li-img" src="/Common/img/nlu/im_intent_identification.png"></image>
                             <text class="item-li-detail">IM类意图识别</text>
                         </div>
+                        <div class="item-li" onclick="detail('Word_Pos')">
+                            <image class="item-li-img" src="/Common/img/nlu/speech_tagging.png"></image>
+                            <text class="item-li-detail">词性标注</text>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -73,6 +73,10 @@
             "Chat_Intention": {
                 "component": "chat_intention",
                 "path": "/Chat_Intention"
+            },
+            "Word_Pos": {
+                "component": "word_pos",
+                "path": "/Word_Pos"
             }
         }
     },
