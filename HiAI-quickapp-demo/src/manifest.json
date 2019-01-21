@@ -77,6 +77,10 @@
             "Word_Pos": {
                 "component": "word_pos",
                 "path": "/Word_Pos"
+            },
+            "Entity": {
+                "component": "entity",
+                "path": "/Entity"
             }
         }
     },

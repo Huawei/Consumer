@@ -85,6 +85,10 @@
                             <image class="item-li-img" src="/Common/img/nlu/speech_tagging.png"></image>
                             <text class="item-li-detail">词性标注</text>
                         </div>
+                        <div class="item-li" onclick="detail('Entity')">
+                            <image class="item-li-img" src="/Common/img/nlu/entity_identification.png"></image>
+                            <text class="item-li-detail">实体识别</text>
+                        </div>
                     </div>
                 </div>
             </div>
