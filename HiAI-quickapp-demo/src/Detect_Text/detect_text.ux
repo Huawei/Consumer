@@ -1,0 +1,282 @@
+<template>
+   <div class="container">
+    <div class="top-container">
+      <image class="face-image" src="{{imageUri}}" onclick="select"></image>
+    </div>
+    <div class="bottom-container">
+      <tabs>
+        <tab-content class="result-group-container">
+          <div class="result-content">
+            <div class="result-title">
+              <text class="result-title-detail">分析结果</text>
+            </div>
+            <div class="result-line"></div>
+            <div class="result-item-content">
+              <list class="result-list" id="list">
+                <block for="result_list">
+                  <list-item type="result" class="items">
+                    <div class="item-li">
+                      <text class="item-li-detail">{{$item}}</text>
+                    </div>
+                  </list-item>
+                </block>
+              </list>
+            </div>
+          </div>
+        </tab-content>
+      </tabs>
+    </div>
+    <div class="select-container">
+      <input class="select-btn" type="button" onclick="select" value="上传图片"></input>
+    </div>
+    <div class="mark {{isShow}}" onclick="cancel">
+      <div class="popup-container {{isShow}} ">
+        <text class="popup-text" onclick="selectMedia('takePhoto')">拍照</text>
+        <div class="popup-line1"></div>
+        <text class="popup-text" onclick="selectMedia('selectImage')">从相册中选择</text>
+        <div class="popup-line2"></div>
+        <text class="popup-text" onclick="selectMedia('cancel')">取消</text>
+      </div>
+    </div>
+  </div>
+</template>
+<style>
+  .container {
+  flex: 1;
+  flex-direction: column;
+  background-color: #f0ecec;
+}
+
+.top-container {
+  flex-direction: column;
+  width: 100%;
+  height: 45%;
+  align-items: center;
+}
+
+.face-image {
+  flex: 1;
+}
+
+.bottom-container {
+  width: 100%;
+  height: 55%;
+  background-color: #ffffff;
+  flex-direction: column;
+}
+
+.result-group-container {
+  flex: 1;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.result-content {
+  flex-direction: column;
+  flex: 1;
+}
+
+.result-title-detail {
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  height: 90px;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.result-line {
+  margin-top: 5px;
+  width: 100%;
+  height: 1px;
+  background-color: #f0ecec;
+}
+
+.result-item-content {
+  flex-direction: column;
+  flex: 1;
+  padding: 30px;
+  display: flex;
+}
+
+.result-list {
+  width: 100%;
+  height: 600px;
+}
+
+.items {
+  width: 100%;
+  /* height: 80px; */
+}
+
+.item-li {
+  align-items: center;
+}
+
+.item-li-detail {
+  font-size: 30px;
+  color: #000000;
+  flex: 1;
+}
+
+.select-container {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  flex-direction: column;
+  align-items: center;
+  bottom: 40px;
+}
+
+.select-btn {
+  width: 80%;
+  height: 100%;
+  background-color: #1478fa;
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+  border-radius: 10px;
+}
+
+.mark {
+  position: fixed;
+  display: none;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #d3d3d3;
+  opacity: 0.5;
+}
+
+.popup-container {
+  width: 100%;
+  height: 315px;
+  display: none;
+  background-color: #ffffff;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0px;
+  border: 1px solid #f0ecec;
+}
+
+.show {
+  display: flex;
+}
+
+.popup-line1 {
+  width: 100%;
+  height: 1px;
+  background-color: #f0ecec;
+}
+
+.popup-text {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: 30px;
+  color: #000000;
+}
+
+.popup-line2 {
+  width: 100%;
+  height: 10px;
+  background-color: #f0ecec;
+}
+</style>
+<script>
+  import ai from '@system.ai';
+  import media from '@system.media';
+  import { errCodeList } from "../Common/data"
+  module.exports = {
+    data: {
+      imageUri: "/Common/img/initial/initial_orc_picture.png",
+      result_list: [],
+      isShow: '',
+      level: '',
+    },
+    onInit() {
+      this.$page.setTitleBar({
+        text: '通用文字识别',
+      })
+      this.detectText();
+    },
+
+    //选择图片
+    select: function () {
+      var that = this;
+      that.isShow = 'show';
+    },
+    //在弹出框中选择取消按钮时，隐藏弹出框
+    cancel: function () {
+      var that = this;
+      that.isShow = '';
+    },
+     //获取图片资源
+    selectMedia: function (e) {
+      var that = this;
+      //判断是拍照获取资源，调用takePhoto方法
+      if (e === "takePhoto") {
+        that.takePhoto().then(function (data) {
+          that.imageUri = data.uri;
+          that.detectText();
+        });
+      }
+      //判断是从相册中选择图片，调用selectOneImage方法
+      else if (e === "selectImage") {
+        that.selectOneImage().then(function (data) {
+          that.imageUri = data.uri;
+          that.detectText();
+        });
+      }
+      else {
+        that.cancel();
+      }
+    },
+    //拍摄照片
+    takePhoto: function () {
+      var that = this;
+      that.isShow = '';
+      return new Promise(function (resolve, reject) {
+        //调用media库中takePhoto方法
+        media.takePhoto({
+          success: function (data) {
+            resolve(data);
+          }
+        })
+      });
+    },
+    //从手机相册中选择第一张图片
+    selectOneImage: function () {
+      var that = this;
+      that.isShow = '';
+      return new Promise(function (resolve, reject) {
+        //调用media库中pickImage方法
+        media.pickImage({
+          success: function (data) {
+            resolve(data);
+          }
+        })
+      });
+    },
+
+    //通用文字识别
+    detectText: function () {
+      var that = this;
+      that.result_list = [];
+      ai.detectText({
+        uri: that.imageUri,
+        level: 1,
+        success: function (data) {
+          that.result_list.push(data.value);
+        },
+        fail: function (data, code) {
+          that.result_list.push("errorCode:  " + errCodeList[code])
+        },
+        complete: function () {
+          console.log('handling complete');
+        }
+      })
+    }
+  }
+</script>

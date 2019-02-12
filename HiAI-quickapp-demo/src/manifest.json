@@ -65,7 +65,7 @@
             "Word_Segment": {
                 "component": "word_segment",
                 "path": "/Word_Segment"
-            },
+			},
             "Assistant_Intention": {
                 "component": "assistant_intention",
                 "path": "/Assistant_Intention"
@@ -81,7 +81,11 @@
             "Entity": {
                 "component": "entity",
                 "path": "/Entity"
-            }
+            },
+			"Detect_Text": {
+				"component": "detect_text",
+				"path": "/detect_text"
+			}
         }
     },
     "display": {

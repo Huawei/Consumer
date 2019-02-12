@@ -91,6 +91,23 @@
                         </div>
                     </div>
                 </div>
+                //文本识别
+                <div class="item-container">
+                    <div class="item-title">
+                        <image class="item-title-icon" src="/Common/img/ocr/OCR.png"></image>
+                        <text class="item-title-detail {{list.detectText}}-txt" onclick="selectConFn('detectText')">
+                            文本识别
+                        </text>
+                    </div>
+                    //通用文字识别
+                    <div class="item-content {{list.detectText}}">
+                        <div class="item-li" onclick="detail('Detect_Text')">
+                            <image class="item-li-img" src="/Common/img/ocr/OCR.png"></image>
+                            <text class="item-li-detail">通用文字识别</text>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -202,6 +219,7 @@
                 speechRecognition: '',
                 osVersionName: '',
                 nulRecognition: '',
+                detectText:'',
                 isVersion: false,
             }
         },
