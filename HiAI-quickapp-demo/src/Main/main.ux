@@ -6,6 +6,7 @@
                     <image class="title-background" src="/Common/img/background.png"></image>
                     <text class="title-detail">HiAI快速体验</text>
                 </stack>
+                
                 /*人脸识别*/
                 <div class="item-container">
                     <div class="item-title">
@@ -59,6 +60,7 @@
                         </div>
                     </div>
                 </div>
+
                 //自然语言处理
                 <div class="item-container">
                     <div class="item-title">
@@ -91,6 +93,24 @@
                         </div>
                     </div>
                 </div>
+
+                //码检测
+                <div class="item-container">
+                    <div class="item-title">
+                        <image class="item-title-icon" src="/Common/img/detectbarcode/detect_bar_code.png"></image>
+                        <text class="item-title-detail {{list.detectBarCode}}-txt" onclick="selectConFn('detectBarCode')">
+                            码检测
+                        </text>
+                    </div>
+                    //码检测
+                    <div class="item-content {{list.detectBarCode}}">
+                        <div class="item-li" onclick="detail('Detect_Bar_Code')">
+                            <image class="item-li-img" src="/Common/img/detectbarcode/detect_bar_code.png"></image>
+                            <text class="item-li-detail">码检测</text>
+                        </div>
+                    </div>
+                </div>
+
                 //文本识别
                 <div class="item-container">
                     <div class="item-title">
@@ -219,7 +239,8 @@
                 speechRecognition: '',
                 osVersionName: '',
                 nulRecognition: '',
-                detectText:'',
+                detectText: '',
+                detectBarCode:'',
                 isVersion: false,
             }
         },

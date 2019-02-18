@@ -1,0 +1,118 @@
+<import name='commonui' src='../Common/ux/common_ui'></import>
+<template>
+    <div class="container">
+        <commonui img-Uri='{{imageUri}}' result-list='{{result_list}}'>
+        </commonui>
+        <div class="select-container">
+            <input class="select-btn" type="button" onclick="select" value="上传图片"></input>
+        </div>
+        <div class="mark {{isShow}}" onclick="cancel">
+            <div class="popup-container {{isShow}} ">
+                <text class="popup-text" onclick="selectMedia('takePhoto')">拍照</text>
+                <div class="popup-line1"></div>
+                <text class="popup-text" onclick="selectMedia('selectImage')">从相册中选择</text>
+                <div class="popup-line2"></div>
+                <text class="popup-text" onclick="selectMedia('cancel')">取消</text>
+            </div>
+        </div>
+    </div>
+</template>
+<style>
+    @import '../Common/css/common.css';
+</style>
+
+<script>
+    import ai from '@system.ai';
+    import media from '@system.media';
+    import { errCodeList } from "../Common/data";
+    module.exports = {
+        data: {
+            imageUri: "/Common/img/detectbarcode/barcode_two.PNG",
+            result_list: [],
+            isShow: '',
+            level: '',
+        },
+
+        onInit() {
+            this.$page.setTitleBar({ text: '码检测' });
+            this.detectBarCode();
+        },
+        //选择图片
+        select: function () {
+            var that = this;
+            that.isShow = 'show';
+        },
+        //在弹出框中选择取消按钮时，隐藏弹出框
+        cancel: function () {
+            var that = this;
+            that.isShow = '';
+        },
+        //获取图片资源
+        selectMedia: function (e) {
+            var that = this;
+            //判断是拍照获取资源，调用takePhoto方法
+            if (e === "takePhoto") {
+                that.takePhoto().then(function (data) {
+                    that.imageUri = data.uri;
+                    that.detectBarCode();
+                });
+            }
+            //判断是从相册中选择图片，调用selectOneImage方法
+            else if (e === "selectImage") {
+                that.selectOneImage().then(function (data) {
+                    that.imageUri = data.uri;
+                    that.detectBarCode();
+                });
+            }
+            else {
+                that.cancel();
+            }
+        },
+        //拍摄照片
+        takePhoto: function () {
+            var that = this;
+            that.isShow = '';
+            return new Promise(function (resolve, reject) {
+                //调用media库中takePhoto方法
+                media.takePhoto({
+                    success: function (data) {
+                        resolve(data);
+                    }
+                })
+            });
+        },
+        //从手机相册中选择第一张图片
+        selectOneImage: function () {
+            var that = this;
+            that.isShow = '';
+            return new Promise(function (resolve, reject) {
+                //调用media库中pickImage方法
+                media.pickImage({
+                    success: function (data) {
+                        resolve(data);
+                    }
+                })
+            });
+        },
+
+        //检测二维码内容
+        detectBarCode: function () {
+            var that = this;
+            that.result_list = [];
+            ai.detectBarcode({
+                uri: that.imageUri,
+                success: function (data) {
+                    //将二维码中的内容展示到界面上
+                    var resultStr = JSON.stringify(data.barcode);
+                    that.result_list.push(resultStr);
+                },
+                fail: function (data, code) {
+                    that.result_list.push("errorCode:  " + errCodeList[code]);
+                },
+                complete: function () {
+                    console.log('handling complete');
+                }
+            })
+        },
+    }
+</script>

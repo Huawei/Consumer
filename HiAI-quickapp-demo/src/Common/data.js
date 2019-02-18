@@ -91,3 +91,22 @@ const wordPosObject =
 export {
     wordPosObject
 }
+
+const barCodeTypes = [
+    "未知码类型",
+    "电话信息的二维码",
+    "地理位置信息的二维码",
+    "网址信息的二维码",
+    "邮件信息的二维码",
+    "联系人信息的二维码",
+    "短信信息的二维码",
+    "日程事件信息的二维码",
+    "wifi信息的二维码",
+    "文本信息的二维码",
+    "商品信息的条码",
+    "书籍ISBN信息的条码",
+]
+
+export {
+    barCodeTypes
+}

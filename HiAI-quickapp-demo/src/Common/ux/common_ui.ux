@@ -1,0 +1,43 @@
+<template>
+  <div class="container">
+    <div class="top-container">
+      <image class="face-image" src="{{imgUri}}"></image>
+    </div>
+    <div class="bottom-container">
+      <tabs>
+        <tab-content class="result-group-container">
+          <div class="result-content">
+            <div class="result-title">
+              <text class="result-title-detail">分析结果</text>
+            </div>
+            <div class="result-line"></div>
+            <div class="result-item-content">
+              <list class="result-list" id="list">
+                <block for="resultList">
+                  <list-item type="result" class="items">
+                    <div class="item-li">
+                      <text class="item-li-detail">{{$item}}</text>
+                    </div>
+                  </list-item>
+                </block>
+              </list>
+            </div>
+          </div>
+        </tab-content>
+      </tabs>
+    </div>
+  </div>
+</template>
+<style>
+  @import '../css/common.css';
+</style>
+<script>
+  export default  {
+    props: [
+      'imgUri','resultList'
+    ],
+    onInit: function () {
+      console.log("imageUri: " + this.imgUri);
+    },
+  }
+</script>

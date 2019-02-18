@@ -65,7 +65,7 @@
             "Word_Segment": {
                 "component": "word_segment",
                 "path": "/Word_Segment"
-			},
+            },
             "Assistant_Intention": {
                 "component": "assistant_intention",
                 "path": "/Assistant_Intention"
@@ -82,10 +82,14 @@
                 "component": "entity",
                 "path": "/Entity"
             },
-			"Detect_Text": {
-				"component": "detect_text",
-				"path": "/detect_text"
-			}
+            "Detect_Text": {
+                "component": "detect_text",
+                "path": "/detect_text"
+            },
+            "Detect_Bar_Code": {
+                "component": "detect_bar_code",
+                "path": "/detect_bar_code"
+            }
         }
     },
     "display": {
@@ -95,7 +99,7 @@
         "titleBarTextColor": "#ffffff",
         "menu": true,
         "pages": {
-            "Hello": {
+            "Main": {
                 "titleBarText": "TitleBar"
             }
         }
