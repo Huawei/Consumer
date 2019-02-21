@@ -34,6 +34,10 @@
                 "component": "main",
                 "path": "/main"
             },
+            "Aesthetic_Score": {
+                "component": "aesthetic_score",
+                "path": "/Aesthetic_Score"
+            },
             "Detect_Face": {
                 "component": "detect_face",
                 "path": "/detect_face"

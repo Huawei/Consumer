@@ -6,7 +6,7 @@
                     <image class="title-background" src="/Common/img/background.png"></image>
                     <text class="title-detail">HiAI快速体验</text>
                 </stack>
-                
+
                 /*人脸识别*/
                 <div class="item-container">
                     <div class="item-title">
@@ -128,6 +128,23 @@
                     </div>
                 </div>
 
+                //图像识别
+                <div class="item-container">
+                    <div class="item-title">
+                        <image class="item-title-icon" src="/Common/img/picture/image_recognise.png"></image>
+                        <text class="item-title-detail {{list.imageRecognition}}-txt" onclick="selectConFn('imageRecognition')">
+                            图像识别
+                        </text>
+                    </div>
+                    //图像识别子元素
+                    <div class="item-content {{list.imageRecognition}}">
+                        <div class="item-li" onclick="detail('Aesthetic_Score')">
+                            <image class="item-li-img" src="/Common/img/picture/aesthetic_score.png"></image>
+                            <text class="item-li-detail">美学评分</text>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -239,8 +256,9 @@
                 speechRecognition: '',
                 osVersionName: '',
                 nulRecognition: '',
+                imageRecognition: '',
                 detectText: '',
-                detectBarCode:'',
+                detectBarCode: '',
                 isVersion: false,
             }
         },
