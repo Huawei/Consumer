@@ -1,0 +1,11 @@
+{
+	"client":{
+		"cp_id":"890007000000000586",
+		"product_id":"9105385871707968479",
+		"client_id":"169339777252851776",
+		"client_secret":"B00FDF1F32E311923DDBF25D1F300BB60F58F20A1CEB8AA898351A9139277F21",
+		"app_id":"101028547",
+		"package_name":"com.huawei.cloud.drive"
+	},
+	"configuration_version":"1.0"
+}
