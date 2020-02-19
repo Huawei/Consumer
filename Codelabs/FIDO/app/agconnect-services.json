@@ -1,0 +1,11 @@
+{
+	"client":{
+		"cp_id":"260086000000043952",
+		"product_id":"9105385871708263967",
+		"client_id":"238769392530228224",
+		"client_secret":"71A2714D1153BFD75A38E17C67260309A99C28022BACADE924C88FBB68197C0C",
+		"app_id":"101414561",
+		"package_name":"com.huawei.hms.fido.sample.bioauthn"
+	},
+	"configuration_version":"1.0"
+}
