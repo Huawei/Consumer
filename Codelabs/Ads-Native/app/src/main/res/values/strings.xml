@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NativeAdExample</string>
+    <string name="ad_id_native">testu7m3hc4gvm</string>
+    <string name="ad_id_native_small">testb65czjivt9</string>
+    <string name="ad_id_native_video">testy63txaom86</string>
+    <string name="ad_flag">Ad</string>
+    <string name="display_form">Display form:</string>
+    <string name="large">Large image with text.</string>
+    <string name="small">Small image with text.</string>
+    <string name="video">Video with text.</string>
+    <string name="load_button_text">LOAD AD</string>
+    <string name="status_ad_loading">Ad loading state: being loaded.</string>
+    <string name="status_load_ad_success">Ad loading state: loaded successfully.</string>
+    <string name="status_load_ad_fail">Ad loading state: failed to be loaded. Error code: </string>
+    <string name="status_play_start">Video playback state: starting to be played.</string>
+    <string name="status_playing">Video playback state: being played.</string>
+    <string name="status_play_end">Video playback state: playback completed.</string>
+    <string name="ad_is_closed">Ad is closed.</string>
+</resources>
+

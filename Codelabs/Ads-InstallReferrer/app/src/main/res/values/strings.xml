@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HuaweiAdsDemo</string>
+    <string name="enter_install_referrer">InstallReferrer Sample</string>
+    <string name="install_referrer">InstallReferrer</string>
+    <string name="click_timestamp">Click timestamp</string>
+    <string name="install_timestamp">Install timestamp</string>
+    <string name="call_mode">mode</string>
+    <string name="call_mode_sdk">sdk</string>
+    <string name="call_mode_aidl">aidl</string>
+    <string name="package_name">PackageName</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="input_package_name">Input PackageName:</string>
+    <string name="input_install_referrer">Input InstallReferrer:</string>
+    <string name="write_install_referrer">Write install referrer for test</string>
+    <string name="invalid_package_name">Please input package name</string>
+    <string name="invalid_install_referrer">Please input install referrer</string>
+    <string name="save_install_referrer_success">Save install referrer success</string>
+    <string name="save_install_referrer_fail">Save install referrer failure</string>
+    <string name="delete_install_referrer_success">Delete install referrer success</string>
+</resources>
