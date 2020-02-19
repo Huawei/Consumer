@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ranking ID:"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/et_ranking_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:hint="Input Ranking ID"
+            android:text=""
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="isRealTime:"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/sp_time_dimension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_get_ranking_meta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="loadRankingMetadata(String rankingId, boolean isRealTime)"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_get_ranking_meta2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="loadRankingMetadata(boolean isRealTime)"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/meta_clear_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Log"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/ranking_meta_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true" />
+    </ScrollView>
+    <include
+        layout="@layout/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:visibility="gone" />
+
+</LinearLayout>

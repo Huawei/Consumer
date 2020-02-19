@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head" />
+
+    <Button
+        android:id="@+id/btn_load_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/load_event"/>
+
+    <Button
+        android:id="@+id/btn_load_event_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/load_event_off"/>
+
+    <EditText
+        android:id="@+id/et_load_some_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:hint="@string/content_hide_events_by_ids"/>
+
+    <Button
+        android:id="@+id/btn_load_some_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/load_event_by_id"/>
+    <Button
+        android:id="@+id/btn_load_some_event_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/load_event_by_id_off"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/increment_event"/>
+
+    <include layout="@layout/layout_bottom" />
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_signin_drive"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="driveSignIn"/>
+        <Button
+            android:id="@+id/btn_guide_drive_protocol"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="toAgreeDriveProtocol"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_archive_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/archive_add"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_archive_get_max_content_size"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/archive_get_max_file_size"/>
+        <Button
+            android:id="@+id/btn_archive_get_max_image_size"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/archive_get_max_image_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_archive_load"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/archive_load"/>
+        <Button
+            android:id="@+id/btn_archive_load_cache"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/archive_load_cache"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add" />
+
+        <CheckBox
+            android:id="@+id/cb_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="delete" />
+
+        <EditText
+            android:id="@+id/et_max_size"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="20" />
+
+        <Button
+            android:id="@+id/btn_archive_get_select_intent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/archive_select_intent"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_bottom" />
+
+</LinearLayout>
