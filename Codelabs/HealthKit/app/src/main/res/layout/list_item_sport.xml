@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" >
+    <data>
+        <variable
+                name="walkingSport"
+                type="com.huawei.codelabs.hihealth.happysport.data.WalkingRepository.WalkingSport"/>
+        <variable
+                name="clickListener"
+                type="android.view.View.OnClickListener"/>
+    </data>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:onClick="@{clickListener}">
+
+        <TextView
+                android:text="@{String.format(@string/app_start_time,walkingSport.formatStartTime())}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/record_start"/>
+        <TextView
+                android:text="@{String.format(@string/app_duration_time, walkingSport.formatDuration())}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/record_duration"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+</layout>

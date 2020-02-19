@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HMSSafetyDetectSample</string>
+
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_start">start</string>
+
+    <!-- SysIntegrity -->
+    <string name="title_activity_sys_integrity">SysIntegrity</string>
+    <string name="title_sys_integrity_entry">SysIntegrity</string>
+    <string name="run">Run detection</string>
+    <string name="processing">Detecting</string>
+    <string name="rerun">Rerun detection</string>
+
+    <string name="detect_go_hint">Click the button below to detect system integrity.</string>
+
+
+</resources>

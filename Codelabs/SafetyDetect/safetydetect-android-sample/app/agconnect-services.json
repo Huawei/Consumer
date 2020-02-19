@@ -1,0 +1,11 @@
+{
+	"client":{
+		"cp_id":"390086000109143548",
+		"product_id":"9105385871708203720",
+		"client_id":"223093021695018176",
+		"client_secret":"51B6FAD28196A6743705BA97C99BC1D07B7982943D47A944E86AA57FAB5F218F",
+		"app_id":"101324691",
+		"package_name":"com.huawei.hms.safetydetect.sample"
+	},
+	"configuration_version":"1.0"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">IapDemo</string>
+
+    <string name="version">Version</string>
+
+    <string name="pay_price">Product price</string>
+    <string name="pay_productName">Product name</string>
+    <string name="pay_productDesc">Product Description</string>
+    
+    <string name="buy">buy</string>
+
+</resources>

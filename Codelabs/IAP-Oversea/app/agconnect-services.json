@@ -1,0 +1,11 @@
+{
+	"client":{
+		"cp_id":"890852200000000072",
+		"product_id":"9105385871708097919",
+		"client_id":"190438139389542464",
+		"client_secret":"125396EB99B664C8CF57B2723D32ADBB79D76699A91F3AA3A315BD09AE13C62C",
+		"app_id":"101142919",
+		"package_name":"com.hmsiap.codelab.huawei"
+	},
+	"configuration_version":"1.0"
+}

@@ -1,0 +1,390 @@
+
+<!doctype html>
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>HMS Core WalletKit接入</title>
+  <link rel="stylesheet" href="../iconfont/material-icons.css">
+  <link rel="stylesheet" href="../css/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="popup">
+    <div class="cloes-tag"></div>
+    <img id="bigImg">
+  </div>
+
+  <huawei-codelab id="HMSWalletKit" title="HMS Core WalletKit接入" feedback-link="https://developer.huawei.com/consumer/en/support/feedback">
+    
+    <huawei-codelab-step label="Introduction" duration="1">
+      <h2><strong>Overview</strong></h2>
+<p>HUAWEI Wallet Kit allows users to claim passes of merchants, including loyalty cards, gift cards, coupons, boarding passes, event tickets, and transit passes, and add them to HUAWEI Wallet. You can provide a button or link in your app for users to add passes to their HUAWEI Wallet and view and manage them.<br>You need to perform the following operations:</p>
+<ul>
+<li>Register an account on HUAWEI Developer. Create and configure an app and enable the HUAWEI Wallet Kit API in <a href="https://developer.huawei.com/consumer/en/service/josp/agc/index.html" target="_blank">AppGallery Connect</a>.</li>
+<li>Select and register HUAWEI Wallet Kit in the app, and configure a merchant service account and callback address. Use a tool to generate a public key and synchronize the key to the Huawei server.</li>
+<li>Create a project in Android Studio IDE and configure connection to the HMS Core Wallet SDK.</li>
+<li>Call the HUAWEI Wallet Kit API to push a template of merchant information to the Huawei server.</li>
+<li>Call and debug the HMS Core Wallet SDK. For details, please refer to &#34;Integrating the HMS Core Wallet SDK&#34; in the HUAWEI Wallet Kit Development Guide.</li>
+</ul>
+<h2><strong>What You Will Create</strong></h2>
+<p>In this codelab, you will use the created demo project to:<br>Call the HMS Core Wallet SDK to construct instances so that passes can be added to HUAWEI Wallet.</p>
+<h2 class="checklist"><strong>What You Will Learn</strong></h2>
+<ul class="checklist">
+<li>Create an app in <a href="https://developer.huawei.com/consumer/en/service/josp/agc/index.html" target="_blank">AppGallery Connect</a>.</li>
+<li>Enable the HUAWEI Wallet Kit API.</li>
+<li>Import the HMS Core Wallet SDK.</li>
+<li>Call the HMS Core Wallet SDK to add passes to HUAWEI Wallet.</li>
+</ul>
+
+
+    </huawei-codelab-step>
+    
+    <huawei-codelab-step label="What You Will Need" duration="1">
+      <h2><strong>Hardware Requirements</strong></h2>
+<ul>
+<li>A computer (desktop or laptop) that runs Windows 10</li>
+<li>A Huawei mobile phone with Huawei Mobile Services (APK) 4.0.0.300 or later, which will be used for debugging and running the demo project</li>
+</ul>
+<aside class="special"><p><strong>Note</strong>: Please prepare the preceding hardware environment and relevant devices in advance.</p>
+</aside>
+<h2><strong>Software Requirements</strong></h2>
+<ul>
+<li><a href="https://developer.android.com/studio" target="_blank">Android Studio 3.X</a></li>
+<li>Java JDK (1.8 or later)</li>
+<li>SDK Platform (19 or later)</li>
+<li>Gradle (4.6 or later)</li>
+</ul>
+<aside class="special"><p><strong>Note</strong>: Please prepare the preceding software environment in advance.</p>
+</aside>
+
+
+    </huawei-codelab-step>
+    
+    <huawei-codelab-step label="Preparing for the Integration" duration="20">
+      <p>HUAWEI HMS Core integration requires the following preparations</p>
+<ul>
+<li>Creating an AGC Application.</li>
+<li>Creating an Android Studio Project.</li>
+<li>Generating a signature certificate.</li>
+<li>Generating a signature certificate fingerprint.</li>
+<li>Configuring the signature certificate fingerprint.</li>
+<li>Adding the application package name and save the configuration file.</li>
+<li>Configure the Maven address and AGC gradle plug-in.</li>
+<li>Configure the signature file in Android Studio.</li>
+</ul>
+<p>For details, see the <a href="https://developer.huawei.com/consumer/en/codelab/HMSPreparation/index.html" target="_blank">HUAWEI HMS Core Integration Preparation</a>.</p>
+<aside class="special"><p><strong>Note:</strong> You need to register as a developer to complete the operations above.</p>
+</aside>
+
+
+    </huawei-codelab-step>
+    
+    <huawei-codelab-step label="Enabling HUAWEI Wallet Kit" duration="5">
+      <h2><strong>Enabling the HUAWEI Wallet Kit API</strong></h2>
+<ul>
+<li>Sign in to <a href="https://developer.huawei.com/consumer/en/service/josp/agc/index.html" target="_blank">AppGallery Connect</a> and go to My apps &gt; Develop &gt; Overview &gt; Manage APIs.</li>
+</ul>
+<p class="image-container"><img style="width: 490.00px" src="img\71d2b3959896af88.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>Enable the HUAWEI Wallet Kit API.</li>
+</ul>
+<p class="image-container"><img style="width: 514.00px" src="img\99ae2b3e784afe3b.png" onclick = "imageclick(src)"></p>
+<p>You have now successfully enabled the HUAWEI Wallet Kit API for your app.</p>
+<h2><strong>Generating a Public-Private Key Pair</strong></h2>
+<ul>
+<li>Download the <strong>RSAUtils.zip</strong> package from &#34;Generating the Public and Private Keys&#34; step of <a href="https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/wallet-preparations" target="_blank">preparation</a>, decompress it, and open the <strong>RSAUtils</strong> folder.</li>
+</ul>
+<p class="image-container"><img style="width: 392.00px" src="img\9ddc8af023bc7c3d.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>Double-click the <strong>start.bat</strong> file.</li>
+</ul>
+<p class="image-container"><img style="width: 643.00px" src="img\a5a177fdf0e83ba2.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>After the file is successfully executed, the path to the generated public and private key files is displayed. By default, the keys are in the <strong>out</strong> folder in the current path.</li>
+</ul>
+<p class="image-container"><img style="width: 532.00px" src="img\7d029f88a1eaea36.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>The following figure displays files in the out folder.</li>
+</ul>
+<p class="image-container"><img style="width: 608.00px" src="img\5ce4dde29e092288.png" onclick = "imageclick(src)"></p>
+<aside class="special"><p><strong>Note:publickey.txt</strong>: public key file, which is used for registering HUAWEI Wallet Kit. The public key is verified by the Huawei server when a user attempts to add a pass to HUAWEI Wallet.<br><strong>privateKey.txt</strong>: private key file, which is used to sign the JSON string converted from an instance. Please store the file properly.</p>
+</aside>
+<h2><strong>Registering HUAWEI Wallet Kit</strong></h2>
+<ul>
+<li>Sign in to AppGallery Connect and go to <strong>My apps</strong>.</li>
+</ul>
+<p class="image-container"><img style="width: 511.00px" src="img\173ed9151c67d063.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>Click the <strong>Develop</strong> tab and go to <strong>Earning</strong> &gt; <strong>Wallet Kit</strong> from the navigation panel on the left. Click <strong>Apply for Wallet Kit</strong> in the upper right corner on the page displayed.</li>
+</ul>
+<p class="image-container"><img style="width: 516.00px" src="img\b7e0dda868674f0b.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>Configure basic service information, such as the service type, service ID, and callback URL, enter the public key, and click <strong>Next</strong>.</li>
+</ul>
+<p class="image-container"><img style="width: 518.00px" src="img\da3f9de65ba13f41.png" onclick = "imageclick(src)"></p>
+
+
+    </huawei-codelab-step>
+    
+    <huawei-codelab-step label="Integrating the HMS Core Wallet SDK" duration="5">
+      <h2><strong>Obtaining the Configuration File</strong></h2>
+<ul>
+<li>Sign in to <a href="https://developer.huawei.com/consumer/en/service/josp/agc/index.html" target="_blank">AppGallery Connect</a>, go to <strong>My apps</strong> &gt; <strong>Develop</strong> &gt; <strong>Overview</strong>, select the created app in the upper right corner, and click Set next to <strong>Data storage location</strong>.</li>
+</ul>
+<p class="image-container"><img style="width: 520.00px" src="img\51c99ce6142b259b.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>Select countries and regions as required and click <strong>OK</strong>.</li>
+</ul>
+<p class="image-container"><img style="width: 517.00px" src="img\fc1ed0cbc00ab87a.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>In the <strong>App information</strong> section, download the <code>agconnect-services.json</code> file.</li>
+</ul>
+<p class="image-container"><img style="width: 506.00px" src="img\42f15fcc3fcdf89c.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>Save the <code>agconnect-services.json</code> file to the root directory of the app in the Android Studio demo project.</li>
+</ul>
+<p class="image-container"><img style="width: 459.00px" src="img\d757a7c1dbbbbe82.png" onclick = "imageclick(src)"></p>
+<h2><strong>Configuring Dependency for the HMS Core Wallet SDK</strong></h2>
+<ul>
+<li>Open the <strong>build.gradle</strong> file in the <strong>app</strong> directory.</li>
+</ul>
+<p class="image-container"><img style="width: 400.00px" src="img\2bece6e2b709b4ac.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>Add the following build <strong>dependencies</strong> in dependencies and replace {version} with the current version number of the HMS Core Wallet SDK, which is 2.0.0.300.<pre><div id="copy-button1" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>dependencies {
+    implementation &#39;com.huawei.hms:wallet:{version}&#39;
+}
+
+</code></pre>
+</li>
+<li>Click Sync Now to synchronize the project.</li>
+</ul>
+<p class="image-container"><img style="width: 603.00px" src="img\659d564266479b35.png" onclick = "imageclick(src)"></p>
+<h2><strong>Configuring Obfuscation Scripts</strong></h2>
+<aside class="special"><p><strong>Note:</strong> If you need to use the code obfuscation function, please configure the obfuscation configuration file properly to avoid affecting the HMS Core Wallet SDK, which could lead to function errors.</p>
+</aside>
+<p>Open the obfuscation script file <code>proguard-rules.pro</code> of your Android Studio project and add obfuscation configurations to the file.</p>
+<pre><div id="copy-button2" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>-ignorewarning 
+-keepattributes *Annotation* 
+-keepattributes Exceptions 
+-keepattributes InnerClasses 
+-keepattributes Signature 
+-keepattributes SourceFile,LineNumberTable 
+-keep class com.hianalytics.android.**{*;} 
+-keep class com.huawei.updatesdk.**{*;} 
+-keep class com.huawei.hms.**{*;}
+
+</code></pre>
+<p>If you have used AndResGuard, add it to the whitelist in the obfuscation script file.</p>
+<pre><div id="copy-button3" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>&#34;R.string.hms*&#34;, 
+&#34;R.string.connect_server_fail_prompt_toast&#34;, 
+&#34;R.string.getting_message_fail_prompt_toast&#34;, 
+&#34;R.string.no_available_network_prompt_toast&#34;, 
+&#34;R.string.third_app_*&#34;, 
+&#34;R.string.upsdk_*&#34;, 
+&#34;R.layout.hms*&#34;, 
+&#34;R.layout.upsdk_*&#34;, 
+&#34;R.drawable.upsdk*&#34;, 
+&#34;R.color.upsdk*&#34;, 
+&#34;R.dimen.upsdk*&#34;, 
+&#34;R.style.upsdk*&#34;
+
+</code></pre>
+
+
+    </huawei-codelab-step>
+    
+    <huawei-codelab-step label="UI Design" duration="20">
+      <p>The HUAWEI Wallet Kit API is used to add passes to HUAWEI Wallet. You need to configure pass information when calling this API. For example, to add a loyalty card through this API, you need to configure the loyalty card number, loyalty points, and member name on the loyalty card. In this codelab, you can create a layout page in your Android Studio project and design the UI according to the following figure.<br><img style="width: 162.00px" src="img\e536e3c8f1b2ee8c.png" onclick = "imageclick(src)"></p>
+
+
+    </huawei-codelab-step>
+    
+    <huawei-codelab-step label="Sample Code for Adding a Loyalty Card to HUAWEI Wallet" duration="30">
+      <aside class="special"><p><strong>Note:</strong> HUAWEI Wallet Kit sends a JWT to the Huawei server to generate a pass and bind the pass to a user.</p>
+</aside>
+<p>Display the Add to HUAWEI Wallet button.Display the Add to HUAWEI Wallet button in an app. For details about button specifications, please refer to <a href="https://developer.huawei.com/consumer/en/service/hms/catalog/HwJointOperationAppV3.html?page=hmssdk_jointOper_devguide_icon_rules" target="_blank">Huawei Icon Specifications</a></p>
+<aside class="special"><p><strong>Note:</strong> The codelab sample implements the button using the Button control. During practical development, please implement the <strong>Add to HUAWEI Wallet</strong> button in compliance with specifications.</p>
+</aside>
+<p>Construct a loyalty card instance.</p>
+<pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>PassObject.Builder passBuilder = PassObject.getBuilder();
+passBuilder.setStatus(status)
+    .setOrganizationPassId(cardNumber)
+    .setPassStyleIdentifier(mPassStyleIdentifier.getText().toString())
+    .setPassTypeIdentifier(typeId)
+    .setSerialNumber(serinumber)
+    .addAppendFields(appendFields)
+    .addCommonFields(commonField)
+    .passBuilder.addLocationList(locationList)
+    .addImageList(imageList);
+// Generate a loyalty card instance. 
+PassObject passObject = passBuilder.build();
+
+</code></pre>
+<p>Convert the instance to a JWT.</p>
+<pre><div id="copy-button5" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>// Fixed public key provided by HUAWEI used to encrypt the sessionKey 
+String sessionKeyPublicKey = &#34;MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAgBJB4usbO33Xg5vhJqfHJsMZj44f7rxpjRuPhGy37bUBjSLXN+dS6HpxnZwSVJCtmiydjl3Inq3Mzu4SCGxfb9RIjqRRfHA7ab5p3JnJVQfTEHMHy8XcABl6EPYIJMh26kztPOKU2Mkn6yhRaCurhVUD3n9bD8omiNrR4rg442AJlNamA7vgKs65AoqBuU4NBkGHg0VWWpEHCUx/xyX6hIwqc1aD7P2f62ZHsKpNZBOek/riWhaVx3dTAa9ZS+Av3IGLOZiplhYIow9f8dlWyqs8nff9FZoJO03QhXLvOORT+lPAkW6gFzaoeMaGb40HakkZn3uvlAEKrKrtR0rZEok+N1hnboaAu8oaKK0rF1W6iNrXcFrO0rcrCsFTVF8qCa/1dFmIXwUd2M6cUzT9W0YkNyb6ZBbwEhjwBL4DNW4JfeF2Dzj0eZYlSuYV7e7e1e+XEO8lwPLAiy4bEFAWCaeuDVIhbIoBaU6xHNVQoyzct98gaOYxE4mVDqAUVmhfAgMBAAE=&#34;;
+
+// sessionkey is used to encrypt the payload data. 
+String sessionKey = RandomUtils.generateSecureRandomFactor(16);
+
+// Encrypt JSON as payload of JWT 
+byte[] sessionKeyBytes = EncodeUtil.hex2Byte(sessionKey);
+String objectJson = passObject.toJson();
+String payLoadEncrypt = AESUtils.encryptAESCBC(objectJson.getBytes(EncodeUtil.UTF_8), sessionKeyBytes);
+
+// Encrypt sessionKey and set into header of JWT 
+Map&lt;String, Object&gt; headerMap = new HashMap&lt;&gt;();
+try {
+	String sessionKeyPlaintext = RSA.encrypt(sessionKey.getBytes(), sessionKeyPublicKey, &#34;RSA/ECB/OAEPwithSHA-256andMGF1Padding&#34;, &#34;UTF-8&#34;);
+	headerMap.put(&#34;sessionKey&#34;, sessionKeyPlaintext);
+} catch (Exception e) {
+	System.out.println(e.getMessage());
+}
+
+JwtBuilder builder = Jwts.builder().setHeader(headerMap).setPayload(payLoadEncrypt);
+String userToken = builder.compact();
+String content = userToken.substring(0, userToken.length() - 1);
+
+String sign = &#34;&#34;;
+String charset = &#34;utf-8&#34;;
+try {
+	// Use the private key generated during service registration to sign the JWT body and header to obtain a JWT and encode the JWT using Base64. 
+	PKCS8EncodedKeySpec priPKCS8 = new PKCS8EncodedKeySpec(Base64.getDecoder().decode(privateKey));
+	KeyFactory keyf = KeyFactory.getInstance(&#34;RSA&#34;);
+	PrivateKey priKey = keyf.generatePrivate(priPKCS8);
+
+	java.security.Signature signatureObj = java.security.Signature.getInstance(SIGN_ALGORITHMS256);
+	signatureObj.initSign(priKey);
+	signatureObj.update(content.getBytes(charset));
+
+	byte[] signed = signatureObj.sign();
+	sign = Base64.getEncoder().encodeToString(signed);
+} catch (Exception ex) { 
+	...
+}
+
+</code></pre>
+<p>Create <strong>CreateWalletPassRequest</strong>.</p>
+<pre><div id="copy-button6" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>CreateWalletPassRequest request = CreateWalletPassRequest.getBuilder()
+    .setJwt(jwtStr)
+    .build();
+
+</code></pre>
+<p>Create a Client instance.</p>
+<pre><div id="copy-button7" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>WalletPassClient walletObjectsClient = Wallet.getWalletPassClient(PassTestActivity.this);
+
+</code></pre>
+<p>Create a task.</p>
+<pre><div id="copy-button8" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>Task&lt;AutoResolvableForegroundIntentResult&gt; task = walletObjectsClient.createWalletPass(request);
+
+</code></pre>
+<p>Execute the task.</p>
+<pre><div id="copy-button9" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>// SAVE_FLAG is a task execution flag used to receive the task execution result. 
+ResolveTaskHelper.excuteTask(task, XXXActivity.this, SAVE_FLAG);
+
+</code></pre>
+<p>Receive the loyalty card adding result.</p>
+<pre><div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+	switch (requestCode) {
+		case SAVE_TO_ANDROID:
+			switch (resultCode) {
+				case Activity.RESULT_OK:
+					Toast.makeText(this, &#34;save success&#34;, Toast.LENGTH_LONG).show();
+					break;
+				case Activity.RESULT_CANCELED:
+					Toast.makeText(this, &#34;cancel by user&#34;, Toast.LENGTH_LONG).show();
+					break;
+				default:
+					if (data != null) {
+						int errorCode =
+								data.getIntExtra(
+										WalletCommonConstants.EXTRA_ERROR_CODE, -1);
+						Toast.makeText(this, &#34;fail, [&#34; + errorCode + &#34;]:&#34; + errorCode, Toast.LENGTH_LONG).show();
+					} else {
+						Toast.makeText(this, &#34;fail:data is null&#34;, Toast.LENGTH_LONG).show();
+					}
+					break;
+			}
+	}
+}
+
+</code></pre>
+
+
+    </huawei-codelab-step>
+    
+    <huawei-codelab-step label="Packing and Testing" duration="5">
+      <h2><strong>Registering a Huawei ID</strong></h2>
+<ul>
+<li>Register a Huawei ID in your country or region. After you enter the verification code sent by the Huawei server, the registration is successful.</li>
+</ul>
+<p class="image-container"><img style="width: 505.00px" src="img\a5f44bc7a93345b1.png" onclick = "imageclick(src)"></p>
+<h2><strong>Testing the Function of Adding a Loyalty Card</strong></h2>
+<ul>
+<li>Click<br><img style="width: 27.00px" src="img\34903a54064bfde3.png" onclick = "imageclick(src)"></li>
+</ul>
+<p>to run the project you have created in Android Studio to generate an APK. Then install the APK on the test phone. The screen is shown in the following figure.</p>
+<p class="image-container"><img style="width: 272.00px" src="img\ed8161b51bf4e454.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>Tap <strong>ClickSaveLoyaltyCard</strong>. The loyalty card configuration page is displayed.</li>
+</ul>
+<p class="image-container"><img style="width: 160.00px" src="img\fbb7f698bb7578b6.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>Enter mandatory information, such as the member name and merchant name. Tap <strong>clickSaveData</strong>. The following page is displayed.</li>
+</ul>
+<p class="image-container"><img style="width: 213.00px" src="img\55b426cc89ba270e.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>Tap <strong>walletKitSDK add card</strong>. The Wallet Kit adapter is started to display the confirmation page.</li>
+</ul>
+<p class="image-container"><img style="width: 249.00px" src="img\16bdfd7b49851c26.png" onclick = "imageclick(src)"></p>
+<ul>
+<li>If it is the first time that you add a loyalty card, the agreement checkbox is displayed. Select the checkbox and tap <strong>Add to HUAWEI Wallet</strong>. The Huawei server returns a result code. Result code 0 indicates that the loyalty card is successfully added.</li>
+</ul>
+
+
+    </huawei-codelab-step>
+    
+    <huawei-codelab-step label="Congratulations" duration="0">
+      <p>Well done. You have successfully completed this codelab and learned:</p>
+<ul>
+<li>How to create an app in <a href="https://developer.huawei.com/consumer/en/service/josp/agc/index.html" target="_blank">AppGallery Connect</a>.</li>
+<li>How to enable the HUAWEI Wallet Kit API.</li>
+<li>How to import the HMS Core Wallet SDK and call the HUAWEI Wallet Kit API to add a pass to HUAWEI Wallet.</li>
+</ul>
+
+
+    </huawei-codelab-step>
+    
+    <huawei-codelab-step label="Reference" duration="0">
+      <p><a href="https://developer.huawei.com/consumer/en/doc/development/HMS-References/wallet-api-client-1" target="_blank">HMS Core Wallet SDK APIs</a></p>
+<p><a href="https://developer.huawei.com/consumer/en/doc/development/HMS-Examples/wallet-example" target="_blank">HUAWEI Wallet Kit Demo</a></p>
+
+
+    </huawei-codelab-step>
+    
+  </huawei-codelab>
+  <text id="copy-alertMsg" class="copy-alert">Code copied</text>
+
+</body>
+
+  <script src="../js/native-shim.js"></script>
+  <script src="../js/custom-elements.js"></script>
+  <script src="../js/prettify.js"></script>
+  <script src="../js/codelab-elements.js"></script>
+  <script src="../js/origin_hasdk.js"></script>
+  <script src="../js/self-defined.js"></script>
+
+</html>

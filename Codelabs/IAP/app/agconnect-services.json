@@ -1,0 +1,11 @@
+{
+	"client":{
+		"cp_id":"10086000000000293",
+		"product_id":"9105163812218182630",
+		"client_id":"167055653674680320",
+		"client_secret":"244D1CB84377DFC76C1951DDE7DAB316966725EB973164F34379985220CA7160",
+		"app_id":"100051813",
+		"package_name":"com.hmsdemo.doubleballsapp.huawei"
+	},
+	"configuration_version":"1.0"
+}

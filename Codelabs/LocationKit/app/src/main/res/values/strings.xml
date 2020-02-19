@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">locationdemo</string>
+    <string name="hw_id">Huawei ID</string>
+    <string name="hw_pay">Huawei IAP</string>
+    <string name="hw_push">Huawei PUSH</string>
+	<string name="hw_sns">Huawei SNS</string>
+	<string name="hw_game">Huawei GAME</string>
+	<string name="hw_openid">Huawei OPENID</string>
+	<string name="hw_location">Huawei LOCATION</string>
+	<string name="activity_request">ActivityUpdates</string>
+	<string name="activity_transition_request">ActivityTransitionUpdates</string>
+
+	<string name="sample_description">Huawei Mobile Service Use process Demo</string>
+	<string name="sample_hwid_description">Huawei ID Use Process Demo</string>
+	<string name="sample_hwgamedescription">Huawei GAME Use Process Demo</string>
+	<string name="sample_hwpay_description">Huawei IAP Use Process Demo</string>
+	<string name="sample_hwsns_description">Huawei PUSH Use Process Demo</string>
+	<string name="sample_hwpush_description">Huawei SNS Use Process Demo</string>
+	<string name="sample_hwlocation_description">Huawei Location Use Process Demo</string>
+	<string name="sample_hwlocation3_description">Huawei Location 3.0 Use Process Demo</string>
+	<string name="sample_request_activity_transition">RequestActivityTransition Demo</string>
+
+	<string name="sample_hwod_description">Get OAID and ODID</string>
+	<string name="sample_pms_description">PMS</string>
+	<string name="sample_pms_inner">Inner Pay</string>
+	<string name="sample_pms_pms">Query Product Information</string>
+	<string name="sample_pms_pms_pay">PMS Payments</string>
+	<string name="hwid_sign_in">Login In</string>
+	<string name="hwid_sign_in_backend">Login In Backend</string>
+	<string name="hwid_sign_out">Login Out</string>
+	<string name="hwid_user_photo">User photo</string>
+
+	<string name="sns_start">Start SNS</string>
+	<string name="sns_send_msg">Send message</string>
+
+	<string name="num_buy">"Number: "</string>
+	<string name="hwpay_buy">Buy</string>
+	<string name="request_id">"Order number: "</string>
+	<string name="hwpay_query">"Query Order"</string>
+	<string name="hwpay_getPurchaseInfo">"getPurchaseInfo"</string>
+	<string name="product_no">"Product NO: "</string>
+
+	<string name="push_gettoken_sync">Synchronous GetToken</string>
+	<string name="push_gettoken_asyn">Asynchronous GetToken</string>
+	<string name="get_push_status">Get Push State</string>
+	<string name="push_status">"Push State: "</string>
+	<string name="push_receive_msg">Receive push pass message</string>
+	<string name="push_receive_msg_notify">Receive push notification bar message</string>
+	<string name="push_delete_token">Delete Token</string>
+
+	<string name="push_token_des">"TOKEN: "</string>
+
+	<string name="hwod_oaid">GET OAID</string>
+	<string name="hwod_odid">GET ODID</string>
+	<string name="hw_oaid_set">SET OAID</string>
+	<string name="hw_odid_set">SET ODID</string>
+
+	<string name="hwgame_register">Register</string>
+	<string name="hwgame_updateinfo">Updateinfo</string>
+	<string name="hwgame_getPhoneinfo">GetPhoneinfo</string>
+
+	<string name="pay_inner_query">QueryInfo</string>
+	<string name="pay_inner_query_resutl">"Result: "</string>
+	<string name="pay_inner_intent">"OpenUiIntent"</string>
+	<string name="pay_merchant_id">"MerchantId"</string>
+	<string name="pay_user_id">"UserId"</string>
+
+
+	<string name="location_getLastLocation">获取最后地理位置</string>
+
+
+	<!-- Activity detection strings -->
+	<string name="in_vehicle">In a vehicle</string>
+	<string name="on_bicycle">On a bicycle</string>
+	<string name="on_foot">On foot</string>
+	<string name="running">Running</string>
+	<string name="still">Still</string>
+	<string name="tilting">Tilting</string>
+	<string name="unknown">Unknown activity</string>
+	<string name="walking">Walking</string>
+	<string name="unidentifiable_activity">Unidentifiable activity: %1$d</string>
+	<string name="detected_activities_title">Detected Activities</string>
+	<string name="request_activity_updates">Request updates</string>
+	<string name="remove_activity_updates">Remove updates</string>
+	<string name="activity_updates_enabled">Activity updates enabled</string>
+	<string name="activity_updates_not_enabled">Failed to enable activity updates</string>
+	<string name="activity_updates_removed">Activity updates removed</string>
+	<string name="activity_updates_not_removed">Failed to remove activity updates</string>
+	<string name="percent">%1$d%%</string>
+	<string name="unknown_location">Unknown location</string>
+
+	<plurals name="num_locations_reported">
+		<item quantity="zero">No location reported</item>
+		<item quantity="one">One location reported</item>
+		<item quantity="other">%d locations reported</item>
+	</plurals>
+
+</resources>

@@ -1,0 +1,11 @@
+{
+  "client": {
+    "cp_id": "260086000071979720",
+    "product_id": "9105385871708052969",
+    "client_id": "178155358378786816",
+    "client_secret": "2302B1FFD17446F20013B18D8F8EE6D5799AFA2BBF13D43D8A06FBC727C596A2",
+    "app_id": "101085235",
+    "package_name": "com.wz.android.mapdemo"
+  },
+  "configuration_version": "1.0"
+}

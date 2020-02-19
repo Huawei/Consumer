@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="url_array">
+        <item>Malicious Urls</item>
+        <item>http://wap.paokw.cn</item>
+        <item>http://www.appid-ios-aoet.cn/ip</item>
+        <item>http://wap.paokw.cn/admin</item>
+        <item>http://wap.paykc.cn</item>
+        <item>https://appurl.io/IbY4HVP-P</item>
+        <item>http://owafranceadmin.000webhostapp.com/</item>
+        <item>http://rewtrrt.000webhostapp.com/</item>
+        <item>http://5e5m2i.wuxihg.com/</item>
+        <item>http://91cheerful.com.tw/shop/class/?135.html</item>
+    </string-array>
+</resources>
