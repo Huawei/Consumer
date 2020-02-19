@@ -1,0 +1,11 @@
+{
+	"client":{
+		"cp_id":"890086000102023686",
+		"product_id":"9105385871708043128",
+		"client_id":"175140736335872064",
+		"client_secret":"8615315AF63CE6C467298280157A1FE68EEBB07E4345D72CCB542B173674F671",
+		"app_id":"101073001",
+		"package_name":"com.huawei.codelabpush"
+	},
+	"configuration_version":"1.0"
+}

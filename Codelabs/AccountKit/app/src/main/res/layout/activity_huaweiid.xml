@@ -1,0 +1,42 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_title_margin"
+        android:paddingTop="@dimen/activity_title_margin"
+        android:paddingRight="@dimen/activity_title_margin"
+        tools:context="com.huawei.hmssample.HuaweiIdActivity">
+
+        <TextView
+            android:text="@string/sample_hwid_description"
+            style="@style/TitleStyle"
+            />
+
+
+        <Button
+            android:id="@+id/hwid_signin"
+            style="@style/ButtonStyle"
+            android:text="@string/hwid_sign_in" />
+
+        <Button
+            android:id="@+id/hwid_signInCode"
+            style="@style/ButtonStyle"
+            android:text="@string/hwid_revokeAccess" />
+
+
+        <Button
+            android:id="@+id/hwid_signout"
+            style="@style/ButtonStyle"
+            android:text="@string/hwid_sign_out" />
+        <FrameLayout
+            android:id="@+id/framelog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"></FrameLayout>
+    </LinearLayout>
+</ScrollView>
