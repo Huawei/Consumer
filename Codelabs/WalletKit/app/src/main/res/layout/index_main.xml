@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/saveLoyaltyCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:onClick="saveLoyaltyCard"
+        android:text="@string/save_loyalty_card" />
+
+
+    <Button
+        android:id="@+id/saveGiftCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:onClick="saveGiftCard"
+        android:text="@string/save_gift_card" />
+
+    <Button
+        android:id="@+id/saveCouponCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:onClick="saveCouponCard"
+        android:text="@string/save_coupon_card" />
+
+</LinearLayout>

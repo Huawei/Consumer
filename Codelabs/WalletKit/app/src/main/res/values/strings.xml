@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">HmsWalletKitDemo</string>
+    <!--会员卡字段-->
+    <string name="pass_type_id">服务号</string>
+    <string name="pass_issuer_id">issuerId(用户id,测试:60993，开发:300011981)</string>
+    <string name="pass_id">账户id(passid)</string>
+    <string name="member_name">会员名称</string>
+    <string name="barcode_text">条码说明</string>
+    <string name="barcode_type">条码类型</string>
+    <string name="barcode_value">条码取值</string>
+    <string name="pass_style_identifier">模板标识</string>
+    <string name="serinumber">卡券唯一标识(serinumber)</string>
+    <string name="image_module_data_main_image_uris">推广图片1</string>
+    <string name="image_module_data_main_image_uris_des">推广图片描述1</string>
+    <string name="image_module_data_main_image_uris1">推广图片2(可选）</string>
+    <string name="image_module_data_main_image_uris_des1">推广图片描述2(可选)</string>
+    <string name="info_module_data_hex_background_color">详情模块16进制背景颜色</string>
+    <string name="info_module_data_hex_font_color">详情模块16进制字体颜色</string>
+    <string name="info_module_data_label_info_rows_lable">详情模块标签lable</string>
+    <string name="info_module_data_label_info_rows_value">详情模块标签value</string>
+    <string name="info_module_data_show_last_update_time">详情模块显示上次更新时间标志</string>
+    <string name="message_header">消息标题</string>
+    <string name="message_body">消息内容</string>
+    <string name="message_header1">消息标题1</string>
+    <string name="message_body1">消息内容1</string>
+    <string name="text_data_header">文本信息Head</string>
+    <string name="text_data_body">文本信息Body</string>
+    <string name="text_data_header1">文本信息Head1</string>
+    <string name="text_data_body1">文本信息Body1</string>
+    <string name="merchant_name">商户名称</string>
+    <string name="background_image">卡面底图</string>
+    <string name="homepage_uri_key">homepageUri键</string>
+    <string name="homepage_uri_value">homepageUri值</string>
+    <string name="homepage_uri_lable">homepageUri标签</string>
+    <string name="nearby_locations_value">附近门店</string>
+    <string name="nearby_locations_lable">附近门店展示名称</string>
+    <string name="hotline_value">热线号码</string>
+    <string name="hotline_lable">热线展示名称</string>
+    <string name="website_value">主页网址</string>
+    <string name="website_lable">主页展示名称</string>
+    <string name="latitude">位置纬度double类型正负90</string>
+    <string name="longitude">位置经度double类型正负180</string>
+    <string name="latitude1">位置纬度double类型正负90(可选)</string>
+    <string name="longitude1">位置经度double类型正负180(可选)</string>
+    <string name="points">点数</string>
+    <string name="balance">积分</string>
+    <string name="secondary_points">奖励金</string>
+    <string name="name">卡片名称</string>
+    <string name="card_name">卡片名称</string>
+    <string name="card_number">卡号</string>
+    <string name="status">状态</string>
+    <string name="logo">商户LOGO</string>
+    <string name="Start_time">开始时间</string>
+    <string name="End_time">结束时间</string>
+    <string name="merchant_Provides">优惠券所有者名称</string>
+    <string name="Details">详细</string>
+    <string name="disclaimer">免责声明</string>
+
+    <string name="relatedPassId1">链接id1</string>
+    <string name="relatedPassId2">链接id2</string>
+    <string name="relatedPassId3">链接id3</string>
+    <string name="relatedPassId4">链接id4</string>
+    <string name="level">优惠水平</string>
+
+    <string name="click_save_data">点击选择保存方式</string>
+
+    <!--main_index字段-->
+    <string name="save_loyalty_card">点击添加会员卡</string>
+    <string name="save_gift_card">点击添加礼品卡</string>
+    <string name="save_coupon_card">点击添加优惠券</string>
+
+    <!--gift_card-->
+    <string name="gift_background_image">礼品卡的背景图片</string>
+    <string name="gift_background_image_des">礼品卡的背景图片描述</string>
+    <string name="gift_logo">礼品卡logo的URL</string>
+    <string name="gift_merchant_name">商户名称</string>
+    <string name="gift_card_name">卡片名称</string>
+    <string name="gift_card_number">卡号</string>
+    <string name="gift_card_balance">积分值</string>
+    <string name="gift_card_pin">礼品卡的pin值</string>
+
+    <string name="balance_currency_code">余额货币编码(balanceCurrencyCode)</string>
+    <string name="balance_micros">余额</string>
+    <string name="pass_balance_update_time">余额更新的时间</string>
+
+    <string name="pass_event_number">卡券事件编号</string>
+    <string name="passPin">PIN码</string>
+
+    <string name="gift_nearby_stores_url">附近商店url</string>
+    <string name="gift_nearby_stores_name">附近商店展示名称</string>
+
+    <string name="gift_main_image_url">主页url</string>
+    <string name="gift_main_image_name">主页展示名称</string>
+
+    <string name="gift_hot_line_phone">热线电话</string>
+    <string name="gift_hot_line_name">热线展示名称</string>
+
+    <string name="link_lable">link标题(linkLable)</string>
+    <string name="link_uri_gift">link链接(linkURI)</string>
+    <string name="link_des_gift">link描述(linkDes)</string>
+
+    <string name="link_lable1">link标题1(linkLable1)</string>
+    <string name="link_uri_gift1">link链接1(linkURI1)</string>
+    <string name="link_des_gift1">link描述1(linkDes1)</string>
+
+    <!--sec_main-->
+    <string name="save_to_wallet">walletKitSDK添卡</string>
+    <string name="click_link_toPay">三方intent添加卡券</string>
+    <string name="click_app_orUriToPay">点击钱包或浏览器添加卡券</string>
+    <string name="view_card">点击查看已经添加的卡券</string>
+</resources>

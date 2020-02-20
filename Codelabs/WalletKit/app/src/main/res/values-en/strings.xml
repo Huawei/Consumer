@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">HmsWalletKitDemo</string>
+    <!--会员卡字段-->
+    <string name="pass_type_id">Pass Type</string>
+    <string name="pass_issuer_id">issuerId(test:60993，dev:300011981)</string>
+    <string name="pass_id">passid</string>
+    <string name="member_name">Member Name</string>
+    <string name="barcode_text">Bar Description</string>
+    <string name="barcode_type">Bar Type</string>
+    <string name="barcode_value">Bar Code</string>
+    <string name="pass_style_identifier">Template ID</string>
+    <string name="serinumber">serinumberText</string>
+    <string name="image_module_data_main_image_uris">Banner 1 URI</string>
+    <string name="image_module_data_main_image_uris_des">Banner 1 URI Des</string>
+    <string name="image_module_data_main_image_uris1">Banner 2 URI </string>
+    <string name="image_module_data_main_image_uris_des1">Banner 2 URI Des </string>
+    <string name="info_module_data_hex_background_color">infoModuleDataHexBackgroundColor</string>
+    <string name="info_module_data_hex_font_color">infoModuleDataHexFontColor</string>
+    <string name="info_module_data_label_info_rows_lable">infoModuleDataLabelInfoRowsLable</string>
+    <string name="info_module_data_label_info_rows_value">infoModuleDataLabelInfoRowsValue</string>
+    <string name="info_module_data_show_last_update_time">infoModuleDataShowLastUpdateTime</string>
+    <string name="message_header">Message Header</string>
+    <string name="message_body">Message Info</string>
+    <string name="message_header1">Message Header 1</string>
+    <string name="message_body1">Message Info 1</string>
+    <string name="text_data_header">textDataHeader</string>
+    <string name="text_data_body">textDataBody</string>
+    <string name="text_data_header1">textDataHeader1</string>
+    <string name="text_data_body1">textDataBody1</string>
+    <string name="merchant_name">Merchant Name</string>
+    <string name="background_image">Card Picture Uri</string>
+    <string name="homepage_uri_key">homepageUriKey</string>
+    <string name="homepage_uri_value">homepageUriValue</string>
+    <string name="homepage_uri_lable">homepageUriLable</string>
+    <string name="nearby_locations_value">Nearby Location Value</string>
+    <string name="nearby_locations_lable">Nearby Location</string>
+    <string name="hotline_value">Hotline Value</string>
+    <string name="hotline_lable">Hotline display Name</string>
+    <string name="website_value">Website Value</string>
+    <string name="website_lable">Website display Name</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="latitude1">latitude1</string>
+    <string name="longitude1">longitude1</string>
+    <string name="points">Points</string>
+    <string name="balance">balance</string>
+    <string name="secondary_points">Rewards</string>
+    <string name="name">Card Name</string>
+    <string name="card_name">Card Name</string>
+    <string name="card_number">Card Number</string>
+    <string name="status">status</string>
+    <string name="logo">LOGO()</string>
+    <string name="Start_time">StartTime</string>
+    <string name="End_time">EndTime</string>
+    <string name="merchant_Provides">merchant Provides Name</string>
+    <string name="Details">Details</string>
+    <string name="disclaimer">disclaimer</string>
+    <string name="relatedPassId1">relatedPassId1</string>
+    <string name="relatedPassId2">relatedPassId2</string>
+    <string name="relatedPassId3">relatedPassId3</string>
+    <string name="relatedPassId4">relatedPassId4</string>
+    <string name="level">level</string>
+    <string name="click_save_data">clickSaveData</string>
+
+    <!--main_index字段-->
+    <string name="save_loyalty_card">ClickSaveLoyaltyCard</string>
+    <string name="save_gift_card">ClickSaveGiftCard</string>
+    <string name="save_coupon_card">ClickSaveCouponCard</string>
+
+    <!--gift_card-->
+    <string name="gift_background_image">Background picture of the gift card</string>
+    <string name="gift_background_image_des">Description of the gift card background image</string>
+    <string name="gift_logo">URL of the gift card logo</string>
+    <string name="gift_merchant_name">Merchant name</string>
+    <string name="gift_card_name">Card name</string>
+    <string name="gift_card_number">Gift Card Number</string>
+    <string name="gift_card_balance">Balance</string>
+    <string name="gift_card_pin">Gift card pin</string>
+
+    <string name="balance_currency_code">balanceCurrencyCode</string>
+    <string name="balance_micros">Balance Currency Code</string>
+    <string name="pass_balance_update_time">Last Balance Update Time</string>
+
+    <string name="gift_nearby_stores_url">Nearby stores url</string>
+    <string name="gift_nearby_stores_name">Nearby stores name</string>
+
+    <string name="gift_main_image_url">Main page url</string>
+    <string name="gift_main_image_name">Main page name</string>
+
+    <string name="gift_hot_line_phone">Hot line</string>
+    <string name="gift_hot_line_name">Hot line name</string>
+
+    <string name="pass_event_number">Event Number</string>
+    <string name="passPin">Pass Pin</string>
+    <string name="link_lable">linkLable</string>
+    <string name="link_uri_gift">linkUri</string>
+    <string name="link_des_gift">linkUri</string>
+    <string name="link_lable1">linkLable1</string>
+    <string name="link_uri_gift1">linkUri1</string>
+    <string name="link_des_gift1">linkUri1</string>
+
+    <!--sec_main-->
+    <string name="save_to_wallet">walletKitSDK add card</string>
+    <string name="click_link_toPay">Third party intent add card coupon</string>
+    <string name="click_app_orUriToPay">Click on wallet or browser to add card</string>
+    <string name="view_card">Click to view the added coupons</string>
+
+
+
+</resources>

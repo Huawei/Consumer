@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/serinumber"
+                    android:textColor="#FF0000" />
+
+                <EditText
+                    android:id="@+id/serinumberLoyalty"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:maxLength="10"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pass_style_identifier"
+                    android:textColor="#FF0000"/>
+
+                <EditText
+                    android:id="@+id/passStyleIdentifier"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text = "loyalty202"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pass_type_id"
+                    android:textColor="#FF0000"/>
+                <EditText
+                    android:id="@+id/passTypeId"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="hwpass.com.huawei.wallet.loyalty.test"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pass_issuer_id"
+                    android:textColor="#FF0000"/>
+                <EditText
+                    android:id="@+id/issuerId"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:text="60993" />
+            </LinearLayout>
+
+            <!--split line-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:text="split line：The above parameters are required. The following are displayed." />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/background_image" />
+
+                <EditText
+                    android:id="@+id/backgroundImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="https://contentcenter-drcn.dbankcdn.com/cch5/wallet/AccessCard/cloudRes/img_access_edit_personalise_big6.jpg"
+                    android:layout_marginTop="0dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logo" />
+
+                <EditText
+                    android:id="@+id/logoLoyalty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="https://contentcenter-drcn.dbankcdn.com/cch5/Wallet-WalletKit/picres/cloudRes/card_loyalty_logo.png" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/merchant_name"
+                    android:textColor="#FF0000"/>
+
+                <EditText
+                    android:id="@+id/merchantNameLoyalty"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="carrefour vip"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textColor="#FF0000"/>
+
+                <EditText
+                    android:id="@+id/nameLoyalty"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="carrefour"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_number"
+                    android:textColor="#FF0000"/>
+
+                <EditText
+                    android:id="@+id/cardNumberLoyalty"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:maxLength="10"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:text="" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance"
+                    android:textColor="#FF0000"/>
+
+                <EditText
+                    android:id="@+id/balanceLoyalty"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:digits="0123456789."
+                    android:maxLength="10"
+                    android:layout_width="match_parent"
+                    android:text="199"/>
+
+            </LinearLayout>
+
+
+            <!--linkpassid-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/relatedPassId1" />
+
+                <EditText
+                    android:id="@+id/relatedPassId1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/relatedPassId2" />
+
+                <EditText
+                    android:id="@+id/relatedPassId2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/relatedPassId3" />
+
+                <EditText
+                    android:id="@+id/relatedPassId3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/relatedPassId4" />
+
+                <EditText
+                    android:id="@+id/relatedPassId4"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points" />
+
+                <EditText
+                    android:id="@+id/pointsLoyalty"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/barcode_text" />
+
+                <EditText
+                    android:id="@+id/barcodeTextLoyalty"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:maxLength="15"
+                    android:layout_width="match_parent"
+                    android:text="1234567890" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/barcode_value" />
+
+                <EditText
+                    android:id="@+id/barcodeValueLoyalty"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:maxLength="10"
+                    android:digits="0123456789"
+                    android:layout_width="match_parent"
+                    android:text="123456789123456" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/member_name"
+                    android:textColor="#FF0000"/>
+
+                <EditText
+                    android:id="@+id/memberName"
+                    android:maxLength="15"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:text="tester" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level"
+                    android:textColor="#FF0000"/>
+
+                <EditText
+                    android:id="@+id/levelLoyalty"
+                    android:maxLength="15"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+            <!--MessageLists -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/message_header" />
+
+                <EditText
+                    android:id="@+id/messageHeader"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:text="Message" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/message_body" />
+
+                <EditText
+                    android:id="@+id/messageBody"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:text="Welcome to use our loyalty card." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/message_header1" />
+
+                <EditText
+                    android:id="@+id/messageHeader1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/message_body1" />
+
+                <EditText
+                    android:id="@+id/messageBody1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+
+              <LinearLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/image_module_data_main_image_uris" />
+
+                  <EditText
+                      android:id="@+id/imageModuleDataMainImageUris"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="0dp"
+                      android:layout_width="match_parent"
+                      android:text="https://contentcenter-drcn.dbankcdn.com/cch5/wallet/HiWallet/cloudRes/ic_empty_idcard.png"/>
+
+              </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/image_module_data_main_image_uris_des" />
+
+                <EditText
+                    android:id="@+id/imageModuleDataMainImageUrisDes"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/image_module_data_main_image_uris_des"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+	    
+	     <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/image_module_data_main_image_uris1" />
+
+                <EditText
+                    android:id="@+id/imageModuleDataMainImageUris1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="https://contentcenter-drcn.dbankcdn.com/cch5/wallet/HiWallet/cloudRes/ic_empty_bank.png"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/image_module_data_main_image_uris_des1" />
+
+                <EditText
+                    android:id="@+id/imageModuleDataMainImageUrisDes1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/image_module_data_main_image_uris_des1"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+            <!--nearbyLocations-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nearby_locations_value" />
+
+                <EditText
+                    android:id="@+id/nearbyLocationsValue"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nearby_locations_lable" />
+
+                <EditText
+                    android:id="@+id/nearbyLocationsLable"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:text="Nearby Location"/>
+            </LinearLayout>
+
+            <!--websiteKey-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/website_value" />
+
+                <EditText
+                    android:id="@+id/websiteValue"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/website_lable" />
+
+                <EditText
+                    android:id="@+id/websiteLable"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:text="Website"/>
+            </LinearLayout>
+
+
+            <!--hotline-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hotline_value" />
+
+                <EditText
+                    android:id="@+id/hotlineValue"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:text="4008205566" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hotline_lable" />
+
+                <EditText
+                    android:id="@+id/hotlineLable"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Customer service hotline"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+
+            <!--位置-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/latitude"
+                    android:textColor="#FF0000"/>
+
+                <EditText
+                    android:id="@+id/latitude"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789.-"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:text="89"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/longitude"
+                    android:textColor="#FF0000"/>
+
+                <EditText
+                    android:id="@+id/longitude"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789.-"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:text="114"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/latitude1"
+                    />
+
+                <EditText
+                    android:id="@+id/latitude1"
+                    android:layout_height="wrap_content"
+                    android:maxLength="8"
+                    android:digits="0123456789.-"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/longitude1"
+                    />
+
+                <EditText
+                    android:id="@+id/longitude1"
+                    android:layout_height="wrap_content"
+                    android:maxLength="8"
+                    android:digits="0123456789.-"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:textColor="#FF0000"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id = "@+id/selectStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text = "@string/Start_time"
+                android:gravity = "center"
+                android:onClick="selectStartTime">
+
+            </Button>
+
+            <Button
+                android:id = "@+id/selectEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text = "@string/End_time"
+                android:gravity = "center"
+                android:onClick="selectEndTime">
+
+            </Button>
+
+        </LinearLayout>
+
+            <Button
+                android:id = "@+id/clickSaveData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text = "@string/click_save_data"
+                android:textAllCaps="false"
+                android:gravity = "center"
+                android:onClick="click_save_data">
+
+            </Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
