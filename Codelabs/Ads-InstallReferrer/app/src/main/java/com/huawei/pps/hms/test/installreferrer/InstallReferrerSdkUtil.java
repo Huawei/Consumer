@@ -1,5 +1,17 @@
 /*
- * Copyright (c) Huawei Technologies Co., Ltd. 2014-2019. All rights reserved.
+ * Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
  */
 
 package com.huawei.pps.hms.test.installreferrer;
@@ -33,9 +45,9 @@ public class InstallReferrerSdkUtil {
             Log.e(TAG, "connect context is null");
             return false;
         }
-        // 创建InstallReferrerClient实例 | Create InstallReferrerClient
+        // Create InstallReferrerClient
         mReferrerClient = InstallReferrerClient.newBuilder(mContext).setTest(true).build();
-        // 连接转化跟踪参数服务 | Start connecting service
+        // Start connecting service
         mReferrerClient.startConnection(installReferrerStateListener);
         return true;
     }
@@ -67,10 +79,10 @@ public class InstallReferrerSdkUtil {
     private void get() {
         if (null != mReferrerClient) {
             try {
-                //获取转化跟踪参数，不要在主线程中调用该方法。 | install referrer id information. Do not call this method in the main thread.
+                // install referrer id information. Do not call this method in the main thread.
                 ReferrerDetails referrerDetails = mReferrerClient.getInstallReferrer();
                 if (null != referrerDetails && null != mCallback) {
-                    // 展示转化跟踪参数 | Update install referer details.
+                    // Update install referer details.
                     mCallback.onSuccuss(referrerDetails.getInstallReferrer(),
                             referrerDetails.getReferrerClickTimestampMillisecond(),
                             referrerDetails.getInstallBeginTimestampMillisecond());
@@ -97,11 +109,11 @@ public class InstallReferrerSdkUtil {
                     get();
                     break;
                 case InstallReferrerClient.InstallReferrerResponse.FEATURE_NOT_SUPPORTED:
-                    //服务不支持,下载安装最新华为移动服务（APK）| Service not supported. Please download and install the latest version of Huawei Mobile Services(APK).
+                    // Service not supported. Please download and install the latest version of Huawei Mobile Services(APK).
                     Log.i(TAG, "FEATURE_NOT_SUPPORTED");
                     break;
                 case InstallReferrerClient.InstallReferrerResponse.SERVICE_UNAVAILABLE:
-                    //服务不存在, 升级华为移动服务（APK）版本2.6.5及以上 | Service unavailable. Please update the version of Huawei Mobile Services(APK) to 2.6.5 or later.
+                    // Service unavailable. Please update the version of Huawei Mobile Services(APK) to 2.6.5 or later.
                     Log.i(TAG, "SERVICE_UNAVAILABLE");
                     break;
                 default:
