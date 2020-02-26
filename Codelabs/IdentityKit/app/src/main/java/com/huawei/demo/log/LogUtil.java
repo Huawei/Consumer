@@ -19,7 +19,7 @@ package com.huawei.demo.log;
 import android.util.Log;
 
 public class LogUtil {
-    private static final String LOG_TAG = "identity_demo";
+    private static final String LOG_TAG = "identitycodelab";
 
     public static void i(String tag, String msg) {
         Log.i(LOG_TAG, tag + " : " + msg);

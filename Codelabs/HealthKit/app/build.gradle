@@ -14,7 +14,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    // 签名
+    // TODO: signingConfigs
     //signingConfigs {
     //    debug {
     //        storeFile file('health_keystore/happysport.jks')
