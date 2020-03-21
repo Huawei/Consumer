@@ -63,7 +63,7 @@ import java.util.List;
  * @since 2020-01-13
  */
 public class MainActivity extends AppCompatActivity implements PermissionInterface, View.OnClickListener {
-    private static final int TIMEOUT_MILLISECONDS = 10000;
+    private static final int TIMEOUT_MILLISECONDS = 5000;
     private static final String TAG = "Nearby Connection Demo";
 
     private TransferEngine mTransferEngine = null;
@@ -313,6 +313,7 @@ public class MainActivity extends AppCompatActivity implements PermissionInterfa
                 @Override
                 public void onEstablish(String endpointId, ConnectInfo connectionInfo) {
                     mTransferEngine = Nearby.getTransferEngine(getApplicationContext());
+                    mEndpointId = endpointId;
                     mDiscoveryEngine.acceptConnect(endpointId, mDataCb);
                     ToastUtil.showShortToastTop("Let's chat!");
                     sendBtn.setEnabled(true);
