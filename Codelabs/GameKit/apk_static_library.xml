@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<libraries>
+
+    <apk>
+        <sub_path>
+            <item>
+                testDemo\libs\gamekit-1.0.0.jar
+            </item>
+            <item>
+                testDemo\libs\gson-2.3-sources.jar
+            </item>
+            <item>
+                testDemo\libs\gson-2.3.jar
+            </item>
+            <item>
+				gamekitdemo\libs\gamekit-1.0.0.jar
+            </item>
+            <item>
+				gamekitdemo\libs\classes.jar
+            </item>
+            <item>
+				gamekitdemo\libs\gamekit-0.0.1.jar
+            </item>
+            <item>
+				gamekitdemo\libs\gamekit-1.0.0.300.jar
+            </item>
+        </sub_path>
+    </apk>
+
+</libraries>
