@@ -75,12 +75,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Enable collection capability
         instance.setAnalyticsEnabled(true);
-        // Enable Automatically collection capability
-        instance.setAutoCollectionEnabled(true);
 
         // TODO: Registering the HMS Service
-        // Register the HMS service and collect automatic events (account events).
-        // Automatic account event collection requires HMS APK 4.0.0.300 or a later version.
+        // Register the HMS service and collect automatic events (account event or InAppPurchase event, etc.).
         instance.regHmsSvcEvent();
 
         txtQuestion = (TextView)findViewById(R.id.question_text_view);
@@ -136,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         // TODO: UnRegistering the HMS Service
-        // After the HMS service is unbound, no automatic event (account event) is reported.
+        // After the HMS service is unbound, no automatic event (account event or InAppPurchase event, etc.) is reported.
         instance.unRegHmsSvcEvent();
     }
 
