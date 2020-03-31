@@ -31,7 +31,7 @@ Note: Without a namepaceType, you can not configure supplements in the following
 
 3.Register the beacon device. The beacon ID and beacon type can be obtained by using the management tool provided by the beacon manufacturer (e.g., Sensoro) or a third-party beacon tool downloaded in the Play Store (e.g., Beacon Tools).
 
-4.Configure message supplements for the beacon.
+4.Configure message attachments for the beacon.
 First select a namespaceType created in STEP 2. Second, input the content of the supplement.
 Note: The supplement content in this demo is suggested to be a JSON string.
 For example, for namespaceType canteen, the supplement content references {"canteenDesc":"This is the description of Canteen A.","canteenName":"Canteen A"}; and for namepaceType notice, the supplement content references {"canteenName":"Canteen A","notice":"Huawei employees dinning here can get a 20% discount and a free fruit platter."}.
