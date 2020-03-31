@@ -11,6 +11,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         hwads:adId="@string/banner_ad_id"
-        hwads:bannerSize="BANNER_SIZE_360_57" />
+        hwads:bannerSize="BANNER_SIZE_320_50" />
 
 </RelativeLayout>

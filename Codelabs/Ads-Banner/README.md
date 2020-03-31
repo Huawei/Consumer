@@ -18,7 +18,7 @@
     Install the program on Huawei Android mobile phones.
     
 ## Supported Environments
-    Huawei Mobile Services (APK) 4.0.0 or later has been installed on Huawei Android phones.
+    HMS Core (APK) 4.0.0 or later has been installed on Huawei Android phones.
 	
 ## Configuration 
     N/A
