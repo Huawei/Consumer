@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.huawei.sinktester">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".AlertActivity"
+                  android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".PasswordActivity"/>
+        <activity android:name=".PlayActivity"/>
+        <activity android:name=".PinActivity"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+                android:name=".SinkTesterService"
+                android:enabled="true"
+                android:exported="true"/>
+    </application>
+    <uses-permission android:name="com.huawei.permission.HISIGHT_ACCESS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- Grant the Internet access permission-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Grant the permission to obtain the information about the Wi-Fi access status and Wi-Fi hotspots -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+</manifest>

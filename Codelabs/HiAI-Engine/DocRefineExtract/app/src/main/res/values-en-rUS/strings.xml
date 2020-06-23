@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HiAICodeDemo</string>
+    <string name="camera">Camera</string>
+    <string name="album">Album</string>
+
+    <string name="ni_title_1">NoteSnapshot</string>
+    <string name="ni_title_2">Detected Results</string>
+    <string name="btn_text_1">Detect Document</string>
+    <string name="btn_text_2">Correct Image And Extract Text</string>
+
+    <string name="nr_title">Extracted Results</string>
+
+    <string name="toast_1">Image fetch exception!</string>
+    <string name="toast_2">Image acquisition failed!</string>
+    <string name="toast_3">Result is null!</string>
+    <string name="toast_4">Out of bounds, please crop correctly!</string>
+    <string name="toast_5">Detected failed!</string>
+
+</resources>

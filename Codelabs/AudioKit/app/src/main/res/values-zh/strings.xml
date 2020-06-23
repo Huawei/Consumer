@@ -1,0 +1,27 @@
+<!--
+  ~ Copyright (c) Huawei Technologies Co., Ltd. 2019-2020. All rights reserved.
+  -->
+
+<resources>
+    <string name="app_name">Audio Kit Demo</string>
+    <string name="set_cache">缓存设置</string>
+    <string name="set_play">播放指定地址歌曲</string>
+    <string name="play_path">输入歌曲地址</string>
+    <string name="set_cache_size">设置新的缓存空间,单位M</string>
+    <string name="cur_cache_size">缓存空间限制：</string>
+    <string name="cur_use_cache_size">当前已缓存缓存空间大小</string>
+    <string name="clear_cache">清空缓存</string>
+    <string name="online_list">在线列表</string>
+    <string name="local_list">本地列表</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="btn_play">播放</string>
+
+    <string name="mode_shuffle_on" priority="LT">"随机播放"</string>
+    <string name="mode_shuffle_off" priority="LT">"顺序播放"</string>
+    <string name="mode_repeat_current" priority="LT">"单曲循环"</string>
+    <string name="mode_repeat_all" priority="LT">"列表循环"</string>
+    <string name="unknowsong" priority="translator">未知歌曲</string>
+    <string name="unknown_artist_name" priority="LT">未知艺术家</string>
+    <string name="no_songs" priority="LT">"暂无歌曲"</string>
+</resources>

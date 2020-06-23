@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PoseEstimationDemo</string>
+    <string name="load_plugin">请先下载插件！</string>
+    <string name="not_support">设备不支持API!</string>
+    <string name="no_point">没有检测到关键点！</string>
+    <string name="choose_photo">选择照片</string>
+    <string name="plugin_install_failed">插件安装失败！</string>
+</resources>

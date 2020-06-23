@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.huawei.pps.hms.test.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/call_mode"
+        android:textColor="#d9000000"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/call_mode_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <RadioButton
+            android:id="@+id/mode_sdk_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/call_mode_sdk"
+            android:textColor="#d9000000" />
+
+        <RadioButton
+            android:id="@+id/mode_aidl_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/call_mode_aidl"
+            android:textColor="#d9000000" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/color_divider" />
+
+    <RelativeLayout
+        android:id="@+id/enter_install_referrer_rl"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/item_normal_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/enter_install_referrer"
+            android:textColor="#d9000000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_public_arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/color_divider" />
+
+    <RelativeLayout
+        android:id="@+id/write_install_referrer_rl"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/item_normal_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/write_install_referrer"
+            android:textColor="#d9000000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_public_arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/color_divider" />
+</LinearLayout>

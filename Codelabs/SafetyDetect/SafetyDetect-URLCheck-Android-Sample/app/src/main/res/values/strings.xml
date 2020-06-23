@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HMSSafetyDetectSample</string>
+
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_start">start</string>
+
+    <!-- UrlCheck -->
+    <string name="title_url_check_entry">URLCheck</string>
+    <string name="title_activity_url_check">URLCheck</string>
+    <string name="call_url_text">http|https://</string>
+    <string name="call_url_btn">check url</string>
+    <string name="call_result_text">check result</string>
+
+    <!-- Tab -->
+    <string name="tab_menu_appscheck">AppsCheck</string>
+    <string name="tab_menu_integrity">SysIntegrity</string>
+    <string name="tab_menu_urlcheck">URLCheck</string>
+    <string name="tab_menu_user">UserDetect</string>
+
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PoseEstimationDemo</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="load_plugin">Please download the plugin first!</string>
+    <string name="not_support">The device don\'t support this API!</string>
+    <string name="no_point">No points were detected!</string>
+    <string name="plugin_install_failed">The plugin download and install failed!</string>
+</resources>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FIDO2 Sample</string>
+    <string name="txt_service_url_default">https://termstest.hwcloudtest.cn:22643/fido2/</string>
+
+    <string name="txt_service_url">FIDO服务器：</string>
+    <string name="txt_user_name">"用户名："</string>
+    <string name="user_name_default">Fido2SampleTestUser</string>
+    <string name="txt_user_required_level">用户校验(uv):</string>
+    <string name="txt_authenticator_attachment_mode">认证器类型：</string>
+    <string name="txt_attestation_conveyance_preference">凭证偏好：</string>
+    <string name="txt_need_residentkey_or_not">存储用户秘钥(rk)</string>
+    <string name="btn_net_get_register_info">查询服务器上注册信息</string>
+    <string name="btn_net_test_register">注册</string>
+    <string name="btn_net_test_authenticate">认证</string>
+    <string name="btn_net_deregister_all">删除服务器上注册信息</string>
+
+    <string name="user_not_empty">用户名不能为空。</string>
+    <string name="connect_server_err">URL不合法或连接FIDO服务器失败。</string>
+    <string name="reg_fail">注册失败。</string>
+    <string name="reg_success">注册成功。</string>
+    <string name="authn_fail">认证失败。</string>
+    <string name="authn_success">认证成功。</string>
+    <string name="unknow_err">未知错误。</string>
+    <string name="message_title">提示</string>
+    <string name="error_title">错误</string>
+    <string name="confirm_btn">确认</string>
+    <string name="cp_reg_info">已注册信息：</string>
+    <string name="get_register_info_fail">查询注册信息失败。</string>
+    <string name="get_register_info_success">查询注册信息成功。</string>
+    <string name="delete_register_info_success">删除注册信息成功。</string>
+    <string name="delete_register_info_fail">删除注册信息成功。</string>
+    <string name="credential_id">凭据ID：</string>
+</resources>

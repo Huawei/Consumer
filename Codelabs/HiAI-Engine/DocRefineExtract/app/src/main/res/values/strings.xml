@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HiAICodeDemo</string>
+    <string name="camera">拍照</string>
+    <string name="album">相册</string>
+
+    <string name="ni_title_1">秒拍笔记</string>
+    <string name="ni_title_2">检测结果</string>
+    <string name="btn_text_1">文档检测</string>
+    <string name="btn_text_2">校正提取</string>
+
+    <string name="nr_title">提取结果</string>
+
+    <string name="toast_1">图片获取异常！</string>
+    <string name="toast_2">图片获取失败！</string>
+    <string name="toast_3">结果为空！</string>
+    <string name="toast_4">超出边界,请正确裁剪!</string>
+    <string name="toast_5">检测失败</string>
+
+
+</resources>

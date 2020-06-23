@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/vibrate_l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/packageName_no_init"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="packageName设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/packageName_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="包名"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="#CA444141" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/notificationId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="notificationId设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/notificationId_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="notificationId"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_l7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/title_no_init"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="title设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/title_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="标题"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="#CA444141" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_l8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/subTitle_no_init"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="subTitle设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/subTitle_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="子标题"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="#CA444141" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_l9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/content_no_init"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="content设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/content_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="推送内容"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="#CA444141" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_l4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/operation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="operation设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/operation_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="请输入operation值"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_l5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/template"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="template设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/template_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="请输入template值"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_l6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/iconID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="iconID设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/iconID_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="请输入iconID"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="date设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/date_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="请输入date"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/guideDistance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="导向距离设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/guideDistance_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="请输入导向距离"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/guideDistanceUnit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="导向单位设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/guideDistanceUnit_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="请输入导向单位"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/guideDirectionId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="DirectionId设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/guideDirectionId_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="请输入DirectionId"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/guideText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="guideText设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/guideText_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="请输入guideText"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/vibrate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="vibrate设置 :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/vibrate_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="请输入vibrate"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <Button
+                android:id="@+id/notifyTest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="发起消息推送" />
+
+            <TextView
+                android:id="@+id/notifyStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="notifyStatus :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

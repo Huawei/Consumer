@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/vibrate_l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/packageName_no_init"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set package name :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/packageName_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="package name"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="#CA444141" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/notificationId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set notification Id :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/notificationId_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="notification Id"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_l7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/title_no_init"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set title :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/title_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="title"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="#CA444141" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_l8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/subTitle_no_init"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set subTitle :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/subTitle_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="subTitle"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="#CA444141" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_l9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/content_no_init"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set content :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/content_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="content"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="#CA444141" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_l4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/operation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set operation :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/operation_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="operation"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_l5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/template"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set template :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/template_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="template"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_l6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/iconID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set iconID :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/iconID_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="icon Id"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set date :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/date_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="date"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/guideDistance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set guide distance :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/guideDistance_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="guide distance"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/guideDistanceUnit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set guide distance unit :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/guideDistanceUnit_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="guide distance unit"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/guideDirectionId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set direction Id :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/guideDirectionId_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="direction Id"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/guideText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set guide text :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/guideText_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="guide text"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/vibrate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set vibrate mode :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/vibrate_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="vibrate mode"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:textColor="#CA444141" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <Button
+                android:id="@+id/notifyTest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Send notification" />
+
+            <TextView
+                android:id="@+id/notifyStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="notify Status :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

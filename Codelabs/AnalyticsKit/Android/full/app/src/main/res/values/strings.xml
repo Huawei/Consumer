@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HmsAnalyticsKitDemo</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="setting_button">Settings</string>
+    <string name="next_button">Next</string>
+    <string name="post_score_button">Post Score</string>
+    <string name="save_setting_button">Save</string>
+    <string name="q1">The largest planet in the solar system is Jupiter</string>
+    <string name="q2">The first Olympic Games were held in Athens, Greece</string>
+    <string name="q3">The violin has 6 strings</string>
+    <string name="q4">Flying bats belong to birds</string>
+    <string name="q5">Sound spreads faster in the water than in the air</string>
+    <string name="wrong_answer">The answer is wrong.</string>
+    <string name="correct_answer">The answer is correct.</string>
+</resources>

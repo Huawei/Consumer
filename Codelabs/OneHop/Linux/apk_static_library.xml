@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<libraries>
+
+    <apk>
+        <sub_path>
+            <item>
+				app\libs\HwOneHopSdk.jar
+            </item>
+        </sub_path>
+    </apk>
+
+</libraries>

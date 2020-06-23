@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:hint="enter phone number"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/start_query"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignBaseline="@id/phone_number"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:text="@string/start_query" />
+
+
+    <Button
+        android:id="@+id/make_video_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_number"
+        android:layout_alignLeft="@id/phone_number"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/make_video_call" />
+
+    <Button
+        android:id="@+id/make_audio_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_query"
+        android:layout_alignBaseline="@id/make_video_call"
+        android:layout_alignRight="@id/start_query"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="invisible"
+        android:text="@string/make_audio_call" />
+
+</RelativeLayout>

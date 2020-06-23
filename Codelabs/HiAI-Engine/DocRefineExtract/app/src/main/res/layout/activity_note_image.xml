@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        tools:context=".activity.DocSkewCorrectionActivity">
+
+        <com.huawei.hiaicodedemo.widget.TitleBar
+                android:id="@+id/titleBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="@string/ni_title_1"
+                app:titleTextColor="@color/black"
+                app:titleTextSize="18sp"
+                android:layout_alignParentTop="true"/>
+
+        <ImageView
+                android:id="@+id/image_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/titleBar"
+                android:layout_above="@+id/bottom_layout"/>
+
+        <com.huawei.hiaicodedemo.widget.cropview.CropImageView
+                android:id="@+id/image_crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/titleBar"
+                android:layout_above="@+id/bottom_layout"/>
+
+        <LinearLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                        android:id="@+id/btn_doc_detect"
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/btn_text_1"
+                        android:textSize="16sp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/submit_button"
+                        android:textColor="@drawable/submit_button_text_color"/>
+
+                <Button
+                        android:id="@+id/btn_doc_refine"
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/btn_text_2"
+                        android:textSize="16sp"
+                        android:textAllCaps="false"
+                        android:visibility="gone"
+                        android:background="@drawable/submit_button"
+                        android:textColor="@drawable/submit_button_text_color"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

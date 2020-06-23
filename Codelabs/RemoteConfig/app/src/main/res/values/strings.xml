@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Remote Control Demo</string>
+    <string name="fetch_local_button">获取本地配置</string>
+    <string name="fetch_online_button">获取网络配置</string>
+</resources>

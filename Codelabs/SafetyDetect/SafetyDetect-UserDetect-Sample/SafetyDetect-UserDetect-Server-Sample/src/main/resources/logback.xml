@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+  ~ Copyright (c) Huawei Technologies Co., Ltd. 2019-2019. All rights reserved.
+  -->
+
+<configuration>
+    <property scope="context" name="LOG_HOME" value="./" />
+    <property scope="context" name="CONTEXT_NAME" value="CloudSOALoggingContext" />
+
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+
+    <appender name="recapcha" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/logs/run.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_HOME}/logs/run/recapcha_%d{yyyyMMdd}_%i.log</FileNamePattern>
+            <MaxHistory>5</MaxHistory>
+            <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <MaxFileSize>50mb</MaxFileSize>
+            </TimeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+
+    <logger name="com.huawei.safetydetect.userdetect" level="INFO" />
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="recapcha" />
+    </root>
+</configuration>

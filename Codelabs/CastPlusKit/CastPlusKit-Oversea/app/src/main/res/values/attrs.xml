@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SeparatedEditText">
+        <attr name="showCursor" format="boolean" />
+        <attr name="maxLength" format="integer" />
+        <attr name="corner" format="dimension" />
+        <attr name="blockColor" format="color|reference" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="blockSpacing" format="dimension" />
+        <attr name="cursorDuration" format="integer" />
+        <attr name="cursorWidth" format="dimension" />
+        <attr name="cursorColor" format="color|reference" />
+
+    </declare-styleable>
+
+</resources>

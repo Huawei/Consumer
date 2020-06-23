@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/fg_get_wifidetect_status"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/btn_round_corner_normal"
+        android:text="@string/get_wifidetect_status"
+        android:textSize="@dimen/btn_text_size" />
+
+    <TextView
+        android:id="@+id/fg_wifidetecttextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00a0a0"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

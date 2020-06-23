@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">HiAICodeDemo</string>
+    <string name="material">素材</string>
+    <string name="album">相册</string>
+
+    <string name="material_title">选取素材</string>
+
+    <string name="isr_title">图片超分辨率</string>
+    <string name="isr_after">超分后</string>
+    <string name="isr_toast_1">bitmap为空！</string>
+    <string name="isr_toast_2">图片的宽高不能超过800*600</string>
+
+    <string name="gtr_title">通用文字识别</string>
+    <string name="gtr_result">文字识别结果</string>
+    <string name="gtr_toast_1">图片获取异常！</string>
+    <string name="gtr_toast_2">图片获取失败！</string>
+    <string name="gtr_toast_3">结果为空！</string>
+
+    <string name="vs_title">视频人像分割</string>
+
+    <string name="as_title">美学评分</string>
+    <string name="as_result">评分结果</string>
+
+    <string name="tr_title">表格识别</string>
+    <string name="tr_result">结果</string>
+
+</resources>

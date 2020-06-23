@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ShareApp</string>
+    <string name="title">测试App Linking</string>
+    <string name="open_re">打开接收的App linking</string>
+    <string name="open_in">打开输入的App linking</string>
+    <string name="receive">接收的App Linking</string>
+    <string name="enter">输入App Linking</string>
+</resources>

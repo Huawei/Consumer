@@ -1,0 +1,28 @@
+PODS:
+  - AGConnectCore (1.0.0.202):
+    - HMFoundation (~> 1.0.0)
+  - AGConnectCredential (1.0.0.202):
+    - AGConnectCore (~> 1.0.0)
+  - HiAnalytics (5.0.1.301):
+    - AGConnectCredential
+  - HMFoundation (1.0.0.202)
+
+DEPENDENCIES:
+  - HiAnalytics
+
+SPEC REPOS:
+  https://git.huawei.com/w00271181/AM_AppGallery_AppGalleryConnectSDK_ios_spec:
+    - AGConnectCore
+    - AGConnectCredential
+    - HiAnalytics
+    - HMFoundation
+
+SPEC CHECKSUMS:
+  AGConnectCore: f2df6c67378580527855ce53666e86fed7ec2111
+  AGConnectCredential: 63dd03cde140ddd4d86feefe0d7c509b5841eda8
+  HiAnalytics: 1bac7423a534e3edfe7bbd45bc2e8de716ac8968
+  HMFoundation: 0fdd7a6b85dfb24355222a53b18eb2257fa50bf5
+
+PODFILE CHECKSUM: 9dca47e9993e075c819893e7af26626c66b32fb7
+
+COCOAPODS: 1.9.1

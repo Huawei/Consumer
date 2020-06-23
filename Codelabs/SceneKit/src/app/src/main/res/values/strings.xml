@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SceneKit Demo</string>
+    <string name="btn_text_scene_kit_demo">Start Activity</string>
+</resources>

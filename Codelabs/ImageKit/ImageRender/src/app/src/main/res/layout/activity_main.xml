@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huawei.image.render.activity.SystemUIActivity"
+    android:id="@+id/mainLayout">
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_bright"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/test_back"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:layout_gravity="center_vertical"
+            android:text="&lt; Back"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

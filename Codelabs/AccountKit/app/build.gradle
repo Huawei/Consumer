@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.huawei.agconnect'
+android {
+
+    signingConfigs {
+        release {
+            storeFile file("xxx.jks")
+            keyAlias 'xxx'
+            keyPassword 'xxx'
+            storePassword 'xxx'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            debuggable true
+        }
+        debug {
+            signingConfig signingConfigs.release
+            debuggable true
+        }
+    }
+
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.huawei.codelab.hwid"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+}
+
+dependencies {
+    ext.JUNIT_VERSION = '4.12'
+    ext.ESPRESSO_VERSION = '2.2.2'
+
+    implementation fileTree(include: ['*.jar',], dir: 'libs')
+    implementation 'com.android.support:support-compat:28.0.0'
+    implementation "com.google.code.gson:gson:2.8.5"
+    implementation('com.huawei.hms:hwid:4.0.0.300')
+    implementation "com.squareup.okhttp3:okhttp:3.14.2"
+    implementation 'com.squareup.okio:okio:1.14.1'
+    implementation 'com.auth0:java-jwt:3.8.2'
+    implementation 'com.auth0:jwks-rsa:0.8.3'
+}
+
+repositories { flatDir { dirs '../aars' } }

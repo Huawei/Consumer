@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">DvKitDemo</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="description_info">Info</string>
+    <string name="permission_request">This sample needs permission for camera and audio recording.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <string name="abort">Abort</string>
+    <string name="resume">Resume</string>
+
+    <string name="switch_cam">Switch Camera</string>
+    <string name="switch_on">Switch On</string>
+    <string name="switch_off">Switch Off</string>
+    <string name="switch_bak_cam">Switch Back Camera</string>
+    <string name="intro_message">
+        <![CDATA[
+
+
+            This sample demonstrates how to record video using Camera2 API.
+
+
+        ]]>
+    </string>
+    <string name="abort_message">
+        <![CDATA[
+
+
+            The Camera has been aborted.
+
+
+        ]]>
+    </string>
+    <string name="title_activity_pc_test">PcTestActivity</string>
+    <string name="title_activity_pad_test">PadTestActivity</string>
+</resources>

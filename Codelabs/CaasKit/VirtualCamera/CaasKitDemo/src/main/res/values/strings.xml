@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">CaaSKitDemo</string>
+    <string name="pick_video">pick video</string>
+    <string name="start_video">start video</string>
+    <string name="show_call">show</string>
+    <string name="hide_call">hide</string>
+    <string name="caaskit_demo">Caas Kit Demo</string>
+    <string name="caaskit_string">This demo shows developers the effect of integrating Huawei Caas Kit capabilities.</string>
+</resources>

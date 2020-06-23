@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_interstitial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:text="@string/interstitial_title_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ad_display_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/text_interstitial"
+        android:text="@string/display_form"
+        android:textColor="#000000"
+        android:textSize="@dimen/hiad_text_16_sp" />
+
+    <RadioGroup
+        android:id="@+id/display_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_interstitial"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/ad_display_form"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/display_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/interstitial_display_picture" />
+
+        <RadioButton
+            android:id="@+id/display_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interstitial_display_video" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/load_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ad_display_form"
+        android:layout_marginTop="100dp"
+        android:text="@string/load_button" />
+</RelativeLayout>

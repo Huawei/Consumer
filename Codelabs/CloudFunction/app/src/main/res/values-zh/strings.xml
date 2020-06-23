@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">云函数示例工程</string>
+    <string name="instruction">请输入一个年份：</string>
+    <string name="instruction_result">结果显示在这里</string>
+    <string name="OK_button">确定</string>
+    <string name="year_error">输入不是年份</string>
+</resources>

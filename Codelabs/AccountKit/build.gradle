@@ -1,0 +1,28 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        // Codelab Configuration - HMS SDK
+        maven { url 'https://developer.huawei.com/repo/' }
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+        // Codelab Configuration - agc plugin
+        classpath 'com.huawei.agconnect:agcp:1.2.0.300'
+    }
+}
+
+allprojects {
+    repositories {
+        // Codelab Configuration - HMS SDK
+        maven { url 'https://developer.huawei.com/repo/' }
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

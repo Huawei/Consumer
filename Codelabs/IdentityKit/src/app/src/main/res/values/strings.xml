@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Address</string>
+    <string name="show_address_desc">Show user address</string>
+    <string name="query_address_button_desc">Get Huawei User Address</string>
+    <string name="demo_introduction">Demo introduction\n\n\nThis demo simulates a third-party application calling the Huawei User Identity Service API to obtain user address information.\n\nThe user clicks the Get Huawei User Address button to enter the address selection interface. selects a specific address. After clicking OK, the user name, phone number, and address information are displayed on the interface.</string>
+    <string name="demo_guide">Demo usage introduction</string>
+    <string name="user_cancel_share_address">User cancels address sharing</string>
+    <string name="network_not_available">The network is not available. Please check the network status</string>
+    <string name="country_not_supported_identity">The Identity service is not supported in the current locale</string>
+    <string name="child_account_not_supported_identity">Children account do not support Identity service</string>
+</resources>

@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.huawei.agconnect'
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.wz.android.mapdemo"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file("xxx.xxx")
+            storePassword "xxx"
+            keyAlias "xxx"
+            keyPassword "xxx"
+            v2SigningEnabled true
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.huawei.hms:maps:4.0.0.301'
+}

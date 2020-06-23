@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="background_normal">#009688</color>
+    <color name="background_normal_border">#009688</color>
+    <color name="background_normal_pressed">#009F91</color>
+    <color name="background_green">#4CAF50</color>
+    <color name="background_green_pressed">#54BF58</color>
+    <color name="background_red">#FF1E63</color>
+    <color name="background_red_pressed">#FC216A</color>
+    <color name="background_yellow">#F1B706</color>
+    <color name="background_yellow_pressed">#FFC107</color>
+
+    <color name="background_processing">#8BC34A</color>
+
+    <color name="text_view_background">#1743A000</color>
+
+    <color name="transparent">#9000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#888888</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPink">#ff739b</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorYellow">#ffc80a</color>
+    <color name="colorGreen">#8cc850</color>
+    <color name="colorBlue">#2096ff</color>
+    <color name="colorViolet">#9c28b0</color>
+
+    <color name="colorLightBack">#FAFAFA</color>
+    <color name="colorDeepBack">#DDDDDD</color>
+    <color name="colorDeepDeepBack">#BBBBBB</color>
+
+    <color name="colorLightBlue">#aaccff</color>
+    <color name="colorDeepBlue">#3366aa</color>
+</resources>

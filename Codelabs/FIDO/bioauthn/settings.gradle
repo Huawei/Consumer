@@ -1,0 +1,2 @@
+include ':BioAuthn Sample'
+rootProject.name='fido-bioauthn-sample'

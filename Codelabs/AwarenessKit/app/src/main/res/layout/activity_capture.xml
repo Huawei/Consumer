@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_title_margin"
+    android:paddingTop="@dimen/activity_title_margin"
+    android:paddingRight="@dimen/activity_title_margin"
+    tools:context=".awareness.CaptureActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TitleStyle"
+            android:text="@string/awareness_capture_sample" />
+
+        <Button
+            android:id="@+id/capture_getTimeCategories"
+            style="@style/ButtonStyle"
+            android:text="@string/awareness_getTimeCategories" />
+
+        <Button
+            android:id="@+id/capture_getHeadsetStatus"
+            style="@style/ButtonStyle"
+            android:text="@string/awareness_getHeadsetStatus" />
+
+        <Button
+            android:id="@+id/capture_getLocation"
+            style="@style/ButtonStyle"
+            android:text="@string/awareness_getLocation" />
+
+        <Button
+            android:id="@+id/capture_getBehaviorStatus"
+            style="@style/ButtonStyle"
+            android:text="@string/awareness_getBehaviorStatus" />
+
+        <Button
+            android:id="@+id/capture_getLightIntensity"
+            style="@style/ButtonStyle"
+            android:text="@string/awareness_getAmbientLightIntensity" />
+
+        <Button
+            android:id="@+id/capture_getWeatherStatus"
+            style="@style/ButtonStyle"
+            android:text="@string/awareness_getWeatherStatus" />
+
+        <Button
+            android:id="@+id/capture_getBluetoothStatus"
+            style="@style/ButtonStyle"
+            android:text="@string/awareness_getBluetoothStatus" />
+
+        <Button
+            android:id="@+id/capture_getBeaconStatus"
+            style="@style/ButtonStyle"
+            android:text="@string/awareness_getBeaconStatus" />
+
+        <Button
+            android:id="@+id/clear_log"
+            style="@style/ButtonStyle"
+            android:text="@string/clear_log" />
+
+        <com.huawei.hms.awareness.codelab.logger.LogView
+            android:id="@+id/logView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

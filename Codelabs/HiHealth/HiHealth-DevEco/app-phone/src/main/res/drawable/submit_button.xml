@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) HuaWei Technologies Co., Ltd.
+  ~ 2018-2019.
+  ~ All rights reserved.
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/btn_color" />
+            <corners android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp" android:topLeftRadius="20dp" android:topRightRadius="20dp" />
+
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="@color/btn_color" />
+            <corners android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp" android:topLeftRadius="20dp" android:topRightRadius="20dp" />
+
+        </shape>
+    </item>
+</selector>

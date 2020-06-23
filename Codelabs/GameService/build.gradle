@@ -1,0 +1,57 @@
+ext {
+    groupId = 'com.huawei.hms'
+    artifactId = 'game'
+    version = '4.0.0.300'
+    versionCode = 40000300
+
+    buildToolsVersion = '28.0.3'
+    compileSdkVersion = 28
+    minSdkVersion = 17
+    targetSdkVersion = 28
+
+    // Android-support库
+    android_support_version = '28.0.0'
+
+    // HMS SDK base组件
+    hms_sdk_base_version = '4.0.0.300'
+
+    // HMS SDK HwID组件
+    hms_sdk_hwid_version = '4.0.0.300'
+
+    // HMS SDK IAP组件
+    hms_sdk_iap_version = '4.0.0.300'
+}
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven {url 'http://developer.huawei.com/repo/'}
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.huawei.agconnect:agcp:1.0.0.300'
+    }
+}
+
+allprojects {
+
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven {url 'http://developer.huawei.com/repo/'}
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+
+    tasks.withType(Javadoc) {
+        options.encoding = 'UTF-8'
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

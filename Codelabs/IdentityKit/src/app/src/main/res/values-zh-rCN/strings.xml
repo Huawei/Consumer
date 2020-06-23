@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">地址管理</string>
+    <string name="show_address_desc">呈现用户地址信息</string>
+    <string name="query_address_button_desc">获取华为用户地址</string>
+    <string name="demo_introduction">Demo介绍\n\n\n该Demo模拟第三方应用调用华为用户身份服务API获取用户地址信息。\n\n用户点击获取华为用户地址按钮，进入地址选择界面后，选择具体地址，点击确认将在界面显示出用户姓名、电话号码和地址信息。</string>
+    <string name="demo_guide">Demo介绍</string>
+    <string name="user_cancel_share_address">用戶取消地址分享</string>
+    <string name="network_not_available">网络不可用，请检查网络状态</string>
+    <string name="country_not_supported_identity">当前地区不支持Identity服务</string>
+    <string name="child_account_not_supported_identity">儿童账号不支持Identity服务</string>
+</resources>

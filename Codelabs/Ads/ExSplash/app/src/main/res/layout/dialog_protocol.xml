@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basedialoglayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_full_bright_emui"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/uniform_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:alpha="0.9"
+            android:gravity="center_vertical"
+            android:textColor="@color/dialog_title"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/center_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/protocol_center_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:maxLines="24"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text="@string/protocol_content_text"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/base_cancelBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="38dip"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1"
+            android:background="@drawable/emui_button_select"
+            android:text="@string/cancel"
+            android:textColor="#cd000000"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/base_okBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="38dip"
+            android:layout_weight="1"
+            android:background="@drawable/emui_button_select"
+            android:text="@string/ok"
+            android:textColor="#cd000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

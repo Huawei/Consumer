@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">CaaSKitDemo</string>
+    <string name="pick_video">pick video</string>
+    <string name="start_video">start video</string>
+    <string name="caaskit_demo">CaasKit Demo</string>
+    <string name="show_call">show</string>
+    <string name="hide_call">hide</string>
+    <string name="share_pause">pause</string>
+    <string name="share_resume">resume</string>
+    <string name="caaskit_string">This demo shows developers the effect of integrating Huawei CaasKit capabilities.</string>
+    <string name="sharing_prompt">Screen sharing demo</string>
+</resources>

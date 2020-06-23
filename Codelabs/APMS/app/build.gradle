@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+// 2.0 Add the APMS plugin
+apply plugin: 'com.huawei.agconnect.apms'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "Replace the app package name with your own app package name on AppGallery Connect (AGC)."
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.1.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.12.2'
+
+    // 1.0 Add APMS SDK library dependency
+    implementation 'com.huawei.agconnect:agconnect-apms:1.2.1.300'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+apply plugin: 'com.huawei.agconnect'
+

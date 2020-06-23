@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FIDO BioAuthn Android Sample</string>
+    <string name="btn_text_finger_auth_no_crpObj">FingerprintManager\nWithout CryptoObject</string>
+    <string name="btn_text_finger_auth_with_crpObj">FingerprintManager\nWith CryptoObject</string>
+    <string name="btn_text_face_auth_with_crpObj">FaceManager\nWithout CryptoObject</string>
+</resources>

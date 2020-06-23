@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">快乐运动</string>
+    <string name="app_total_steps">总步数</string>
+    <string name="app_stride_frequency">步频</string>
+    <string name="app_calorie">卡路里</string>
+    <string name="app_start">开始</string>
+    <string name="app_pause">暂停</string>
+    <string name="app_stop">停止</string>
+    <string name="app_get_auth">获取权限</string>
+    <string name="app_km">%s公里</string>
+    <string name="app_step_per_min">%s步/分钟</string>
+    <string name="app_kcal">%s千卡</string>
+    <string name="app_sport_status">运动状态：%s</string>
+    <string name="app_link_status">登录状态：%s</string>
+    <string name="app_link_connected">已登录</string>
+    <string name="app_link_disconnected">未登录</string>
+    <string name="action_settings">设置</string>
+    <string name="action_about">关于</string>
+    <string name="action_history">历史记录</string>
+    <string name="action_record">记录详情</string>
+    <string name="app_empty_record">没有历史记录</string>
+    <string name="app_start_time">开始时间: %s</string>
+    <string name="app_duration_time">持续时间: %s</string>
+    <string name="app_total_distance">运动里程: %s公里</string>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">HMSSafetyDetectSample</string>
+
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_start">start</string>
+
+    <!-- UserDetect -->
+    <string name="title_user_detect_entry">UserDetect</string>
+    <string name="title_activity_user_detect">UserDetect</string>
+    <string name="detect_go_hint">Click the button below to detect for fake user.</string>
+    <string name="userdetect_btn">Run Detection</string>
+    <string name="processing">Detecting</string>
+    <string name="rerun">Rerun detection</string>
+
+    <!-- Tab -->
+    <string name="tab_menu_appscheck">AppsCheck</string>
+    <string name="tab_menu_integrity">SysIntegrity</string>
+    <string name="tab_menu_urlcheck">URLCheck</string>
+    <string name="tab_menu_user">UserDetect</string>
+
+
+</resources>

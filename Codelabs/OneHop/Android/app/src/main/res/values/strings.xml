@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DemoForOnehop</string>
+    <string name="tips">请您分别在手机和Pad上均安装该Demo，并且手机打开该Demo。手机打开NFC开关后，触碰Pad键盘NFC标签，确认连接后可以看到Pad上Demo打开并显示您所传递的参数。</string>
+</resources>

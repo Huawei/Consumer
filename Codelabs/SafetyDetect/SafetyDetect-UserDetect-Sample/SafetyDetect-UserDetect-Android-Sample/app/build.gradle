@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.huawei.agconnect'
+
+configurations.all {
+    // check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+android {
+    signingConfigs {
+        config {
+            storeFile file('XXXXXXX')
+            keyAlias = 'XXXXXXX'
+            storePassword 'XXXXXX'
+            keyPassword 'XXXXXX'
+        }
+    }
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.huawei.hms.safetydetect.sample"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+            debuggable true
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            debuggable true
+        }
+    }
+	android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "SafetyDetectUserDetectSample-${variant.buildType.name}" + '.apk'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //safetydetect sdk
+    implementation 'com.huawei.hms:safetydetect:4.0.2.300'
+}

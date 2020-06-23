@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cloud Function Demo</string>
+    <string name="instruction">Please enter a year: </string>
+    <string name="instruction_result">Result shows here</string>
+    <string name="OK_button">OK</string>
+    <string name="year_error">Your input is not a year</string>
+</resources>

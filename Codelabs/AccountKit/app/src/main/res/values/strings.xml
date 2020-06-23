@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">hmssample</string>
+    <string name="hw_id">HuaweiId</string>
+    <string name="hw_pay">HuaweiPay</string>
+    <string name="hw_push">HuaweiPUSH</string>
+    <string name="hw_sns">HuaweiSns</string>
+    <string name="hw_location">HuaweiLocation</string>
+    <string name="hw_opendevice">HuaweiOpendevice</string>
+    <string name="hw_ppskit">HuaweiPpskit</string>
+    <string name="hw_game">HuaweiGame</string>
+    <string name="sample_description">Huawei Account Kit Demo</string>
+    <string name="sample_hwid_description">Huawei Account Usage Process</string>
+    <string name="hwid_sign_in">ID-Token Mode Signln</string>
+    <string name="hwid_sign_out">SignOut</string>
+    <string name="hwid_revokeAccess">AuthorizationCode Mode Signln</string>
+
+</resources>

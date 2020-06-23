@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="background_normal">#009688</color>
+    <color name="background_normal_border">#009688</color>
+    <color name="background_normal_pressed">#009F91</color>
+    <color name="background_green">#4CAF50</color>
+    <color name="background_green_pressed">#54BF58</color>
+    <color name="background_red">#FF1E63</color>
+    <color name="background_red_pressed">#FC216A</color>
+    <color name="background_yellow">#F1B706</color>
+    <color name="background_yellow_pressed">#FFC107</color>
+
+    <color name="background_processing">#8BC34A</color>
+
+    <color name="text_view_background">#1743A000</color>
+
+    <color name="tab_checked">#009688</color>
+    <color name="tab_unchecked">#009F91</color>
+    <color name="bg_topbar">#009F91</color>
+    <color name="text_selected">#009688</color>
+    <color name="text_unselected">#4C4C4C</color>
+    <color name="text_topbar">#F4F6F6</color>
+    <color name="div_white">#EFECEC</color>
+    <color name="bg_white">#DADADA</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

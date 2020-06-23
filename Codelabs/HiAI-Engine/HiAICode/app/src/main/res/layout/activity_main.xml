@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/image_super"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+		android:layout_marginTop="120dp"
+        android:textAllCaps="false"
+		android:background="@mipmap/image_super_resolution"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toTopOf="@+id/video_seg"
+		app:layout_constraintVertical_chainStyle="spread"
+		app:layout_constraintDimensionRatio="h,100:27"
+		app:layout_constraintWidth_percent="0.69"/>
+
+	<Button
+			android:id="@+id/video_seg"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:textAllCaps="false"
+			android:background="@mipmap/video_segmentation"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/image_super"
+			app:layout_constraintBottom_toTopOf="@+id/text_detector"
+			app:layout_constraintDimensionRatio="h,100:27"
+			app:layout_constraintWidth_percent="0.69"/>
+
+	<Button
+		android:id="@+id/text_detector"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:textAllCaps="false"
+		android:background="@mipmap/general_text_recognition"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/video_seg"
+		app:layout_constraintBottom_toTopOf="@+id/aesthetic_score"
+		app:layout_constraintDimensionRatio="h,100:27"
+		app:layout_constraintWidth_percent="0.69"/>
+
+
+	<Button
+			android:id="@+id/aesthetic_score"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:textAllCaps="false"
+			android:background="@mipmap/aesthetic_score"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/text_detector"
+			app:layout_constraintBottom_toTopOf="@+id/table_recognition"
+			app:layout_constraintDimensionRatio="h,100:27"
+			app:layout_constraintWidth_percent="0.69"/>
+
+	<Button
+			android:id="@+id/table_recognition"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_marginBottom="80dp"
+			android:textAllCaps="false"
+			android:background="@mipmap/table_recognition"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/aesthetic_score"
+			app:layout_constraintDimensionRatio="h,100:27"
+			app:layout_constraintWidth_percent="0.69"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

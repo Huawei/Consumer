@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Huawei Technologies Co., Ltd. 2019-2020. All rights reserved.
+  -->
+
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="playback_button_pressed_bg_color">#0CFFFFFF</color>
+    <color name="trans">#00000000</color>
+    <color name="black_100_opacity">#FF000000</color>
+    <!-- 对话框第一项文本字体颜色 -->
+    <color name="dialog_first_text_color">@color/black_100_opacity</color>
+    <color name="dialog_first_text_disable_color">#41000000</color>
+    <color name="windowBackground_color">#f7f7f7</color>
+    <!-- 5%不透明黑色 -->
+    <color name="playback_notification_bg_color">#0C000000</color>
+</resources>

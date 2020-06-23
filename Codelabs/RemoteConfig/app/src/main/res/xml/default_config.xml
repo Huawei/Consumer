@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <value key="GREETING_KEY">Greeting, CodeLaber</value>
+    <value key="SET_BOLD_KEY">false</value>
+    <value key="IMAGE_URL_KEY"></value>
+</resources>

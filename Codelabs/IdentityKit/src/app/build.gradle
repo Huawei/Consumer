@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.huawei.agconnect'
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('./lightregion.jks')
+            storePassword '123456aA'
+            keyPassword '123456aA'
+            keyAlias = 'huawei'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.huawei.demo.identitydemo"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 100
+        versionName "1.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            // proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    applicationVariants.all {
+        def buildType = it.buildType.name
+        it.outputs.each {
+            if (buildType == "release") {
+                it.outputFileName = "identitydemo_${versionName}_product_release.apk"
+            } else {
+                it.outputFileName = "identitydemo_${versionName}_product_debug.apk"
+            }
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.huawei.hms:identity:4.0.4.300'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+}

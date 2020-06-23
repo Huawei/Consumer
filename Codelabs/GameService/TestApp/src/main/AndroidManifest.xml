@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.huawei.hms">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".game.MyApplication"
+        android:icon="@drawable/demoicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/demoicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".game.ranking.RankingDataActivity" />
+        <activity android:name=".game.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.huawei.hms.version"
+            android:value="2.6.2" />
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+
+        <activity
+            android:name=".game.achievement.AchievementActivity"
+            android:label="@string/title_activity_achievement"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".game.autotest.AutomatedTestActivity"
+            android:label="@string/title_activity_autotest"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".game.event.EventActivity"
+            android:label="@string/title_activity_achievement"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".game.achievement.AchievementListActivity"
+            android:label="@string/title_activity_achievement_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".game.achievement.AchievementDetailActivity"
+            android:label="@string/title_activity_achievement_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".game.event.EventListActivity"
+            android:label="@string/title_activity_achievement_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".game.ranking.RankingActivity"
+            android:label="RankingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".game.ranking.RankingIntentActivity"
+            android:label="RankingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".game.ranking.RankingMetaActivity"
+            android:label="RankingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".game.archive.ArchiveActivity"
+            android:label="@string/title_activity_achievement_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".game.archive.CommitArchiveActivity"
+            android:label="@string/title_activity_achievement_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".game.playerstats.PlayerStatsActivity"
+            android:label="@string/title_activity_playerstats"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".game.archive.OpenArchiveActivity" />
+        <activity android:name=".game.archive.ArchiveListActivity" />
+        <activity android:name=".game.archive.ArchiveMetadataDetailActivity" />
+        <activity android:name=".game.gamesummary.GameSummaryActivity" />
+    </application>
+
+</manifest>

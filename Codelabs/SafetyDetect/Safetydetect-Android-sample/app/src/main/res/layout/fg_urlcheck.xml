@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|center_horizontal|center_vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.huawei.hms.safetydetect.sample.SafetyDetectUrlCheckAPIFragment">
+
+    <Spinner
+        android:id="@+id/fg_url_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/fg_call_urlCheck_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/call_url_text"
+        android:textSize="12sp" />
+
+
+    <EditText
+        android:id="@+id/fg_call_urlResult"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/call_result_text"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/fg_call_url_btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_round_corner_small"
+        android:text="@string/call_url_btn"
+        android:textSize="12sp" />
+
+</LinearLayout>

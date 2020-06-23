@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.huawei.pps.hms.test.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:paddingTop="19dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="19dp"
+        android:text="@string/install_referrer"
+        android:textColor="#d9000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/install_referrer_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:paddingTop="19dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="19dp"
+        android:textColor="#8f8f8f"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:paddingTop="19dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="19dp"
+        android:text="@string/click_timestamp"
+        android:textColor="#d9000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/click_time_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:paddingTop="19dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="19dp"
+        android:textColor="#8f8f8f"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:paddingTop="19dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="19dp"
+        android:text="@string/install_timestamp"
+        android:textColor="#d9000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/install_time_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:paddingTop="19dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="19dp"
+        android:textColor="#8f8f8f"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+include ':app', ':SplitSampleFeature01'
+rootProject.name='AppBundleDemo'

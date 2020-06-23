@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) Huawei Technologies Co., Ltd. 2019-2020. All rights reserved.
+  -->
+
+<resources>
+    <string-array name="menu_items" translatable="false">
+        <item>@string/online_list</item>
+        <item>@string/local_list</item>
+        <item>@string/set_cache</item>
+        <item>@string/set_play</item>
+    </string-array>
+</resources>

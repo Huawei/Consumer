@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HiHealthKitDemo</string>
+    <string name="distance_content">距离%1$skm</string>
+    <string name="calorie_content">热量%1$skcal</string>
+</resources>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ExSplashExample</string>
+
+    <!-- Privacy -->
+    <string name="protocol_title">Privacy Example of HUAWEI X</string>
+    <string name="protocol_content_text">
+        1.Privacy description\n
+        The HuaweiAdsSdk_Demo is software providing a code demo for the HUAWEI Ads SDK. Connecting to the network, the software collects and processes information to identify devices, providing customized services or ads. If you do not agree to collect the preceding information or do not agree to call related permissions or functions of your mobile phones, the software cannot run properly. You can stop data collection and uploading by uninstalling or exiting this software.\n\n
+        2.Demo description\n
+        This demo is for reference only. Modify the content based on the user protocol specifications. \n\n
+        3.Advertising and marketing\n
+        We will create a user group based on your personal information, collect your device information, usage information, and ad interaction information in this app, and display more relevant personalized ads and other promotion content. In this process, we will strictly protect your privacy. You can learn more about how we collect and use your personal information in personalized ads based on Ads and Privacy.
+        If you want to restrict personalized ads, you can tap here to open the ad setting page and enable the function of restricting personalized ads. After the function is enabled, you will still receive equivalent number of ads. However, the ad relevance will be reduced.
+        </string>
+    <integer name="privacy_start">1033</integer>
+    <integer name="privacy_end">1048</integer>
+    <integer name="personalized_start">1104</integer>
+    <integer name="personalized_end">1108</integer>
+    <string name="no_tip">Don\'t remind me again</string>
+    <string name="cancel">Cancel</string>
+    <string name="setting">Setting</string>
+    <string name="ok">Agree</string>
+    <string name="no">Cancel</string>
+    <string name="alert_title">Reminder</string>
+    <string name="alert_content">HMS Core of this version does not have the related function. Please install HMS Core (APK) of the latest version in AppGallery.</string>
+    <string name="alert_confirm">OK</string>
+
+</resources>

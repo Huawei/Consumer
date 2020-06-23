@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_title_margin"
+    android:paddingTop="@dimen/activity_title_margin"
+    android:paddingRight="@dimen/activity_title_margin"
+    tools:context=".awareness.barrier.LocationBarrierActivity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="@string/awareness_locationBarrier"
+        />
+    <Button
+        android:id="@+id/add_locationBarrier_enter"
+        style="@style/ButtonStyle"
+        android:text="@string/awareness_locationBarrier_enter"
+        />
+    <Button
+        android:id="@+id/add_locationBarrier_stay"
+        style="@style/ButtonStyle"
+        android:text="@string/awareness_locationBarrier_stay"/>
+    <Button
+        android:id="@+id/add_locationBarrier_exit"
+        style="@style/ButtonStyle"
+        android:text="@string/awareness_locationBarrier_exit"
+        />
+    <Button
+        android:id="@+id/delete_barrier"
+        style="@style/ButtonStyle"
+        android:text="@string/awareness_deleteBarrier"
+        />
+    <Button
+        android:id="@+id/clear_log"
+        android:text="@string/clear_log"
+        style="@style/ButtonStyle"/>
+    <ScrollView
+        android:id="@+id/log_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.huawei.hms.awareness.codelab.logger.LogView
+            android:id="@+id/logView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HiAICodeDemo</string>
+    <string name="material">Material</string>
+    <string name="album">Album</string>
+
+    <string name="material_title">Select Material</string>
+
+    <string name="isr_title">Image Super-Resolution</string>
+    <string name="isr_after">After</string>
+    <string name="isr_toast_1">bitmap is null!</string>
+    <string name="isr_toast_2">Width and height of the image cannot exceed 800*600</string>
+
+    <string name="gtr_title">General Text Recognition</string>
+    <string name="gtr_result">Text Recognition Results</string>
+    <string name="gtr_toast_1">Image fetch exception!</string>
+    <string name="gtr_toast_2">Image acquisition failed!</string>
+    <string name="gtr_toast_3">Result is null!</string>
+
+    <string name="vs_title">Video Segmentation</string>
+
+    <string name="as_title">Aesthetic Score</string>
+    <string name="as_result">Score Result</string>
+
+    <string name="tr_title">Table Recognition</string>
+    <string name="tr_result">Table Recognition Results</string>
+
+</resources>

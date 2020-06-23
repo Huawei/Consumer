@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HuaweiAdsDemo</string>
+    <string name="enter_install_referrer">转化跟踪参数示例</string>
+    <string name="install_referrer">转化跟踪参数</string>
+    <string name="click_timestamp">点击时间戳</string>
+    <string name="install_timestamp">安装时间戳</string>
+    <string name="call_mode">调用模式</string>
+    <string name="call_mode_sdk">sdk方式</string>
+    <string name="call_mode_aidl">aidl方式</string>
+    <string name="package_name">包名</string>
+    <string name="delete">删除</string>
+    <string name="save">保存</string>
+    <string name="input_package_name">请输入包名：</string>
+    <string name="input_install_referrer">请输入转化跟踪参数：</string>
+    <string name="write_install_referrer">写入测试转化跟踪参数</string>
+    <string name="invalid_package_name">请输入包名</string>
+    <string name="invalid_install_referrer">请输入转化跟踪参数</string>
+    <string name="save_install_referrer_success">保存转化跟踪参数成功</string>
+    <string name="save_install_referrer_fail">保存转化跟踪参数失败</string>
+    <string name="delete_install_referrer_success">删除转化跟踪参数成功</string>
+</resources>

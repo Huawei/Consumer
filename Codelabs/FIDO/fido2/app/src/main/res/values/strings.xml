@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">FIDO2 Sample</string>
+    <string name="txt_service_url_default">https://termstest.hwcloudtest.cn:22643/fido2/</string>
+    <string name="txt_service_url">FIDO Server:</string>
+    <string name="txt_user_name">"User:       "</string>
+    <string name="user_name_default">Fido2SampleTestUser</string>
+    <string name="txt_user_required_level">User Verification:</string>
+    <string name="txt_authenticator_attachment_mode">Attachment Modality:</string>
+    <string name="txt_attestation_conveyance_preference">Attestation:</string>
+    <string name="txt_need_residentkey_or_not">Resident Key:</string>
+    <string name="btn_net_get_register_info">Obtain Registration Info from Server</string>
+    <string name="btn_net_test_register">Register</string>
+    <string name="btn_net_test_authenticate">Authenticate</string>
+    <string name="btn_net_deregister_all">Delete Registration Info from Server</string>
+
+    <string name="user_not_empty">Enter a user name.</string>
+    <string name="connect_server_err">Invalid URL or FIDO server connection failure.</string>
+    <string name="reg_fail">Registration failed.</string>
+    <string name="reg_success">Registration successful.</string>
+    <string name="authn_fail">Authentication failed.</string>
+    <string name="authn_success">Authentication successful.</string>
+    <string name="unknow_err">Unknow error.</string>
+    <string name="message_title">Message</string>
+    <string name="error_title">Error</string>
+    <string name="confirm_btn">OK</string>
+    <string name="cp_reg_info">Registration Info:</string>
+    <string name="get_register_info_fail">Failed to obtain registration info.</string>
+    <string name="get_register_info_success">Registration info obtained successfully.</string>
+    <string name="delete_register_info_success">Registration info deleted successfully.</string>
+    <string name="delete_register_info_fail">Failed to delete registration info.</string>
+    <string name="credential_id">Credential ID:</string>
+
+
+</resources>

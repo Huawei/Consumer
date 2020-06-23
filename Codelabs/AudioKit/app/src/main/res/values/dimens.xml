@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Huawei Technologies Co., Ltd. 2019-2020. All rights reserved.
+  -->
+
+<resources>
+    <!-- 跳动符号最大高度 -->
+    <dimen name="melody_height">13dp</dimen>
+
+    <!-- 跳动符号宽度 -->
+    <dimen name="melody_width">1.3dp</dimen>
+
+    <!-- 跳动符号间距 -->
+    <dimen name="melody_gap">2dp</dimen>
+    <dimen name="layout_margin_left_and_right">16dp</dimen>
+
+    <dimen name="list_first_text_size">15sp</dimen>
+    <dimen name="list_second_text_size">13sp</dimen>
+
+    <dimen name="widget_trackinfo1_marginend">0dp</dimen>
+    <dimen name="widget_next_margin">10dp</dimen>
+
+</resources>
