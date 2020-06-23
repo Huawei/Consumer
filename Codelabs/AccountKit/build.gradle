@@ -3,7 +3,8 @@
 buildscript {
     repositories {
         // Codelab Configuration - HMS SDK
-        maven { url 'https://developer.huawei.com/repo/' }
+
+        maven { url 'http://developer.huawei.com/repo/' }
         google()
         jcenter()
     }
@@ -17,6 +18,7 @@ buildscript {
 allprojects {
     repositories {
         // Codelab Configuration - HMS SDK
+
         maven { url 'https://developer.huawei.com/repo/' }
         google()
         jcenter()
