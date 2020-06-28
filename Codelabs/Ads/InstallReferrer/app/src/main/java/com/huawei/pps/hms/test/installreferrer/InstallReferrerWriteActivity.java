@@ -1,17 +1,5 @@
 /*
- * Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-     http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+ * Copyright (c) Huawei Technologies Co., Ltd. 2014-2019. All rights reserved.
  */
 
 package com.huawei.pps.hms.test.installreferrer;
@@ -49,14 +37,14 @@ public class InstallReferrerWriteActivity extends BaseActivity implements View.O
 
     protected void init() {
         super.init();
-        // Create the "package_name" EditText. User can write service package name.
+        //请输入包名 | Create the "package_name" EditText. User can write service package name.
         mPackageNameEt = findViewById(R.id.package_name_et);
-        // Create the "install_referrer" EditText. User can write install referrer info.
+        //请输入转化跟踪参数 | Create the "install_referrer" EditText. User can write install referrer info.
         mInstallReferrerEt = findViewById(R.id.install_referrer_et);
-        // Create the "delete" button, which tries to delete existed install referrer according package name.
+        // 删除 | Create the "delete" button, which tries to delete existed install referrer according package name.
         mDeleteBtn = findViewById(R.id.delete_btn);
         mDeleteBtn.setOnClickListener(this);
-        // Create the "save" button, which tries to save what just typed.
+        // 保存 |  Create the "save" button, which tries to save what just typed.
         mSaveBtn = findViewById(R.id.save_btn);
         mSaveBtn.setOnClickListener(this);
     }
@@ -109,12 +97,12 @@ public class InstallReferrerWriteActivity extends BaseActivity implements View.O
         SharedPreferences.Editor editor = sp.edit();
         if (null != editor) {
             if (isDelete) {
-                // Delete existed install referrer according package name
+                //删除输入包名对应的转化跟踪参数 | Delete existed install referrer according package name
                 editor.remove(pkgName);
                 editor.commit();
                 Toast.makeText(this, R.string.delete_install_referrer_success, Toast.LENGTH_SHORT).show();
             } else {
-                // Save the typed install referrer.
+                //保存输入的转化跟踪参数 | Save the typed install referrer.
                 JSONObject jsonObject = new JSONObject();
                 try {
                     jsonObject.put("channelInfo", installReferrer);
