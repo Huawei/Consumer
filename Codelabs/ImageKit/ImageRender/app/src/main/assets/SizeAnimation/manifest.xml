@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Root screenWidth="1080">
+    <Image src="default_background.jpg" w="#screen_width" h="#screen_height"/>
+    <Image  x="380" y="390" centerX="139" centerY="151"  src="ty.png">
+        <SizeAnimation>
+            <Size w="114" h="120" time="0"/>
+            <Size w="278" h="301" time="600"/>
+            <Size w="114" h="120" time="1200"/>
+            <Size w="278" h="301" time="1800"/>
+        </SizeAnimation>
+    </Image>
+</Root>

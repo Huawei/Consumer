@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root screenWidth="1080">
+	<FlipBook  src="front.jpg" bgsrc="bg1.jpg,bg2.jpg,bg3.jpg" color="argb(100,255,255,255)" />
+</Root>

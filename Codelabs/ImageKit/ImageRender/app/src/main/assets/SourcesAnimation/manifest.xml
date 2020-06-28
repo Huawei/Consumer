@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root screenWidth="1080">
+    <Image src="bj.jpg" />
+    <Image  x="200" y="300"  src="zuida1_1.png">
+       <SourcesAnimation>
+           <Source src="zuida1_1.png" time="0"/>
+           <Source src="zuida1_1.png" time="400"/>
+           <Source src="zuida1_2.png" time="800"/>
+           <Source src="zuida1_3.png" time="1200"/>
+           <Source src="zuida1_4.png" time="1600"/>
+           <Source src="zuida1_5.png" time="2000"/>
+           <Source src="zuida1_1.png" time="2500"/>
+           <Source src="zuida1_1.png" time="3000"/>
+           <Source src="zuida1_2.png" time="3500"/>
+           <Source src="zuida1_3.png" time="4000"/>
+           <Source src="zuida1_4.png" time="4500"/>
+           <Source src="zuida1_5.png" time="5000"/>
+       </SourcesAnimation>
+    </Image>
+</Root>

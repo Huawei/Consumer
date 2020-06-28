@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Animations">
+        <item >AlphaAnimation</item>
+        <item >PositionAnimation</item>
+        <item >RotationAnimation</item>
+        <item >SizeAnimation</item>
+        <item >SourcesAnimation</item>
+        <item >ParticleView</item>
+        <item >WaterWallpaper</item>
+        <item >Paint</item>
+        <item >MeshImage</item>
+        <item >Marquee</item>
+        <item >FlipBook</item>
+        <item >ParticleScatter</item>
+        <item >RotateView</item>
+        <item >DropPhysicalView</item>
+    </string-array>
+</resources>

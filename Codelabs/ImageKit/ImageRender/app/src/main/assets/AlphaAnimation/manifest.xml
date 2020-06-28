@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root screenWidth="1080">
+  <Image src="bj.jpg">
+  </Image>
+  <Image  x="210" y="490" centerX="139" centerY="151"  src="aixin7.png">
+   <AlphaAnimation>
+       <Alpha a="0" time="0"/>
+       <Alpha a="35" time="500"/>
+       <Alpha a="65" time="1000"/>
+       <Alpha a="95" time="1500"/>
+       <Alpha a="125" time="2000"/>
+       <Alpha a="150" time="2500"/>
+   </AlphaAnimation>
+</Image>
+</Root>

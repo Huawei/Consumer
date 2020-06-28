@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root screenWidth="1080">
+    <Image src="bj.jpg"/>
+    <Image x="110" y="200" centerX="139" centerY="151" src="ty.png">
+       <RotationAnimation>
+           <Rotation angle="0" time="0"/>
+           <Rotation angle="20" time="300"/>
+           <Rotation angle="0" time="600"/>
+           <Rotation angle="-20" time="900"/>
+           <Rotation angle="0" time="1200"/>
+       </RotationAnimation>
+    </Image>
+</Root>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root screenWidth="1080">
+
+    <Image  src="bg.jpg"/>
+
+	<Image x="0" y="0" src="part.png">
+		<Paint x="0" y="0" w="1080" h="2400" weight="200" clear_percent="30" /> 
+	</Image>
+
+    <Image x="0" y="1000" w="1080" h="1240">
+        <Paint x="0" y="1600" weight="40" color="#ADADAD" clear_percent="60"  /> 
+    </Image>
+
+</Root>

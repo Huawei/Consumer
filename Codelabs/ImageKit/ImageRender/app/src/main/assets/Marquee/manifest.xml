@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root screenWidth="1080">
+    <Image  src="bj.jpg" />
+    <Marquee state="1" showTime="10" color="#aa11ff" deltaAngle="5" marqueeColor="#aa5500" marqueePos="0.3" weight="50" pathname="rect" scaleX="25" scaleY="25" translateX="12.5" translateY="12.5"/>
+</Root>

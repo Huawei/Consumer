@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root screenWidth="1080">
+    <Image src="background.jpg"/>
+    <MeshImage x="100" y="500" w="339" h="388" mesh="20,20" center_point="221" sensor="true" src="part.png">
+        <Translation duration="2000" repeat="0" delay="0" factor="0.15" values="1.0,0" max_distance_x="30" max_distance_y="30" no_move_distance_x="121" no_move_distance_y="138"/>
+    </MeshImage>
+</Root>
+

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root screenWidth="1080">
+    <Image src="bj.jpg"/>
+    <Image  x="510" y="390" centerX="136" centerY="151"  src="ty.png">
+       <PositionAnimation>
+           <Position x="0" y="0" time="0"/>
+           <Position x="-300" y="0" time="1000"/>
+           <Position x="-300" y="300" time="2000"/>
+           <Position x="0" y="300" time="3000"/>
+           <Position x="0" y="0" time="4000"/>
+       </PositionAnimation>
+    </Image>
+</Root>
