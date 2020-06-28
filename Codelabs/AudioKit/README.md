@@ -32,7 +32,7 @@
 
 
 ## Result
-   <img src="result_1.jpg">
+   <img src="result_1.png">
    <img src="result_2.jpg">
 
 ##  License
