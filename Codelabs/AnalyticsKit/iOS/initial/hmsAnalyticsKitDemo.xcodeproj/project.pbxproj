@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4EBCB48B248F6BAA00BAD39C /* agconnect-services.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EBCB48A248F6BAA00BAD39C /* agconnect-services.plist */; };
 		4ED11FE624765D610029DCC6 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED11FE324765D610029DCC6 /* SettingsViewController.m */; };
 		4ED11FE724765D610029DCC6 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED11FE424765D610029DCC6 /* SettingsViewController.xib */; };
 		4ED1B1AB24765B520081FE69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B1AA24765B520081FE69 /* AppDelegate.m */; };
@@ -19,6 +18,8 @@
 		4ED1B1BC24765B540081FE69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B1BB24765B540081FE69 /* main.m */; };
 		4ED1B1C624765B540081FE69 /* hmsAnalyticsKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B1C524765B540081FE69 /* hmsAnalyticsKitDemoTests.m */; };
 		4ED1B1D124765B540081FE69 /* hmsAnalyticsKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B1D024765B540081FE69 /* hmsAnalyticsKitDemoUITests.m */; };
+		B96885565CBCC9255C409530 /* Pods_hmsAnalyticsKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7E2A90878D1C2607F169AD /* Pods_hmsAnalyticsKitDemo.framework */; };
+		D6A010C678DDD8C6A68CE773 /* Pods_hmsAnalyticsKitDemo_hmsAnalyticsKitDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB1E0E915C12BFCD711BA2 /* Pods_hmsAnalyticsKitDemo_hmsAnalyticsKitDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4EBCB48A248F6BAA00BAD39C /* agconnect-services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "agconnect-services.plist"; sourceTree = "<group>"; };
+		1330E0AA35C1618C65D13271 /* Pods-hmsAnalyticsKitDemo-hmsAnalyticsKitDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hmsAnalyticsKitDemo-hmsAnalyticsKitDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-hmsAnalyticsKitDemo-hmsAnalyticsKitDemoUITests/Pods-hmsAnalyticsKitDemo-hmsAnalyticsKitDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CDB1E0E915C12BFCD711BA2 /* Pods_hmsAnalyticsKitDemo_hmsAnalyticsKitDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hmsAnalyticsKitDemo_hmsAnalyticsKitDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED11FE124765D610029DCC6 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		4ED11FE324765D610029DCC6 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		4ED11FE424765D610029DCC6 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
@@ -61,6 +63,10 @@
 		4ED1B1CC24765B540081FE69 /* hmsAnalyticsKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hmsAnalyticsKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED1B1D024765B540081FE69 /* hmsAnalyticsKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hmsAnalyticsKitDemoUITests.m; sourceTree = "<group>"; };
 		4ED1B1D224765B540081FE69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F7E2A90878D1C2607F169AD /* Pods_hmsAnalyticsKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hmsAnalyticsKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		910C2D204480A4F4902A9775 /* Pods-hmsAnalyticsKitDemo-hmsAnalyticsKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hmsAnalyticsKitDemo-hmsAnalyticsKitDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-hmsAnalyticsKitDemo-hmsAnalyticsKitDemoUITests/Pods-hmsAnalyticsKitDemo-hmsAnalyticsKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BC0B58B7ED803FEC2D298554 /* Pods-hmsAnalyticsKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hmsAnalyticsKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-hmsAnalyticsKitDemo/Pods-hmsAnalyticsKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C122D5C11670DB30EE587953 /* Pods-hmsAnalyticsKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hmsAnalyticsKitDemo.release.xcconfig"; path = "Target Support Files/Pods-hmsAnalyticsKitDemo/Pods-hmsAnalyticsKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B96885565CBCC9255C409530 /* Pods_hmsAnalyticsKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A010C678DDD8C6A68CE773 /* Pods_hmsAnalyticsKitDemo_hmsAnalyticsKitDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +99,21 @@
 		01FDF9E6195DD85577945269 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				BC0B58B7ED803FEC2D298554 /* Pods-hmsAnalyticsKitDemo.debug.xcconfig */,
+				C122D5C11670DB30EE587953 /* Pods-hmsAnalyticsKitDemo.release.xcconfig */,
+				1330E0AA35C1618C65D13271 /* Pods-hmsAnalyticsKitDemo-hmsAnalyticsKitDemoUITests.debug.xcconfig */,
+				910C2D204480A4F4902A9775 /* Pods-hmsAnalyticsKitDemo-hmsAnalyticsKitDemoUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3769C7221E28BFCC90C5BC00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F7E2A90878D1C2607F169AD /* Pods_hmsAnalyticsKitDemo.framework */,
+				4CDB1E0E915C12BFCD711BA2 /* Pods_hmsAnalyticsKitDemo_hmsAnalyticsKitDemoUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4ED1B19D24765B520081FE69 = {
@@ -103,6 +124,7 @@
 				4ED1B1CF24765B540081FE69 /* hmsAnalyticsKitDemoUITests */,
 				4ED1B1A724765B520081FE69 /* Products */,
 				01FDF9E6195DD85577945269 /* Pods */,
+				3769C7221E28BFCC90C5BC00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,7 +141,6 @@
 		4ED1B1A824765B520081FE69 /* hmsAnalyticsKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				4EBCB48A248F6BAA00BAD39C /* agconnect-services.plist */,
 				4ED11FE124765D610029DCC6 /* SettingsViewController.h */,
 				4ED11FE324765D610029DCC6 /* SettingsViewController.m */,
 				4ED11FE424765D610029DCC6 /* SettingsViewController.xib */,
@@ -163,6 +184,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4ED1B1D524765B540081FE69 /* Build configuration list for PBXNativeTarget "hmsAnalyticsKitDemo" */;
 			buildPhases = (
+				B9AD2F2D2AB4B3F8CD84D326 /* [CP] Check Pods Manifest.lock */,
 				4ED1B1A224765B520081FE69 /* Sources */,
 				4ED1B1A324765B520081FE69 /* Frameworks */,
 				4ED1B1A424765B520081FE69 /* Resources */,
@@ -198,6 +220,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4ED1B1DB24765B540081FE69 /* Build configuration list for PBXNativeTarget "hmsAnalyticsKitDemoUITests" */;
 			buildPhases = (
+				CFBE7A0D0693DC5136CF41B1 /* [CP] Check Pods Manifest.lock */,
 				4ED1B1C824765B540081FE69 /* Sources */,
 				4ED1B1C924765B540081FE69 /* Frameworks */,
 				4ED1B1CA24765B540081FE69 /* Resources */,
@@ -263,7 +286,6 @@
 				4ED1B1B624765B540081FE69 /* Assets.xcassets in Resources */,
 				4ED1B1B424765B530081FE69 /* Main.storyboard in Resources */,
 				4ED11FE724765D610029DCC6 /* SettingsViewController.xib in Resources */,
-				4EBCB48B248F6BAA00BAD39C /* agconnect-services.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +304,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9AD2F2D2AB4B3F8CD84D326 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hmsAnalyticsKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFBE7A0D0693DC5136CF41B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hmsAnalyticsKitDemo-hmsAnalyticsKitDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4ED1B1A224765B520081FE69 /* Sources */ = {
@@ -459,6 +528,7 @@
 		};
 		4ED1B1D624765B540081FE69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0B58B7ED803FEC2D298554 /* Pods-hmsAnalyticsKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,7 +538,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.huawei.hademocase;
+				PRODUCT_BUNDLE_IDENTIFIER = HWhmsAnalyticsKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -476,6 +546,7 @@
 		};
 		4ED1B1D724765B540081FE69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C122D5C11670DB30EE587953 /* Pods-hmsAnalyticsKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -485,7 +556,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.huawei.hademocase;
+				PRODUCT_BUNDLE_IDENTIFIER = HWhmsAnalyticsKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -533,6 +604,7 @@
 		};
 		4ED1B1DC24765B540081FE69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1330E0AA35C1618C65D13271 /* Pods-hmsAnalyticsKitDemo-hmsAnalyticsKitDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HAX6GK3P64;
@@ -551,6 +623,7 @@
 		};
 		4ED1B1DD24765B540081FE69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910C2D204480A4F4902A9775 /* Pods-hmsAnalyticsKitDemo-hmsAnalyticsKitDemoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HAX6GK3P64;

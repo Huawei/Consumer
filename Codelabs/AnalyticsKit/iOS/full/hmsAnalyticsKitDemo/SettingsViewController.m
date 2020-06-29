@@ -55,7 +55,6 @@
     if(_favor.text){
            [HiAnalytics setUserProfile:@"user_favor" setValue:_favor.text];
        }
-    NSLog(@"set user profile successd.");
 }
 
 - (void)backButtonPressed:(id)sender{

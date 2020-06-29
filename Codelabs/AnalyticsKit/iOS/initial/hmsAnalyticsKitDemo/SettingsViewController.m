@@ -45,7 +45,6 @@
 }
 
 - (void)settings{
-    NSLog(@"set user profile successd.");
 }
 
 - (void)backButtonPressed:(id)sender{

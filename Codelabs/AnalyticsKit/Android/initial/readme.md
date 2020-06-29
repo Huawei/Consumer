@@ -1,4 +1,4 @@
-## HmsAnalyticsKitDemo
+# HmsAnalyticsKitDemo
 
 
 ## Table of Contents
@@ -8,21 +8,21 @@
 * [Installation](#installation)
 * [Configuration ](#configuration )
 * [Supported Environments](#supported-environments)
-* [Sample Code](# Sample Code)
+* [Result](#Result)
 * [License](#license)
 
 
 ## Introduction
     HmsAnalyticsKitDemo is a app that applying HUAWEI Hianalytics SDK used for showing how to collect user engagement and user preference.
-[Read more about Hianalytics](https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/3021001).
+[Read more about Hianalytics](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides-V5/introduction-0000001050745149-V5).
 
 ## Getting Started
 
 For more development guidance, please refer to the links below:
 
-Development Guide: https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/3021001
+[Development Guide](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides-V5/android-dev-process-0000001050163813-V5).
 
-API References: https://developer.huawei.com/consumer/en/doc/development/HMS-References/3021004
+[API References](https://developer.huawei.com/consumer/en/doc/development/HMSCore-References-V5/android-api-analytics-overview-0000001051067140-V5).
 
 We also provide an example to demonstrate the use of analytics SDK for Android.
 
@@ -34,7 +34,7 @@ In Android Studio, use the "Open an existing Android Studio project", and select
 
 You can use the "gradlew build" command to build the project directly.
 
-You should create an app in AppGallery Connect, and obtain the file of agconnect-services.json and add to the project. You should also generate a signing certificate fingerprint and add the certificate file to the project, and add configuration to build.gradle. More to https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/Development-Guide
+You should create an app in AppGallery Connect, and obtain the file of agconnect-services.json and add to the project. You should also generate a signing certificate fingerprint and add the certificate file to the project, and add configuration to build.gradle. More to [Development Process](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides-V5/android-dev-process-0000001050163813-V5).
 
 
 ## Installation
@@ -63,15 +63,15 @@ You should create an app in AppGallery Connect, and obtain the file of agconnect
     3. Android Studio 
     4. Java JDK 1.7 (JDK 1.8 is recommended.)
 
-## Sample Code
+## Result
 After running the app you should see a screen like this:
 
-<img src="res/screen_0.png" height="534" width="300" style="max-width:100%;">
+<img src="images/screen_0.png" height="534" width="300" style="max-width:100%;">
 
 Click the button TRUE or FALSE to answer the question; Click the NEXT, show the next question; Click POST SCORE, log the score user got. All the infomations will be upload to Hianalytics Console, and you can see these infomations in real time using Debug View.
 
 Click button SETTINGS:
-<img src="res/screen_1.png" height="534" width="300" style="max-width:100%;">
+<img src="images/screen_1.png" height="534" width="300" style="max-width:100%;">
 
 You will be asked what your favorite sport is. This choice will be logged to Hianalytics as a User Property.
 

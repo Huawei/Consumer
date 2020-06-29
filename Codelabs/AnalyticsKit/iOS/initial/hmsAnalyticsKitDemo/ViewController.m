@@ -49,9 +49,6 @@
 }
 
 -(void) reportAnswer:(id)sender{
-     UIButton *button = (UIButton *)sender;
-    NSString *mesage = [button currentTitle];
-    NSLog(@"QuestionAnsweringEvent,Answer=%@",mesage);
 }
 
 @end

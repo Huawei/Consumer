@@ -1,9 +1,9 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.huawei.agconnect'
+apply plugin: 'com.huawei.hms.plugin.analytics'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.huawei.hmsanalyticskitdemo"
         minSdkVersion 28
@@ -12,7 +12,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-	signingConfigs {
+    signingConfigs {
         release {
             storeFile file("xxx.xxx")
             storePassword "xxxxxx"
@@ -33,8 +33,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-	
-    implementation 'com.huawei.hms:hianalytics:5.0.0.301'
+
+    implementation 'com.huawei.hms:hianalytics:5.0.1.300'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

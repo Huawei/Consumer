@@ -61,7 +61,6 @@
     
     //report event
    [HiAnalytics onEvent:@"QuestionAnsweringEvent" setParams:@{@"Answer":mesage,@"Timestamp":time}];
-    NSLog(@"QuestionAnsweringEvent,Answer=%@",mesage);
 }
 
 @end
