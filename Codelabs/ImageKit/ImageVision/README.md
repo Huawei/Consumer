@@ -33,12 +33,12 @@ The Image Vision service provides you with 24 color filters for scene-specific s
 - Gradle 3.3.2.
 
 
-- HMS Core (APK) 4.0.0.300 or later.
+- HMS Core (APK) 4.0.2.300 or later.
 
 
 ## Result
 
-![](.\screenshot.PNG)
+![](.\ScreenShot.PNG)
 
 ##  License
 

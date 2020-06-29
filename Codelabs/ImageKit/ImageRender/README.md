@@ -35,7 +35,7 @@ For details, please refer to [XML Syntax Specifications for Image Render](https:
 
 - Gradle 3.3.2.
 
-- HMS Core (APK) 4.0.0.300 or later.
+- HMS Core (APK) 4.0.2.300 or later.
 
 
 ## Result
