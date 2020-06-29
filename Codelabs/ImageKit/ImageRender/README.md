@@ -40,7 +40,7 @@ For details, please refer to [XML Syntax Specifications for Image Render](https:
 
 ## Result
 
-![](.\ScreenShot.jpg)
+   <img src="./ScreenShot.jpg" width = 30% height = 30%>
 
 ##  License
 
