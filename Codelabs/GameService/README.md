@@ -1,4 +1,4 @@
-## Game Service Kit
+# Game Service Kit
 
 
 ## Table of Contents
@@ -31,9 +31,9 @@
 
 ## Configuration
     To use functions provided by packages in examples, you need to configure the app information in AppGallery Connect.
-  See details: [HUAWEI Game Service Development Preparation](https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/game-preparation)
+  See details: [HUAWEI Game Service Development Preparation](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/config-agc-0000001050166285)
 
 ## Sample Code
-  See details: [HUAWEI Game Service Introduction](https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/game-introduction)
+  See details: [HUAWEI Game Service Introduction](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/introduction-0000001050121216)
 ##  License
   GameSeviceKit sample is licensed under the: [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).

@@ -103,7 +103,7 @@ public class RankingMetaActivity extends BaseActivity {
     private void initIsRealTimeSpinner() {
         String[] ctype = new String[]{"true", "false",};
         ArrayAdapter adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, ctype);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);     //设置下拉列表框的下拉选项样式
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);     //Sets the drop-down list box style.
 
         spIsRealTimeSpinner.setAdapter(adapter);
         spIsRealTimeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -124,7 +124,7 @@ public class RankingMetaActivity extends BaseActivity {
     }
 
     private void addRankingListener(final Task<Ranking> task, final String method) {
-        // 清理日志
+        // Clearing Logs
         onClickClearLog();
 
         task.addOnFailureListener(new OnFailureListener() {
@@ -211,7 +211,7 @@ public class RankingMetaActivity extends BaseActivity {
 
     // Level.2
     private void addRankingBufferListener(final Task<List<Ranking>> task, final String method) {
-        // 清理日志
+        // Clearing Logs
         onClickClearLog();
 
         task.addOnFailureListener(new OnFailureListener() {

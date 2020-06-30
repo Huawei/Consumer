@@ -304,7 +304,7 @@ public class CommitArchiveActivity extends BaseActivity {
                                 showPlayerAndGame(archive.getSummary());
                             }
                         } else {
-                            // 有冲突
+                            // Conflict resolution
                             handleConflict(archiveDataOrConflict);
                         }
                     }
@@ -326,7 +326,7 @@ public class CommitArchiveActivity extends BaseActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        /* 结果回调 */
+        /* Result callback */
         if (requestCode == PictureSelector.SELECT_REQUEST_CODE) {
             if (data != null) {
                 try {

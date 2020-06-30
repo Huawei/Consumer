@@ -9,16 +9,16 @@ ext {
     minSdkVersion = 17
     targetSdkVersion = 28
 
-    // Android-support库
+    // Android-support 
     android_support_version = '28.0.0'
 
-    // HMS SDK base组件
+    // HMS SDK base
     hms_sdk_base_version = '4.0.0.300'
 
-    // HMS SDK HwID组件
+    // HMS SDK HwID
     hms_sdk_hwid_version = '4.0.0.300'
 
-    // HMS SDK IAP组件
+    // HMS SDK IAP
     hms_sdk_iap_version = '4.0.0.300'
 }
 
@@ -40,7 +40,7 @@ allprojects {
         google()
         jcenter()
         maven { url "https://jitpack.io" }
-        maven {url 'http://developer.huawei.com/repo/'}
+        maven {url 'https://developer.huawei.com/repo/'}
     }
 
     tasks.withType(JavaCompile) {

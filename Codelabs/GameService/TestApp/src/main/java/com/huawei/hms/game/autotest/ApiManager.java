@@ -210,9 +210,9 @@ public abstract class ApiManager {
                 Serializable info = intent.getSerializableExtra("updatesdk_update_info");
                 if (info instanceof ApkUpgradeInfo) {
                     apkUpgradeInfo = (ApkUpgradeInfo) info;
-                    result.onResult("检查更新成功");
+                    result.onResult("Check update successful");
                 } else {
-                    result.onResult("检查更新失败");
+                    result.onResult("Failed to check the update.");
                 }
             }
 
@@ -220,17 +220,17 @@ public abstract class ApiManager {
 
         @Override
         public void onMarketInstallInfo(Intent intent) {
-            result.onResult("检查更新失败");
+            result.onResult("Failed to check the update.");
         }
 
         @Override
         public void onMarketStoreError(int i) {
-            result.onResult("检查更新失败");
+            result.onResult("Failed to check the update.");
         }
 
         @Override
         public void onUpdateStoreError(int i) {
-            result.onResult("检查更新失败");
+            result.onResult("Failed to check the update.");
         }
 
     }
@@ -246,7 +246,7 @@ public abstract class ApiManager {
     public static void showUpdateDialog(Activity activity, @NonNull final ApiResult result, boolean mustBtnOne) {
         AppUpdateClient client = JosApps.getAppUpdateClient(activity);
         if(updateCallBack == null || updateCallBack.getApkUpgradeInfo() == null){
-            result.onResult("更新弹框失败");
+            result.onResult("Failed to update the dialog box.");
         }
         client.showUpdateDialog(activity, updateCallBack.getApkUpgradeInfo(), mustBtnOne);
     }
@@ -254,7 +254,7 @@ public abstract class ApiManager {
     public static void releaseCallBack(Activity activity, @NonNull final ApiResult result) {
         AppUpdateClient client = JosApps.getAppUpdateClient(activity);
         client.releaseCallBack();
-        result.onResult("更新的回调接口释放成功");
+        result.onResult("The updated callback interface is released successfully.");
     }
 
 }

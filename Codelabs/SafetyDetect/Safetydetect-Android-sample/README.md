@@ -4,7 +4,6 @@
 ## Table of Contents
 
  * [Introduction](#introduction)
- * [Getting Started](#Getting-Started)
  * [Installation](#installation)
  * [Configuration ](#configuration )
  * [Supported Environments](#supported-environments)
@@ -17,15 +16,6 @@
     The following describes packages of SafetyDetect sample code.
 
     sample:Sample code packages.
-	
-## Getting Started
-
-    1. Register as a developer.
-    Register a [HUAWEI account](https://developer.huawei.com/consumer/en/).
-    2. Create an app.
-    Create an app and enable APIs.
-    3. Build the demo.
-    To build this demo, please first import the demo to Android Studio (3.X or later). Then download the agconnect-services.json file of the app from AppGallery Connect, and add the file to the app directory (\app) of the demo. For details, please refer to [Preparations for Integrating HUAWEI HMS Core](https://developer.huawei.com/consumer/en/codelab/HMSPreparation/index.html)
 
 ## Installation
     Before using SafetyDetect Sample code, check whether java environment and Android Studio has been installed.

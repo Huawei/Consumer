@@ -3,11 +3,13 @@
 
 ## Table of Contents
 
-* [Introduction](#introduction)
-* [Installation](#installation)
-* [Supported Environments](#supported-environments)
-* [Sample Code](#Sample-Code)
-* [License](#license)
+- [GameKitDemo](#gamekitdemo)
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Supported Environments](#supported-environments)
+- [Sample-Code](#sample-code)
+- [License](#license)
 
 
 ## Introduction
@@ -33,8 +35,9 @@
 
 ## Sample-Code
 After running the app you should see a screen like this:
-<img src="assets/GameKit-2020-03-06-01.png" height="534" width="300" style="max-width:100%;">
-<img src="assets/GameKit-2020-03-06-02.png" height="534" width="300" style="max-width:100%;">
+
+<img src="./gamekitdemo/src/main/asset/GameKit-2020-03-06-01.png" height="534" width="300" style="max-width:100%;">
+<img src="./gamekitdemo/src/main/asset/GameKit-2020-03-06-02.png" height="534" width="300" style="max-width:100%;">
 
 
 
