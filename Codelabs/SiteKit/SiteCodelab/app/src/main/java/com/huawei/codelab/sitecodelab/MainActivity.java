@@ -20,6 +20,7 @@ import com.huawei.hms.site.api.SearchResultListener;
 import com.huawei.hms.site.api.SearchService;
 import com.huawei.hms.site.api.SearchServiceFactory;
 import com.huawei.hms.site.api.model.AddressDetail;
+import com.huawei.hms.site.api.model.HwLocationType;
 import com.huawei.hms.site.api.model.SearchStatus;
 import com.huawei.hms.site.api.model.Site;
 import com.huawei.hms.site.api.model.TextSearchRequest;
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
     public void search(View view) {
         TextSearchRequest textSearchRequest = new TextSearchRequest();
         textSearchRequest.setQuery(queryInput.getText().toString());
+        textSearchRequest.setHwPoiType(HwLocationType.TOWER);
         searchService.textSearch(textSearchRequest, new SearchResultListener<TextSearchResponse>() {
             @Override
             public void onSearchResult(TextSearchResponse textSearchResponse) {
