@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Auth Codelab Demo</string>
-    <string name="greeting_banner">Welcome to the Codelab</string>
-    <string name="anonymous_button">Anonymous Login</string>
-    <string name="huaweiid_button">HuaweiID Login</string>
-    <string name="game_button">Game ID Login</string>
-    <string name="success_sign">Correct!</string>
-    <string name="fail_sign">Failed</string>
-</resources>

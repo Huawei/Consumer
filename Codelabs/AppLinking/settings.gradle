@@ -1,2 +1,0 @@
-include ':app', ':shareapp'
-rootProject.name='AppLinkingDemo'

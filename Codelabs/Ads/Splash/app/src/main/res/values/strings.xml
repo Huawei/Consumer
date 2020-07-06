@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">SplashAdExample</string>
-    <string name="ad_id_splash">testq6zq98hecj</string>
-    <string name="owner">HUAWEI Developer</string>
-    <string name="copyright_info">Copyright 2020. Huawei Technologies Co., Ltd</string>
-    <string name="status_load_ad_success">Ad loading state: loaded successfully.</string>
-    <string name="status_load_ad_fail">Ad loading state: failed to be loaded. Error code: </string>
-    <string name="status_ad_dismissed">Ad is dismissed.</string>
-</resources>

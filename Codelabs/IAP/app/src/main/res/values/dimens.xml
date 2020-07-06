@@ -1,6 +1,0 @@
-<resources>
-    <dimen name="common_layout_start_end_padding">16dp</dimen>
-    <dimen name="common_layout_start_end_padding_24">24dp</dimen>
-    <dimen name="ui_12_dip">12dp</dimen>
-
-</resources>
